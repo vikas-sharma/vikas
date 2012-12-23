@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition extends="default" name="login">
+		<put-attribute name="body" value="/WEB-INF/views/login/login.jsp" />
+	</definition>
+
+	<definition extends="default" name="register">
+		<put-attribute name="body" value="/WEB-INF/views/login/register.jsp" />
+	</definition>
+
+	<definition extends="default" name="success">
+		<put-attribute name="body" value="/WEB-INF/views/login/success.jsp" />
+	</definition>
+
+	<definition extends="default" name="forgot">
+		<put-attribute name="body" value="/WEB-INF/views/login/forgot.jsp" />
+	</definition>
+
+	<definition extends="default" name="forgotSuccess">
+		<put-attribute name="body" value="/WEB-INF/views/login/forgot.jsp?msg=success" />
+	</definition>
+
+	<definition extends="default" name="forgotFail">
+		<put-attribute name="body" value="/WEB-INF/views/login/forgot.jsp?msg=fail" />
+	</definition>
+
+	<definition extends="default" name="reset">
+		<put-attribute name="body" value="/WEB-INF/views/login/reset.jsp" />
+	</definition>
+
+</tiles-definitions>

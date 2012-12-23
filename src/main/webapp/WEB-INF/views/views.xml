@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition extends="default" name="home">
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition extends="default" name="chess">
+		<put-attribute name="body" value="/WEB-INF/views/chess/index.jsp" />
+	</definition>
+
+	<definition extends="default" name="favourites">
+		<put-attribute name="body" value="/WEB-INF/views/chess/favourites.jsp" />
+	</definition>
+
+	<definition extends="default" name="personal">
+		<put-attribute name="body" value="/WEB-INF/views/personal/index.jsp" />
+		<put-attribute name="import_files"  value="/WEB-INF/views/personal/import_files.jsp"/>
+	</definition>
+
+	<definition extends="default" name="technology">
+		<put-attribute name="body" value="/WEB-INF/views/technology/index.jsp" />
+	</definition>
+
+	<definition extends="default" name="login">
+		<put-attribute name="body" value="/WEB-INF/views/login/login.jsp" />
+	</definition>
+
+	<definition extends="default" name="dataAccessFailure">
+		<put-attribute name="body"
+			value="/WEB-INF/views/dataAccessFailure.jsp" />
+	</definition>
+
+	<definition extends="default" name="resourceNotFound">
+		<put-attribute name="body"
+			value="/WEB-INF/views/resourceNotFound.jsp" />
+	</definition>
+
+	<definition extends="default" name="uncaughtException">
+		<put-attribute name="body"
+			value="/WEB-INF/views/uncaughtException.jsp" />
+	</definition>
+
+</tiles-definitions>

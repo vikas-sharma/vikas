@@ -1,0 +1,1225 @@
+[Event "Above 2000"]
+[Site "?"]
+[Date "2012.07.14"]
+[Round "1"]
+[White "Swathi Ghate"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "B50"]
+[WhiteElo "2283"]
+[BlackElo "2077"]
+[Annotator ",vikas"]
+[PlyCount "53"]
+[TimeControl "60"]
+
+{553MB, Fritz10.ctg} 1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 Nc6 5. Bd3 g6 6. Bc2
+Bg7 7. O-O O-O 8. d4 cxd4 9. cxd4 d5 10. e5 Ne4 11. Nc3 Nxc3 12. bxc3 Na5 13.
+Re1 Qc7 $11 14. Bd2 Nc4 15. Bf4 Qa5 16. Bg5 Re8 17. Nd2 $2 (17. Rb1 $11 {Now,
+black could play either Na3 or h6 leads to unclear positions.}) 17... Qxc3 18.
+Nxc4 Qxc4 $2 (18... dxc4 19. Rc1 Rd8 {with an unclear position}) 19. Bb3 Qc6 $2
+(19... Qa6 $14 20. Bxd5 Be6 21. Bxe6 Qxe6) 20. Rc1 {with compensation} Qd7 21.
+Rc5 (21. Qf3 $1) 21... Qf5 $2 (21... b6 22. Rxd5 Qc7 $14) 22. Qd2 Bf8 (22... h6
+$16 {only move to save the game} 23. Bxh6 Bxh6 24. Qxh6 Be6) 23. Bxd5 $18 Rd8
+24. g4 Qd7 25. e6 Qd6 26. exf7+ Kh8 27. Bf4 1-0
+
+[Event "Above 2000"]
+[Site "?"]
+[Date "2012.07.14"]
+[Round "2"]
+[White "Vikas R Sharma"]
+[Black "Kapil Lohana"]
+[Result "1-0"]
+[ECO "B50"]
+[WhiteElo "2077"]
+[BlackElo "2094"]
+[Annotator ",vikas"]
+[PlyCount "75"]
+[TimeControl "60"]
+
+{553MB, Fritz10.ctg} 1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 Nc6 5. Bd3 d5 6. e5 Nd7
+7. e6 fxe6 8. Ng5 Nf6 9. Qc2 Qc7 10. O-O c4 11. Bxh7 Nxh7 12. Qg6+ Kd7 13.
+Qxe6+ Ke8 14. Qf7+ Kd7 15. Nxh7 Rxh7 16. Qf5+ e6 17. Qxh7 Qe5 18. d4 cxd3 19.
+Qxd3 g5 20. Qe3 Qh8 21. Qxg5 Bd6 22. Bf4 e5 23. Bg3 Kc7 24. Na3 a6 25. Qg6 Ne7
+26. Qg5 Nf5 27. Rfe1 Be6 28. c4 Rg8 29. Qc1 Kb8 30. cxd5 Bxd5 31. Qd1 Bc6 32.
+Qd3 Nd4 33. Nc4 Bb5 34. a4 Bxc4 35. Qxc4 Nf5 36. Qe6 Rxg3 37. fxg3 Qf8 38. Rf1
+1-0
+
+[Event "Above 2000"]
+[Site "?"]
+[Date "2012.07.15"]
+[Round "3"]
+[White "Atul Dahale"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "D93"]
+[WhiteElo "2124"]
+[BlackElo "2077"]
+[Annotator ",vikas"]
+[PlyCount "108"]
+[TimeControl "60"]
+
+{553MB, Fritz10.ctg} 1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. e3
+c5 7. dxc5 Qa5 8. Rc1 dxc4 9. Bxc4 Qxc5 10. Bb3 Qa5 11. O-O Nc6 12. Qe2 Bg4 13.
+h3 Bxf3 14. Qxf3 Rad8 15. Rfd1 Rxd1+ 16. Rxd1 Rd8 17. Rxd8+ Qxd8 18. Qe2 a6 19.
+Na4 b5 20. Nc3 Na5 21. Qd1 Qxd1+ 22. Bxd1 e6 23. Bf3 Nd7 24. Be2 Nb6 25. Nd1
+Nd5 26. Bb8 Nb4 27. a3 Nbc6 28. Bc7 Nb3 29. a4 bxa4 30. Bxa6 Bxb2 31. Bc4 Bf6
+32. Bd6 Be7 33. Bxe7 Nxe7 34. Bxb3 axb3 35. Kf1 Kg7 36. Ke2 Kf6 37. Kd3 Nf5 38.
+Kc3 Nh4 39. g3 Nf3 40. Kxb3 g5 41. Kc4 Ng1 42. Kd3 Nxh3 43. f4 Kf5 44. Nc3 Kg4
+45. Ne4 f5 46. Nf6+ Kxg3 47. Nxh7 gxf4 48. exf4 Nxf4+ 49. Ke3 e5 50. Nf6 Ng2+
+51. Kd3 Kf3 52. Kd2 e4 53. Nd5 e3+ 54. Kd3 Kf2 0-1
+
+[Event "Above 2000"]
+[Site "?"]
+[Date "2012.07.15"]
+[Round "4"]
+[White "Chinmay Kulkarni"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "A16"]
+[WhiteElo "2276"]
+[BlackElo "2077"]
+[Annotator ",vikas"]
+[PlyCount "59"]
+[TimeControl "60"]
+
+{553MB, Fritz10.ctg} 1. Nf3 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Qa4+ Nc6 6.
+Ne5 Nxc3 7. dxc3 Bd7 8. Nxd7 Qxd7 9. Bf4 O-O-O 10. e4 e5 11. Be3 Bc5 12. Rd1
+Qe7 13. Bxc5 Qxc5 14. Rxd8+ Rxd8 15. Bb5 Nd4 16. Bc4 Ne6 17. O-O Ng5 18. Bb3 f5
+19. exf5 e4 20. h4 Nh3+ 21. gxh3 gxf5 22. Rd1 Qe7 23. Rxd8+ Kxd8 24. Qd4+ Kc8
+25. Qd5 Qxh4 26. Qxf5+ Kd8 27. Qf8+ Kd7 28. Qf7+ Kd8 29. Be6 Qg5+ 30. Bg4 1-0
+
+[Event "Above 2000"]
+[Site "?"]
+[Date "2012.07.16"]
+[Round "5"]
+[White "Vikas R Sharma"]
+[Black "Nikhil Dixit"]
+[Result "1-0"]
+[ECO "C10"]
+[WhiteElo "2077"]
+[BlackElo "1898"]
+[Annotator ",vikas"]
+[PlyCount "103"]
+[TimeControl "60"]
+
+{553MB, Fritz10.ctg} 1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6.
+Bd3 Nxe4 7. Bxe4 Nf6 8. Bd3 Be7 9. O-O O-O 10. Qe2 b6 11. Bg5 Bb7 12. Rad1 h6
+13. Bh4 Nh5 14. Bg3 Nxg3 15. hxg3 Bf6 16. c3 Bxf3 17. Qxf3 g6 18. Rfe1 Bg7 19.
+Bc4 Qd6 20. b4 a5 21. b5 Rad8 22. Rd3 Rfe8 23. Qg4 Rd7 24. Qh4 Rde7 25. Rf3 Rd7
+26. g4 c5 27. bxc6 Qxc6 28. Bb3 a4 29. Bc2 b5 30. g5 hxg5 31. Qxg5 b4 32. Qa5
+Ra8 33. Qxb4 Qd6 34. Qb5 a3 35. Bb3 Rc7 36. Qd3 Rac8 37. Qd2 e5 38. d5 e4 39.
+Rxe4 Bxc3 40. Qe2 Bb2 41. Re8+ Rxe8 42. Qxe8+ Kg7 43. g3 Re7 44. Qc6 Qxc6 45.
+dxc6 Rc7 46. Rxf7+ Rxf7 47. Bxf7 Be5 48. f4 Bc7 49. Be8 Kf6 50. Kg2 g5 51.
+fxg5+ Kxg5 52. Kf3 1-0
+
+[Event "Above 2000"]
+[Site "?"]
+[Date "2012.07.16"]
+[Round "6"]
+[White "Vikas R Sharma"]
+[Black "Kiran Panditrao"]
+[Result "1-0"]
+[ECO "B42"]
+[WhiteElo "2077"]
+[BlackElo "2117"]
+[Annotator ",vikas"]
+[PlyCount "107"]
+[TimeControl "60"]
+
+{553MB, Fritz10.ctg} 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Qb6 6. Nb3
+Qc7 7. O-O Nf6 8. Bg5 Be7 9. f4 d6 10. c4 Nbd7 11. Kh1 b6 12. Qe2 Bb7 13. N1d2
+O-O 14. Nf3 e5 15. f5 Rac8 16. Rac1 Rfe8 17. Bb1 Qb8 18. Nbd2 Qa8 19. Rfe1 Bc6
+20. Bd3 Nc5 21. Bc2 b5 22. b4 Ncd7 23. Bb3 Nb6 24. c5 dxc5 25. Bxf6 Bxf6 26.
+Rxc5 Be7 27. Rxc6 Rxc6 28. Nxe5 Rf6 29. Qh5 Rf8 30. Ng4 Rc6 31. Nf3 Nc4 32. e5
+f6 33. Nd4 Rb6 34. Ne6 Rxe6 35. fxe6 fxe5 36. Nxe5 Rf2 37. Nf3 g6 38. Qh3 Qd5
+39. Qg3 Rb2 40. Qb8+ Kg7 41. Qe8 Qd6 42. Qf7+ Kh6 43. Rd1 Qxb4 44. h3 Qc5 45.
+Qf4+ g5 46. Qd4 Qxd4 47. Nxd4 Ne3 48. Re1 Nxg2 49. Nf5+ Kh5 50. Bd1+ g4 51. Rg1
+Nf4 52. Nxe7 Nxh3 53. Bxg4+ Kh4 54. Nf5+ 1-0
+
+[Event "Shropshire Chess League 2010"]
+[Site "?"]
+[Date "2010.10.01"]
+[Round "1"]
+[White "Vikas R Sharma"]
+[Black "Gavyn Cooper"]
+[Result "1-0"]
+[ECO "B30"]
+[WhiteElo "2075"]
+[BlackElo "1915"]
+[Annotator ",vikas"]
+[PlyCount "103"]
+[EventDate "2010.??.??"]
+[TimeControl "60"]
+
+1. e4 c5 2. Nf3 Nc6 3. c4 e5 4. Nc3 g6 5. d3 d6 6. Be2 Bg7
+7. O-O Nge7 8. a3 O-O 9. Nd5 h6 (9... f5 {is playable directly}) 10. Rb1 a5 11.
+Bd2 f5 12. b4 axb4 13. axb4 fxe4 {
+in this opening black normally plans king side attack by playing f4-g5.} 14.
+dxe4 b6 15. Nxe7+ Qxe7 (15... Nxe7 {
+would have saved the pawn but pressure on d6 pawn give advantage to white}) 16.
+bxc5 bxc5 17. Bxh6 Bxh6 18. Qd5+ Qe6 19. Qxc6 Ra2 20. Rbd1 $2 ({
+bishop sacrifice was a bad idea} 20. Rfe1 $16) 20... Rxe2 21. Rxd6 Qe7 (21...
+Qxc4 22. Rxg6+ Bg7 23. Rg5 Qxe4 24. Qc7 Qh7 25. Nxe5 Bf5 26. Qxc5) 22. Rxg6+
+Bg7 23. Qd5+ (23. Rd1 {was better}) 23... Kh7 $2 (23... Qf7 $17) 24. Rg3 Rf4 $4
+(24... Ra2) 25. Ng5+ Kh8 26. Qd1 $4 (26. Qc6 $1 Bd7 27. Qg6 Kg8 28. Qh7+ Kf8
+29. Rb1 $18 {in the game similar position came but with bishop on c8}) 26...
+Rb2 27. Qh5+ Kg8 28. Qh7+ Kf8 29. Qg6 (29. Ra1 Qa7) 29... Rd2 30. Qc6 {
+i tried hard to find a winning combination. but didnt find any. later my
+opponent blunder under time pressure.} Bd7 31. Qc7 Rg4 32. Qb8+ Qe8 33. Qb6 Qe7
+34. Nf3 Ra2 35. Qb8+ Kf7 36. Qb3 Ra6 37. Qe3 Rag6 38. Ne1 Bh6 39. Qf3+ Kg7 40.
+Qc3 Bf4 41. Rxg4 Rxg4 42. g3 Kf8 43. Ng2 Bh6 44. f4 Bg7 45. Qf3 exf4 46. Nxf4
+Kg8 47. Nd5 Bd4+ 48. Kg2 Qg7 49. Rb1 Rg6 50. Rb8+ Kh7 51. Rb7 $4 Bg4 $4 (51...
+Bh3+ $19) 52. Rxg7+ 1-0
+
+[Event "Shropshire Chess League 2010"]
+[Site "?"]
+[Date "2010.10.14"]
+[Round "2"]
+[White "Nigel Ferrington"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "A16"]
+[WhiteElo "2118"]
+[BlackElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "100"]
+[EventDate "2010.??.??"]
+[TimeControl "60"]
+
+1. c4 Nf6 2. g3 g6 3. Bg2 d5 4. cxd5 Nxd5 5. Nc3 Nb6 6. d3
+Bg7 7. Be3 O-O 8. Qd2 Re8 9. Bh6 Nc6 10. Bxg7 Kxg7 11. Bxc6 {giving fianchetto
+bishop is bad if white is going to castle short. or, if its going to castle
+long then this move is opening b-file for black to attack} bxc6 12. Nf3 e5 13.
+h4 h6 14. O-O-O Rb8 15. Ne4 Qd5 (15... Na4 16. b3 (16. Qa5 Nxb2 17. Rd2 Qd5 $1)
+16... Qe7 17. Kb1 {
+was one possibility. although i did not find any winning combination for black}
+) 16. h5 g5 17. b3 f6 {first secured my king then attack} 18. Qc3 a5 19. Nc5 a4
+20. e4 Qf7 21. Nd2 Ra8 22. f4 axb3 23. axb3 Qe7 24. fxe5 fxe5 25. Rdf1 Nd7 26.
+b4 (26. Nxd7 {was better. b4 opens white position}) 26... Nxc5 27. bxc5 Bg4 {
+black is strong here} 28. Nf3 Ra2 29. Rh2 Rxh2 30. Nxh2 Bxh5 31. g4 Bg6 32. Nf3
+Qe6 33. d4 $2 Qxg4 34. Nxe5 Qxe4 35. Nxg6 Kxg6 $19 36. d5 Qe3+ 37. Qxe3 Rxe3
+38. d6 cxd6 39. cxd6 Re8 (39... Rd3 {was simple win}) 40. d7 Rd8 41. Rd1 h5 42.
+Kc2 Kf6 43. Rd6+ Ke7 44. Rxc6 Kxd7 45. Rg6 Rc8+ 46. Kd3 Rc5 47. Rh6 g4 48. Ke4
+Ke7 49. Kf4 Kf7 50. Kg3 Kg7 {
+i didnt note few more moves. i won later on time as well as game.} 0-1
+
+[Event "Shropshire Chess League 2010"]
+[Site "?"]
+[Date "2010.10.24"]
+[Round "3"]
+[White "Vikas R Sharma"]
+[Black "T Brotherton"]
+[Result "1-0"]
+[ECO "C14"]
+[WhiteElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "101"]
+[EventDate "2010.??.??"]
+[TimeControl "60"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e5 Ng8 6. Bxe7
+(6. Be3 {is opening move}) 6... Nxe7 7. Qg4 g6 (7... Ng6 8. h4 h5 9. Qg3 c5 10.
+O-O-O cxd4 11. Nb5 {better for white}) 8. O-O-O b6 9. Nf3 Ba6 10. Qf4 Bxf1 11.
+Rhxf1 {white's all the pieces are developed and king is safe} h6 12. g4 Nd7 13.
+Kb1 Qc8 14. Rd3 Qa6 15. Re1 (15. h4 {was required to stop g5 o-o-o plan}) 15...
+g5 16. Qd2 O-O-O 17. Ne2 Kb8 18. Ra3 Qb7 19. Qb4 c5 20. Qb5 Qc6 21. Nc3 Qxb5
+22. Nxb5 Nc8 23. dxc5 bxc5 24. Rb3 Ndb6 25. a4 c4 26. Ra3 a5 $2 27. Nfd4 Kb7
+28. Rf3 Rd7 29. b3 h5 30. Rh3 h4 31. Rf3 Rh7 32. Ka2 Ka6 $2 33. Nc6 Rb7 34. Rb1
+Nd7 35. Nd8 $2 Rb6 (35... Nxe5 36. Re3 Nxg4 37. Nxb7 Kxb7 38. Rc3 Nxf2 {
+with advantage to black}) 36. Nxf7 $18 Rg7 37. bxc4 dxc4 38. Nc7+ Ka7 39. Rxb6
+Ncxb6 40. Nxe6 Rg6 41. Nfxg5 Nxe5 42. Rf5 Nxg4 43. h3 Nh2 44. Rxa5+ Kb7 45. Rb5
+Kc6 46. Rb1 Nf3 47. Nxf3 Nxa4 48. Ne5+ Kd5 49. Nxg6 Nc3+ 50. Kb2 Nxb1 51. Ngf4+
+1-0
+
+[Event "Shropshire Chess League 2010"]
+[Site "?"]
+[Date "2010.11.11"]
+[Round "4"]
+[White "Tunks, Andy"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "D94"]
+[BlackElo "2077"]
+[Annotator ",vikas"]
+[PlyCount "60"]
+[EventDate "2010.??.??"]
+
+1. d4 Nf6 2. Nf3 g6 3. c4 Bg7 4. Nc3 d5 5. e3 O-O 6. Bd3 c5 7. dxc5 Qa5 8. Qb3
+({Main line is} 8. O-O dxc4 9. Bxc4 Qxc5 10. Qd4 (10. Be2 Nc6 11. Bd2 Qb6) (10.
+Qb3 Nc6) 10... Qxd4 11. exd4) 8... dxc4 (8... Na6 $1 9. Qb5 (9. cxd5 $2 Nxc5
+10. Qb5 Nxd3+ 11. Qxd3 Nxd5 $19) 9... Qxb5 10. Nxb5 Nb4 11. Bb1 dxc4 12. O-O
+Nd7 $17) 9. Qxc4 Na6 10. Bd2 Nxc5 11. Be2 Be6 12. Qb5 $2 (12. Nd5 Bxd5 13. Bxa5
+Bxc4 14. Bxc4 Nfe4 $15) 12... Qxb5 13. Nxb5 Nfe4 $17 14. Nbd4 Bd5 15. Bb4 $1 (
+15. O-O $2 Nxd2 16. Nxd2 Bxd4 17. exd4 Ne6 18. Bf3 Rfd8 {wins a pawn}) 15...
+Rac8 16. O-O Rfd8 17. Rfd1 e5 18. Nb5 (18. Nb3 $1 Na4 19. Rab1 Be6 $15) 18...
+a6 19. Nc3 Nxc3 20. bxc3 Na4 (20... e4 21. Nd4 Na4 $17) 21. Rab1 $2 (21. c4 $1
+e4 22. cxd5 exf3 23. Bxf3 Bxa1 24. Rxa1 f5 $15) 21... Bxa2 (21... e4 {
+was also winning}) 22. Ra1 Bb3 23. Rdb1 Nxc3 $1 $19 24. Rxb3 Nxe2+ 25. Kf1 e4
+26. Nd4 Nxd4 27. exd4 Rxd4 28. Ba3 Rd3 29. Rab1 Rxb3 30. Rxb3 Rc3 0-1
+
+[Event "Shropshire Chess League 2010"]
+[Site "?"]
+[Date "2010.11.24"]
+[Round "5"]
+[White "Vikas R Sharma"]
+[Black "Gary White"]
+[Result "1-0"]
+[ECO "B00"]
+[WhiteElo "2077"]
+[Annotator ",vikas"]
+[PlyCount "41"]
+[TimeControl "60"]
+
+1. e4 b6 2. d4 Bb7 3. Bd3 e6 4. Nf3 d6 (4... c5 5. c3 Nf6
+6. Qe2 Be7 7. O-O Nc6 8. e5 Nd5 9. dxc5 bxc5 10. c4 {is main line}) 5. O-O Nd7
+6. Qe2 Be7 7. e5 $5 dxe5 (7... Bxf3 8. Qxf3 dxe5 9. Bb5 exd4 10. Bxd7+ Kxd7 11.
+Rd1 {with compensation}) 8. dxe5 Bxf3 9. gxf3 c6 $1 {
+stops Bb5 and H1-A8 diagonal threats. Also, Qc7 is coming next move.} 10. Nc3
+Qc7 11. Re1 g5 12. Kh1 h5 13. Ne4 g4 $2 (13... Nxe5 14. Bxg5 Ng6 15. Bxe7 N8xe7
+16. Nf6+ Kf8 17. Rad1) 14. Bf4 gxf3 $2 (14... Nc5 15. Nd6+ Bxd6 16. exd6 Qd7
+17. b4 $18) 15. Qxf3 Nxe5 $4 (15... Nc5 16. Nd6+ Bxd6 17. exd6 Qd7 18. Bb5 $18)
+16. Qg3 $18 f6 17. Qg7 O-O-O 18. Qxh8 Qb7 19. Bxe5 fxe5 20. Qxe5 Nf6 21. Nxf6
+1-0
+
+[Event "Wolverhampton Chess League 2010"]
+[Site "?"]
+[Date "2010.11.16"]
+[Round "2"]
+[White "Vikas R Sharma"]
+[Black "James, Russell A"]
+[Result "0-1"]
+[ECO "C65"]
+[WhiteElo "2077"]
+[BlackElo "2180"]
+[Annotator ",vikas"]
+[PlyCount "104"]
+[TimeControl "60"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. d4
+Bb6 7. Re1 d6 8. h3 Ne7 9. dxe5 dxe5 10. Qxd8 Rxd8 11. Nbd2 ({i was about to
+fall into the trap, but calculated the following variation on time} 11. Nxe5
+Nxe4 12. Rxe4 Rd1+ 13. Kh2 Bf5 $1 {this move i missed while exchanging queens
+on 10th move. but, found it on the next move and escape the trap} 14. Re2 Rxc1
+15. Nd3 Rd1 16. Rxe7 Bxd3 17. Bxd3 Rxd3 18. Re2 Rd1 {
+with clear advantage to black}) 11... c6 12. Bc4 Ng6 13. Nf1 h6 14. b4 $4 {
+positional blunder. inviting a5 and activating blacks pieces. i was thinking
+something like playing Bb2 and pressuring the centre. but my bishop cant leave
+c1-h6 diagonal.} a5 15. Ng3 {
+at this point i realised my last move mistake and changed the plan.} Be6 $2 (
+15... axb4 16. cxb4 Bd4 17. Nxd4 Rxd4 18. Bb3 Rxb4 {wins a pawn.}) 16. Bxe6
+fxe6 17. Be3 Bxe3 18. Rxe3 $11 b5 19. a3 c5 20. bxc5 Rac8 21. a4 bxa4 22. Nf1
+Rxc5 23. N1d2 Nd7 24. Rxa4 Nb6 25. Ra2 a4 26. c4 $2 (26. g3 {
+required to stop Nf4}) 26... Nf4 $15 27. Kh2 $2 {overlooks blacks next move.}
+Nd3 {now, i've to give up either c or f pawn} 28. Rc2 Nxf2 29. Re1 (29. Nf1 $3
+Nd1 30. Ra3 {binds black knight} Rxc4 31. Rxc4 Nxc4 32. Rxa4 {should be draw})
+29... Nd3 $17 30. Rb1 Rd6 31. Rc3 Nd7 $2 (31... Nf4) 32. Rb7 $2 ({missed} 32.
+Ra3 Ra5 33. c5 $1 {threatening Nc4} Rxc5 34. Rxa4 {should be draw}) 32... Ra5
+33. Rb5 Raa6 34. c5 N7xc5 35. Rbxc5 Nxc5 36. Rxc5 a3 $19 37. Rc1 Rdc6 38. Ra1
+Rc2 39. Nb3 a2 40. Nfd2 Rb6 41. Kg1 Rb2 42. Kh2 Rb4 43. h4 h5 44. Rc1 R4xb3 45.
+Nxb3 Rxb3 46. Rc8+ Kf7 47. Ra8 Rb2 48. Kg3 Ke7 49. Kf3 Kd6 50. g4 Rb3+ (50...
+hxg4+ 51. Kxg4 Kc5 52. Kh5 Kd4 53. Ra4+ Kc3 54. Kg6 Rg2+ 55. Kf7 Kb2 {
+was simple win}) 51. Kg2 hxg4 52. Rxa2 Rh3 {we didnt note rest of the moves as
+both of us was under time pressure. later game goes very weired. my opponent
+had an advantage in the end. but i lost on time.} 0-1
+
+[Event "Leicester Chess Congress"]
+[Site "?"]
+[Date "2010.10.01"]
+[Round "1"]
+[White "Ilett, Raymond"]
+[Black "Vikas R Sharma"]
+[Result "1/2-1/2"]
+[ECO "D91"]
+[WhiteElo "1896"]
+[BlackElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "86"]
+[TimeControl "60"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. cxd5 Nxg5 7. Nxg5 e6 8.
+Qd2 exd5 9. Qe3+ Kf8 10. Qf4 Bf6 11. h4 h6 12. Nf3 Kg7 13. e3 Be6 14. Bd3 c5
+15. dxc5 Qa5 (15... Nd7 {was better}) 16. Nd4 Nc6 (16... Qxc5 17. Nxe6+ fxe6
+18. O-O Nd7 {was better}) 17. O-O Qxc5 18. Nxe6+ fxe6 19. Qg3 g5 20. Rac1 Qe7
+21. f4 Rag8 (21... Raf8) 22. h5 (22. e4 $1) 22... Rf8 23. Bb1 ({Again} 23. e4 {
+was more active}) 23... Rhg8 24. Kh1 Kh8 {Black is Ok now} 25. Bg6 Bg7 26. f5
+Bxc3 27. bxc3 exf5 28. Rxf5 Rxf5 29. Bxf5 Re8 30. Rd1 Qxe3 $4 (30... Qe5 31.
+Qf3 Qxe3 {equals.} 32. Qxd5 {is not possible because of} Rd8) 31. Qd6 $18 Qe7
+32. Qxh6+ Kg8 33. Qg6+ Kh8 34. Rf1 Ne5 35. Qh6+ Kg8 36. Re1 $4 (36. Be6+ Qxe6
+37. Rf8+ Rxf8 38. Qxe6+ Nf7 39. Qg6+ Kh8 40. h6 $18) 36... g4 37. g3 $2 (37.
+Re3 $3 $18) 37... Qf7 $1 38. Qg5+ Qg7 39. Bg6 (39. Qf4 $1 $18) 39... Re7 40. h6
+Qf8 $1 41. Bd3+ Kh8 42. Rxe5 $2 Qf3+ 43. Kh2 Qf2+ 1/2-1/2
+
+[Event "Leicester Chess Congress"]
+[Site "?"]
+[Date "2010.10.02"]
+[Round "2"]
+[White "Vikas R Sharma"]
+[Black "Shamash, Michelle"]
+[Result "1-0"]
+[ECO "B19"]
+[WhiteElo "2075"]
+[BlackElo "1740"]
+[Annotator ",vikas"]
+[PlyCount "43"]
+[TimeControl "60"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. Nf3 Nd7 7. h4 h6 8. h5
+Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 Ngf6 12. O-O-O Bd6 (12... Qc7 {is main line
+}) 13. Ne4 Nxe4 14. Qxe4 Nf6 15. Qe2 O-O $4 (15... Qc7 {
+transposes to main line.}) 16. Ne5 $2 (16. g4 {is quick}) 16... Qc7 17. g4 c5
+18. g5 cxd4 19. gxf6 Bxe5 20. fxg7 Bxg7 21. Rhg1 Rac8 $4 (21... Kh8 {only move}
+22. Rxg7 $5) 22. Bxh6 1-0
+
+[Event "Leicester Chess Congress"]
+[Site "?"]
+[Date "2010.10.02"]
+[Round "3"]
+[White "Vikas R Sharma"]
+[Black "Byron, Alan M"]
+[Result "1-0"]
+[ECO "B15"]
+[WhiteElo "2075"]
+[BlackElo "2190"]
+[Annotator ",vikas"]
+[PlyCount "51"]
+[TimeControl "60"]
+
+1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 O-O 8.
+Ne2 Qc7 (8... Re8 {is main line}) 9. Qc2 g6 $2 ({
+gives white h4-h5 attacking chances. Better was} 9... h6) 10. Bh6 Re8 11. O-O-O
+Be6 12. h4 $1 Qa5 (12... Bxa2 13. h5 {Black can't stop white's attack}) 13. h5
+$3 g5 (13... Qxa2 14. hxg6 Bb3 15. gxf7+ Kxf7 16. Bc4+ $1 Bxc4 17. Qxh7+ Ke6
+18. d5+ Bxd5 19. Nd4+ Ke5 20. f4#) 14. a3 b5 15. f4 Bg4 16. fxg5 Bxe2 17. Bxh7+
+$1 Kh8 18. Qf5 Nd7 19. gxf6 Bf8 20. Qg5 Nxf6 (20... Bxh6 21. Qxh6 Nxf6 22. Bf5+
+Kg8 23. Qg5+ Kf8 24. Qxf6 Bxd1 25. Qh6+ {is winning}) 21. Qxf6+ Kxh7 22. Qxf7+
+Kh8 23. Bg5 Be7 24. Bxe7 Rxe7 25. Qxe7 Bxd1 26. h6 1-0
+
+[Event "Leicester Chess Congress"]
+[Site "?"]
+[Date "2010.10.03"]
+[Round "4"]
+[White "Mercs, Peter J"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "B92"]
+[WhiteElo "2082"]
+[BlackElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "97"]
+[TimeControl "60"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O
+O-O 9. a4 Nc6 10. Be3 Be6 11. Bf3 (11. Qd2 {or}) (11. f4 {are main lines})
+11... Rc8 12. Qd2 Nb4 13. Rfd1 Qc7 ({book says} 13... Qd7 14. Rac1 Rfd8) 14. a5
+Rfe8 15. Bb6 Qb8 16. Rac1 (16. Ra4 $142) 16... Nd7 17. Nd5 Nxd5 18. exd5 Bf5
+19. Be3 b5 20. axb6 Nxb6 21. Be2 Nc4 22. Bxc4 Rxc4 23. Na5 Rg4 24. Nc6 Qc8 25.
+f3 Rg6 26. Nxe7+ Rxe7 27. Kh1 {it seems black is attacking. but with fewer
+pieces on the board its difficult for black to find a concrete attacking plan
+even in the presence of opposite color bishops.} Rc7 28. c3 h5 29. Bf2 $1 {
+stopped all my attack} e4 {i was in the intution that i had a very good
+attacking chances. rather i should have think of stopping white's queen side
+pawn storm.} 30. f4 Bg4 31. Re1 Qf5 32. Qe3 $2 Re7 (32... Qxd5 $11) 33. Bh4 $2
+(33. c4 $142 $1 $16) 33... Re8 (33... Rb7 $142) 34. c4 Bf3 $4 {
+miscalculated few continuation} 35. gxf3 Qh3 36. Bg5 f6 37. fxe4 Qxe3 38. Rxe3
+fxg5 39. f5 Rf6 40. b4 {white is winning} Rxf5 41. exf5 $1 Rxe3 42. c5 Kf7 43.
+c6 Re8 44. Ra1 Kf6 45. Rxa6 Ke5 46. b5 Kxd5 47. c7 $1 Ke4 48. b6 Kf3 49. Ra1
+1-0
+
+[Event "Leicester Chess Congress"]
+[Site "?"]
+[Date "2010.10.03"]
+[Round "5"]
+[White "Vikas R Sharma"]
+[Black "K Bowmer"]
+[Result "1-0"]
+[ECO "B50"]
+[WhiteElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "69"]
+[TimeControl "60"]
+
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 g6 5. Bd3 Bg7 6. O-O O-O 7. Bc2 b6 (7... Nc6
+{main line}) 8. d4 Bb7 9. Re1 e6 10. Bg5 h6 11. Bf4 Nc6 12. Na3 cxd4 13. cxd4
+e5 14. Bh2 Nxd4 15. Nxd4 exd4 16. Nb5 d5 17. e5 Ne4 18. Nxd4 a6 $2 19. f3 Nc5
+20. b4 Ne6 (20... Nd7 $1 21. e6 $2 {is not possible because of} Qf6 22. exf7+
+Rxf7 23. Nb3 Re7 {black is ok}) 21. Nxe6 fxe6 22. Bxg6 $16 Qg5 23. Bc2 Rac8 24.
+f4 Qe7 25. Qd3 Rfd8 26. Qg6 (26. Qh7+ $142 Kf8 27. Bg6 d4 28. Rf1 Bd5 29. f5 {
+is winning}) 26... Rc6 27. a3 Rdc8 28. Bd1 $2 ({still} 28. Qh7+ {was winning})
+28... d4 $2 29. Bb3 $18 Kh8 30. Rad1 Qd7 31. Rd3 Rc1 32. Red1 Rxd1+ 33. Rxd1
+Rc6 34. Qd3 Rc3 $4 35. Qxc3 1-0
+
+[Event "Worcestershire Chess Congress"]
+[Site "?"]
+[Date "2010.07.25"]
+[Round "1"]
+[White "Vikas R Sharma"]
+[Black "Ray Collett"]
+[Result "1-0"]
+[ECO "C90"]
+[WhiteElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "69"]
+[TimeControl "60"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Be7 7. Re1 d6 8. c3
+Na5 9. Bc2 O-O 10. d4 Bg4 11. dxe5 (11. d5 {transposes to one of the main line}
+) 11... Bxf3 12. Qxf3 dxe5 13. Qg3 Nc6 14. Bh6 Ne8 (14... Nh5 15. Qg4 Qd6 16.
+Qxh5 Qxh6 17. Qxh6 gxh6 18. Nd2 $14) 15. Nd2 $2 (15. Rd1) 15... Kh8 $2 (15...
+Bh4 $1 16. Qg4 Bxf2+ 17. Kxf2 Qf6+ 18. Bf4 exf4 $15) 16. Be3 $16 Bf6 17. Red1
+Nd6 18. a4 Ne7 19. c4 $1 Qb8 20. c5 (20. b3 $142) 20... Nc4 21. Nxc4 bxc4 22.
+Rab1 Nc6 23. b4 cxb3 24. Bxb3 Qe8 25. Bd5 Rb8 26. Rxb8 Nd4 $4 27. Rxe8 Ne2+ 28.
+Kf1 Nxg3+ 29. hxg3 Rxe8 30. Bxf7 Rf8 31. Rd7 Rc8 32. c6 g5 33. Bc4 a5 34. Ba6
+Rb8 35. Bb7 1-0
+
+[Event "Worcestershire Chess Congress"]
+[Site "?"]
+[Date "2010.07.25"]
+[Round "2"]
+[White "Mangione, Claudio"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "A07"]
+[WhiteElo "2087"]
+[BlackElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "67"]
+[TimeControl "60"]
+
+1. g3 Nf6 2. Bg2 d5 3. d3 g6 4. Nf3 Bg7 5. O-O O-O 6. Nc3 d4 $2 (6... c5 {
+was better. I under-estimated the strength of white's next move.}) 7. Na4 $1 {
+stopped c5} Na6 8. c4 Rb8 9. e3 dxe3 10. Bxe3 b6 $2 (10... Bf5 $1) 11. Ne5 Bd7
+12. d4 Ne8 13. f4 f6 14. Nc6 Bxc6 15. Bxc6 Nb4 16. Bg2 Qd7 17. a3 Nc6 18. d5
+Na5 19. Rc1 Nb7 20. b4 b5 21. cxb5 Qxb5 22. Rc6 Nd8 23. Rc5 Qd7 24. Ra5 $18 Nd6
+25. Nc5 Qc8 26. Rxa7 Nc4 27. Qb3 Nd6 28. Rc1 Ra8 29. Rxa8 Qxa8 30. Nd7 Rf7 31.
+Rxc7 Nb5 32. d6 Qxa3 33. Qxa3 Nxa3 34. Rc8 1-0
+
+[Event "Worcestershire Chess Congress"]
+[Site "?"]
+[Date "2010.07.25"]
+[Round "3"]
+[White "Gerry Heap"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "B92"]
+[BlackElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "84"]
+[EventDate "2010.??.??"]
+[TimeControl "60"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. O-O
+O-O 9. a4 Nc6 10. Be3 Be6 11. f4 exf4 12. Rxf4 Ne5 13. a5 (13. Kh1 Qc7 14. a5
+Rac8 15. Nd4 Rfe8 16. Nf5 Bf8 {as per the opening book}) 13... Ng6 14. Rf1 d5
+$5 15. exd5 Nxd5 16. Nxd5 Qxd5 17. Bf3 Qb5 18. Nd4 Qxb2 19. Nxe6 fxe6 20. Bb6
+Qe5 $1 21. Bxb7 Bd6 22. g3 Bc5+ 23. Kh1 Rab8 24. Rxf8+ (24. Qd7 $142) 24...
+Nxf8 25. Bxc5 Qxc5 26. Qf3 Ng6 (26... Qxc2 27. Rf1 h6 28. Be4 Qc7) 27. Be4 Rf8
+28. Qb3 Qe5 29. Re1 Rf2 $2 30. Qe3 (30. Qb6 $142 $16) 30... Rf6 31. Bxg6 $4
+Rf1+ 32. Rxf1 Qxe3 33. Bd3 Qc5 34. Re1 Kf7 35. Kg2 Qxa5 36. Re4 Qd5 37. Kf3
+Qh5+ 38. Kg2 Qd1 39. Kf2 Kf6 40. h4 e5 41. Ra4 a5 42. Bxh7 g6 0-1
+
+[Event "Worcestershire Chess Congress"]
+[Site "?"]
+[Date "2010.07.25"]
+[Round "4"]
+[White "Vikas R Sharma"]
+[Black "Greatorex, Roger"]
+[Result "1-0"]
+[ECO "B42"]
+[WhiteElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "73"]
+[EventDate "2010.??.??"]
+[TimeControl "60"]
+
+1. e4 e6 2. d4 c5 3. Nf3 a6 4. c4 cxd4 5. Nxd4 Nc6 6. Nxc6 bxc6 7. Bd3 e5 8.
+O-O Nf6 9. Nc3 Bc5 10. Kh1 d6 11. Bg5 h6 12. Bh4 g5 13. Bg3 Rb8 14. Rc1 Bd4 $2
+(14... h5 {with a good attacking chances for black}) 15. Qa4 Qc7 $2 (15... Rxb2
+16. Qxc6+ Qd7 17. Qxd7+ Kxd7 {and black has a solid position}) 16. Nd5 Nxd5 17.
+cxd5 Bc5 $4 (17... O-O 18. Rxc6 $16) 18. Bxe5 $18 dxe5 19. Rxc5 Bb7 20. dxc6
+O-O 21. b4 Bc8 22. a3 Rb6 23. Bc4 Kg7 24. Bd5 f5 25. b5 fxe4 26. Bxe4 Rf4 27.
+bxa6 Rxa6 28. Qc2 Rf6 29. Qc3 Ra7 30. f3 Qd6 31. Qxe5 Qxe5 32. Rxe5 Rxa3 33.
+Rc1 Ra7 34. Re8 Rc7 35. Rd8 Be6 36. Kg1 h5 37. Rc5 1-0
+
+[Event "Worcestershire Chess Congress"]
+[Site "?"]
+[Date "2010.07.25"]
+[Round "5"]
+[White "Stephen Mellor"]
+[Black "Vikas R Sharma"]
+[Result "1/2-1/2"]
+[ECO "B90"]
+[BlackElo "2075"]
+[Annotator ",vikas"]
+[PlyCount "60"]
+[EventDate "2010.??.??"]
+[TimeControl "60"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be3 e5 7. Nb3 Be6 8. Qd2
+Be7 9. O-O-O $2 (9. f3 {is opening move}) 9... Ng4 10. Kb1 O-O 11. Nd5 Bxd5 12.
+exd5 Nd7 13. Be2 Nxe3 14. fxe3 f5 15. g4 f4 16. Bd3 g6 $2 (16... a5 $36) 17.
+Rdf1 Bg5 18. exf4 Rxf4 19. Rxf4 Bxf4 20. Qe1 Rc8 21. h4 Nc5 (21... Nf6 $142)
+22. Nxc5 Rxc5 23. h5 g5 24. Qe4 Qd7 25. Rf1 Rc7 26. Qf3 Qa4 27. Bf5 Kh8 28. h6
+Qe8 29. Qe4 Qf7 30. a3 Qf8 1/2-1/2
+
+[Event "Chester Congress"]
+[Site "?"]
+[Date "2010.06.26"]
+[Round "1"]
+[White "Pablo Padilla"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "B26"]
+[WhiteElo "2134"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "59"]
+[EventDate "2010.??.??"]
+[TimeControl "90"]
+
+1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. Be3 e6 7. Qd2 Rb8 8. Nf3 b5
+9. Nd1 b4 10. O-O Nd4 11. Nh4 f5 $2 ({premature move. I should have played} 
+11... Ne7 {here, as white has castled king side and there is no danger in
+exchange of Bishops after Bh6}) 12. c3 $16 bxc3 13. bxc3 Nb5 14. Rb1 Bd7 15.
+exf5 gxf5 16. Bg5 Qc8 17. Re1 Kf8 18. Bf4 e5 19. Bg5 Nc7 20. Rxb8 Qxb8 21. Ne3
+h6 {black can do nothing else.} 22. Ng6+ Ke8 23. Bh4 Rh7 24. Nd5 $2 (24. Qd1 h5
+25. Qf3 $18) 24... Be6 $2 (24... Kf7 $1 25. Nge7 Nxe7 26. Nxe7 Bf6 {
+and black is safe now}) 25. Ngf4 Bxd5 26. Nxd5 Nxd5 27. Bxd5 Ne7 28. Be6 Ng6
+29. Qd1 h5 30. Qa4+ 1-0
+
+[Event "Chester Congress"]
+[Site "?"]
+[Date "2010.06.26"]
+[Round "2"]
+[White "Vikas R Sharma"]
+[Black "Rohan Shiatis"]
+[Result "1-0"]
+[ECO "B50"]
+[WhiteElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "41"]
+[EventDate "2010.??.??"]
+[TimeControl "90"]
+
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 g6 5. Bd3 Bg7 6. O-O O-O 7. Bc2 Nc6 8. d4
+cxd4 9. cxd4 Bd7 $5 10. Nc3 Rc8 11. Bg5 Qb6 $5 12. Bxf6 Bxf6 $2 13. Nd5 Qxb2
+14. Rb1 Qxa2 15. Rxb7 Rfd8 16. Nxf6+ exf6 17. Ba4 Ne5 18. Bb3 Nxf3+ $4 (18...
+Qa6 19. Bd5 Bc6 $13) 19. Qxf3 Qa6 20. Qxf6 Rf8 21. Rxd7 1-0
+
+[Event "Chester Congress"]
+[Site "?"]
+[Date "2010.06.26"]
+[Round "3"]
+[White "Martin Brown"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "B92"]
+[WhiteElo "2093"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "91"]
+[EventDate "2010.??.??"]
+[TimeControl "90"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Be2 e5 7. Nb3 Be7 8. Be3
+Be6 9. O-O O-O 10. f4 exf4 11. Rxf4 Nc6 12. Nd5 Bxd5 13. exd5 Ne5 14. Rb4 Qc7
+15. a4 Rfc8 $2 (15... Nfd7 16. a5 Rfe8 17. c3 Bf6 {is opening moves. in the
+game, i realised my mistake and retrieve my rook back to e8 square with a
+waste of tempo}) 16. c3 Nfd7 17. a5 Bf6 18. Qd2 Re8 19. Kh1 g6 20. Rf1 Bg7 21.
+Bh6 Bh8 22. h4 b5 23. axb6 Nxb6 24. h5 {it seems white has a strong attacking
+chances here. but my strong knight is defending the position very well.} Nbc4
+25. Bxc4 Nxc4 26. Qf2 Ne5 27. hxg6 hxg6 28. Rh4 Qb7 29. Bg5 f5 $1 30. Nd4 Ng4
+31. Qf3 Bxd4 32. cxd4 Re4 33. Qg3 $2 (33. Qh3 Qg7 34. Qg3 Qd7 35. Qh3 $11)
+33... Qb5 $17 34. Rg1 $2 Qe2 $4 ({blunder under time pressure} 34... Qxd5 $19)
+35. Qxd6 Nf2+ 36. Kh2 Rxh4+ 37. Bxh4 Qh5 38. Qe6+ Kh7 39. Qe7+ Kh6 40. Rf1 $2 (
+40. Ra1 $1 $18) 40... Ng4+ $2 (40... Re8 $1 41. Qxe8 Qxh4+ 42. Kg1 Nh3+ 43.
+gxh3 Qg3+ $11 {
+missed this wonderful combination on the last move of the first time control})
+41. Kg1 $18 Rg8 42. Rf3 Rg7 43. Qd8 Kh7 44. Rh3 Rg8 45. Qc7+ Rg7 46. Be7 1-0
+
+[Event "Chester Congress"]
+[Site "?"]
+[Date "2010.06.27"]
+[Round "4"]
+[White "Vikas R Sharma"]
+[Black "Harry Lamb"]
+[Result "1-0"]
+[ECO "C15"]
+[WhiteElo "2022"]
+[BlackElo "2101"]
+[Annotator ",vikas"]
+[PlyCount "71"]
+[EventDate "2010.??.??"]
+[TimeControl "90"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 dxe4 5. a3 Bxc3+ 6. Nxc3 Nc6 7. Bb5 Nge7
+8. Nxe4 Qd5 (8... O-O 9. c3 e5 {is good for black}) 9. Qd3 f5 10. Ng3 Qxg2 11.
+Bg5 O-O 12. O-O-O {
+white has compensation for the pawn with a very good attacking chances} Qh3 13.
+Qd2 h6 14. Bf4 Nd5 15. Rhg1 Qh4 16. Ne2 Kh7 17. Bxc6 bxc6 18. Be5 Rf7 19. Rg3
+Ba6 20. Ng1 Rg8 21. f4 Nb6 22. Qg2 Bc4 23. Nf3 Qh5 24. Rh3 Qg4 25. Ng5+ Kg6 26.
+Rg3 hxg5 27. Rxg4 fxg4 28. Qxg4 Rf5 29. h4 Rh8 30. fxg5 Nd5 31. Qg3 Be2 32. Re1
+Bh5 33. Bxc7 Rhf8 34. c4 Rf3 35. Qe5 Kh7 36. cxd5 1-0
+
+[Event "Chester Congress"]
+[Site "?"]
+[Date "2010.06.27"]
+[Round "5"]
+[White "Townsend, M Paul"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "D97"]
+[WhiteElo "2222"]
+[BlackElo "2022"]
+[PlyCount "91"]
+[EventDate "2010.??.??"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 a6 8. e5
+b5 9. Qb3 Nfd7 10. e6 fxe6 11. Be3 Nf6 12. Rd1 (12. a4 bxa4 13. Rxa4 Nc6 14.
+Bc4 Rb8 15. Bxe6+ Kh8 16. Qc4 Bxe6 17. Qxe6 Qd6 18. Ng5 Rxb2 19. O-O Nd8 20.
+Qh3 Qd7 21. Qxd7 Nxd7 22. Rxa6 {is main line}) 12... Nd5 $2 ({
+left control over e4 square} 12... Qd6 $142) 13. h4 Qd6 14. h5 Nc6 15. hxg6
+hxg6 16. Rh3 $2 (16. Qc2 $14) 16... Bd7 $2 (16... Nxe3 17. fxe3 Na5 18. Qc2 e5
+19. dxe5 Qc5 $15) 17. Qc2 Be8 18. Ne4 Qb4+ 19. Rd2 e5 $1 20. a3 Qa4 $2 (20...
+Qa5 21. dxe5 Nxe3 22. fxe3 Rd8 $15) 21. Qc5 $2 (21. Qxa4 bxa4 22. Bc4 $16)
+21... Nxe3 (21... Rd8 $142) 22. fxe3 Qb3 (22... exd4 $2 23. Nxd4 Nxd4 24. exd4
+$14) 23. Nfg5 $1 (23. dxe5 Rd8) (23. d5 Na5) 23... Qa2 (23... Bd7 24. g4 $1
+Bxg4 (24... exd4 25. Bg2 $1 $16) 25. Qxc6 exd4 26. Qxg6 Bf5 27. exd4 Qxh3 28.
+Qxg7+ Kxg7 29. Bxh3 Bxh3 30. Nxh3 $18) 24. Nc3 Qa1+ 25. Nd1 Qa2 (25... Rd8 26.
+Ne6 exd4 27. Nxd8 Nxd8 28. Qxe7 Bf7 29. Rxd4 $16) 26. d5 $1 Nd8 27. Qxe7 Bf7
+28. Bd3 (28. Nxf7 Nxf7 29. Qe6 {was immediate finish}) 28... Re8 29. Qb4 e4 30.
+Bxe4 Bf8 $2 (30... Qc4 $142) 31. Qc3 Bg7 32. Qxc7 Qc4 33. Qf4 Re5 34. Rc2 Qa4
+35. Rc7 $2 Rxg5 (35... Qa5+ 36. Rc3 b4 {
+was better than the text. even though white is still winning}) 36. Qxg5 Qxe4
+37. Nc3 $2 (37. Rd7 $1 $18 {my opponent missed this move under time pressure})
+37... Qe5 38. Qxe5 Bxe5 $11 39. Re7 Bxc3+ $4 ({
+blundered under severe time pressure} 39... Bf6 $11) 40. bxc3 $18 Rc8 (40...
+Bxd5 41. Re8+ Kg7 42. Rhh8 $18) 41. e4 $1 {
+protecting all the pawns and now a strong central passed pawns storms} Kf8 42.
+Rd7 Bg8 43. e5 Ke8 44. Ra7 $1 Rc5 45. Rh8 Kf8 46. e6 $1 1-0
+
+[Event "Sunningdale Open"]
+[Site "?"]
+[Date "2010.05.29"]
+[Round "2"]
+[White "Vikas R Sharma"]
+[Black "Ociepka, Adrian"]
+[Result "0-1"]
+[ECO "B09"]
+[WhiteElo "2022"]
+[BlackElo "2178"]
+[Annotator ",vikas"]
+[PlyCount "60"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. f4 Bg7 5. Nf3 O-O 6. Bd3 c5 7. dxc5 dxc5 8. O-O
+Nc6 9. h3 (9. e5 {was more active.}) 9... Rb8 (9... Qb6 $142) 10. Be3 b6 11.
+Qe1 Bb7 12. Rd1 Qc8 (12... Nd4 $142) 13. Qh4 $2 (13. e5 $16) 13... Nb4 14. f5
+c4 15. Be2 $5 Nxc2 16. Bh6 (16. Bg5 $5) 16... Qc5+ 17. Kh1 Ne3 (17... Bxh6 18.
+Qxh6 Nh5 (18... Ne3 19. Ng5 gxf5 20. Rf3 Nxd1 21. Bxd1 Rfd8 22. Bc2 $18) 19.
+Rd5 $3 Ng3+ 20. Kh2 Qc7 21. Kg1 Nxe2+ 22. Nxe2 f6 23. fxg6 e6 24. Rh5 Bxe4 25.
+Ne5 $18) 18. Na4 (18. fxg6 $5) 18... Qa5 19. Bxe3 Qxa4 20. e5 Nd5 $2 (20... Ne4
+$142) 21. Rxd5 $5 (21. Bh6 $1 $18) 21... Bxd5 22. f6 exf6 23. exf6 Rfe8 $2 (
+23... Bh8 24. Ng5 h5 25. Bxh5 gxh5 26. Qg3 Qc2 27. Ne4+ Kh7 28. Ng5+ Kg8 $11)
+24. Ng5 h5 25. fxg7 Rxe3 26. Qf4 $4 (26. Bxh5 $1 $18) 26... Rxe2 27. Nxf7 Bxg2+
+28. Kg1 Bxf1 29. Qxb8+ Qe8 30. Nh6+ Kxg7 0-1
+
+[Event "Sunningdale Open"]
+[Site "?"]
+[Date "2010.05.29"]
+[Round "3"]
+[White "Lenier, Jude"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "B91"]
+[WhiteElo "1948"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "44"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. g3 e5 7. Nde2 Be7 8. Bg2
+O-O 9. O-O Be6 10. h3 b5 11. f4 b4 12. Nd5 Bxd5 13. exd5 Nbd7 14. Be3 Rc8 15.
+g4 $2 (15. a3 $142) 15... Nb6 $11 16. b3 e4 17. Bd4 Nfxd5 18. Bxe4 Bf6 19. g5
+Bxd4+ 20. Qxd4 Re8 21. Ng3 Nc3 22. Nh5 $4 (22. Bb7 $14) 22... Ne2+ 0-1
+
+[Event "Sunningdale Open"]
+[Site "?"]
+[Date "2010.05.30"]
+[Round "4"]
+[White "Coates, David H"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "B99"]
+[WhiteElo "2084"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "82"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3
+Qc7 9. O-O-O Nbd7 10. g4 h6 11. Bxf6 Bxf6 12. h4 Qb6 13. Nde2 Nc5 14. g5 Be7
+15. Kb1 (15. g6 {is main line}) 15... Bd7 16. Bg2 Bc6 $6 (16... O-O-O $11) 17.
+Nd4 a5 $2 (17... O-O-O $11 18. g6 fxg6 19. Nxe6 Nxe6 20. Bh3 Kb8 21. Bxe6 Bf6)
+18. Rhe1 a4 19. Qe3 $1 a3 20. b3 Bd7 $2 (20... O-O-O 21. g6 $16) 21. Nf5 $1 Bf8
+$8 (21... exf5 $2 22. exf5 O-O-O 23. Nd5 $18) 22. Nd4 $2 (22. e5 $1 exf5 23.
+Nd5 Qa7 24. Nc7+ Kd8 25. Nxa8 Qxa8 26. exd6 Qa5 27. Rd5 b6 28. Rxf5 $18) 22...
+O-O-O 23. Bf1 hxg5 24. hxg5 Kb8 $2 (24... Na6) 25. Ndb5 Bxb5 26. Nxb5 Qa5 27.
+Qd4 $16 e5 28. fxe5 Ne6 29. Qd5 dxe5 30. Qc4 (30. Qxe5+ $18) 30... Be7 31. g6
+Bh4 $1 $19 32. Rxd8+ Rxd8 33. Rc1 Bg5 34. b4 Qb6 35. Re1 Bh4 36. Rc1 Bg5 37.
+Re1 fxg6 (37... Nd4 $1 {was quick win}) 38. Bd3 Nd4 39. Rf1 $2 (39. Qc5 $142)
+39... Nf3 $2 ({i missed} 39... Nxb5 40. Qxb5 Qd4 {
+and mate soon. even though the text is also winning.}) 40. Rxf3 Qg1+ 41. Rf1
+Qxf1+ 0-1
+
+[Event "Sunningdale Open"]
+[Site "?"]
+[Date "2010.05.30"]
+[Round "5"]
+[White "Vikas R Sharma"]
+[Black "De Coverly, Roger D"]
+[Result "1-0"]
+[ECO "C91"]
+[WhiteElo "2022"]
+[BlackElo "2116"]
+[Annotator ",vikas"]
+[PlyCount "79"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. d4
+d6 9. c3 Bg4 10. d5 Na5 11. Bc2 c5 (11... c6 {is main line}) 12. h3 Bc8 (12...
+Bd7 {is better square for bishop}) 13. b4 ({book says} 13. Nbd2) 13... cxb4 14.
+cxb4 Nc4 15. a4 Bb7 (15... Bd7 {is again better square for bishop}) 16. Na3
+Nxa3 17. Rxa3 $14 bxa4 18. Nd2 Nd7 19. Nc4 Nb6 20. Na5 Rb8 21. Rc3 f5 22. Nxb7
+Rxb7 23. exf5 Rc7 $2 (23... Bg5 {will exchange one of the white bishop}) 24.
+Rc6 $16 Rxc6 25. dxc6 Qc7 26. Be4 Kh8 27. Be3 a3 (27... d5 28. Bxd5 Nxd5 29.
+Qxd5 Bxb4 30. Rd1 {is winning for white}) 28. g4 (28. Qh5 $1 Bf6 29. Rc1 a2 30.
+Qe2 d5 31. Bxb6 Qxc6 32. Rxc6 a1=Q+ 33. Kh2 dxe4 34. Qc4 $18) 28... Rb8 29.
+Bxb6 Rxb6 30. Qd5 Bg5 31. Qe6 Rb8 32. Bd5 Qe7 (32... Bd2 33. Rd1 Bxb4 34. f6
+gxf6 35. Qxf6+ Qg7 36. c7 Rf8 37. Qxg7+ Kxg7 38. Be6 $18) 33. Ra1 $18 Qxe6 34.
+fxe6 Bd2 35. Rxa3 g6 36. Rxa6 Kg7 37. Ra7+ Kf6 38. Rf7+ Kg5 39. e7 Bxb4 40. Rf8
+1-0
+
+[Event "Sunningdale Open"]
+[Site "?"]
+[Date "2010.05.31"]
+[Round "6"]
+[White "GM Simon Williams"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "D87"]
+[WhiteElo "2527"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "233"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. d4 {This was my first game against any GM} Nf6 2. c4 g6 3. Nc3 d5 4. cxd5
+Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 O-O 8. Ne2 c5 9. h4 {i got out of book here.
+} Nc6 10. Be3 Qa5 ({book says} 10... cxd4 11. cxd4 Qd6 12. Rc1 Rd8 13. d5 Ne5
+14. Qb3 Bd7) 11. Kf1 Rd8 12. Qb3 e6 13. h5 Qc7 ({
+during the game, i thought of playing} 13... cxd4 14. cxd4 Nxd4 15. Nxd4 Bxd4
+16. Bxd4 Rxd4 17. hxg6 hxg6 {and after} 18. Qe3 {
+i was thinking its winning for white. But i missed} Qe5 {
+black is simply a pawn up.}) 14. hxg6 hxg6 15. Bg5 Re8 $2 (15... Rd7 {
+will keep pressure on the d-file}) 16. Bd3 e5 17. d5 Na5 18. Qa3 f6 19. Be3 c4
+20. Bc2 Bd7 21. g3 b6 22. Kg2 Kf7 23. f3 (23. f4 {
+was very aggressive. even though there is no direct threat from white}) 23...
+Rh8 24. g4 Rxh1 25. Rxh1 Rh8 26. Rxh8 Bxh8 27. Bh6 Qc5 $6 (27... Qd8 $1 $11)
+28. Qxc5 bxc5 29. Be3 Nb7 30. Kg3 g5 31. Kf2 Bg7 32. Ng3 Bf8 33. Nf1 Ke8 34.
+Ke2 Kd8 35. Kd2 Kc7 36. Kc1 Kb6 37. Kb2 Nd6 38. Nd2 a5 39. Nf1 Be7 40. Bd2 Be8
+41. Ne3 Bd7 42. Kc1 Bf8 43. Nd1 Be8 44. Nb2 Bd7 45. Be3 Bb5 46. Ba4 Be7 47. Kd2
+Bf8 48. Bf2 Be7 49. Bc2 Bf8 50. Nd1 Be8 51. Ne3 Bd7 52. Bd1 Bb5 53. Nf1 Bd7 54.
+Kc1 Bb5 55. Kb2 Bd7 56. Ng3 Bg7 57. Ka3 Nb5+ 58. Kb2 Nd6 59. Be2 Bb5 60. Be3
+Bf8 61. Nh5 Ne8 62. Ka3 Be7 63. Bd1 Bf8 64. Ba4 Be7 65. Bd2 Ka6 66. Be3 Kb6 67.
+Bf2 Bf8 68. Bg3 Bd6 69. Bh2 Ka6 70. Ng3 Bf8 71. Bg1 Kb6 72. Be3 Nd6 73. Bd1 Bd7
+74. Be2 Bb5 75. Nh5 Ne8 76. Kb2 Be7 77. Bf2 Bf8 78. Bf1 Be7 79. Bg3 Bd6 80. Bh2
+Be7 {
+the position is zugzwang and it should be draw if black keep playing carefully}
+81. a4 $4 Ba6 (81... Bxa4 {i should have simply taken this pawn with the
+threat of Bd1 next move. But, i did not calculate this move because first i
+got very tired after playing 80 accurate moves against a GM and secondly wrong
+assumption of GM cannot mistake and their might be some hidden agenda behind
+the move.}) 82. Kc2 {still the position is in zugzwang.} Bd6 83. Kd2 Kc7 84.
+Bg1 Kb6 85. Be3 Be7 {The idea behind playing Be7 whenever white bishop coming
+to e3 square was that i didnt want to take any risk after Nxf6  sacrifice and
+then Bxg5.} 86. Ke1 Kc7 87. Ng3 Bf8 88. Nf5 Kb6 89. Kf2 Nd6 90. Kg3 Ne8 91. Kh3
+Nd6 92. Ng3 Ne8 93. Nf5 Nd6 94. Bf2 Ne8 95. d6 $3 {
+and white got a breakthrough at last!} Nxd6 96. Ne3 Bb7 97. Bxc4 Nxc4 98. Nxc4+
+Ka6 99. Nb2 Bc6 100. c4 Kb6 101. Kg2 Be7 102. Kf1 Bd7 103. Ke2 Be6 104. Kd3 Bd7
+105. Kc3 Bd6 106. Kb3 Be7 107. Nd1 Bc6 108. Nc3 Bf8 109. Nd5+ Bxd5 110. cxd5
+Be7 111. Kc4 Bd6 112. Be3 Bf8 113. d6 Kc6 114. Bxc5 Bxd6 115. Bxd6 Kxd6 116.
+Kb5 f5 117. gxf5 {
+even though i lose this game. but very happy to give a tough fight to GM} 1-0
+
+[Event "Sunningdale Open"]
+[Site "?"]
+[Date "2010.05.31"]
+[Round "7"]
+[White "Henderson, Ian R"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "D93"]
+[WhiteElo "2117"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "96"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 O-O 6. Nf3 c5 7. dxc5 Qa5 8. Nd2
+(8. Rc1 {is main line}) 8... dxc4 9. Nxc4 Qxc5 10. Be2 Be6 (10... Nc6 {
+controlling e6 square and later Be6 or Rd8 was much stronger}) 11. Ne5 Nd5 12.
+Nxd5 Bxd5 13. O-O Bxe5 14. Bxe5 Bxg2 15. Kxg2 Qxe5 16. Bf3 Nc6 17. Bxc6 $2 (17.
+Qb3 $142) 17... bxc6 18. Qd4 $2 Qxd4 (18... Qg5+ $1 19. Kh1 Qf5 $17) 19. exd4
+Rfd8 20. Rfc1 Rxd4 21. Rxc6 Rad8 22. Rc7 R8d7 23. Rac1 Kg7 24. R1c6 e6 25. b4
+Kf6 26. a4 Ke7 27. Rxd7+ Rxd7 28. b5 Kd8 29. a5 Rc7 30. Ra6 Kc8 31. b6 axb6 32.
+Rxb6 Ra7 33. Rb5 Kc7 34. Kg3 Kc6 35. Re5 Rb7 36. Kf4 h6 37. h4 Rb2 38. f3 Kd6
+39. Re1 Ra2 40. Rb1 Ra4+ 41. Kg3 Rxa5 42. Rb7 Rf5 43. Ra7 Ke5 44. f4+ Kf6 45.
+Rb7 Ra5 46. Rb3 Ra1 47. Rb5 Rg1+ 48. Kf3 h5 0-1
+
+[Event "Warrington Open"]
+[Site "?"]
+[Date "2010.05.08"]
+[Round "2"]
+[White "Vikas R Sharma"]
+[Black "Andrew Bak"]
+[Result "1-0"]
+[ECO "B38"]
+[WhiteElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "103"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. e4 c5 2. Nf3 Nc6 3. c4 g6 4. d4 cxd4 5. Nxd4 Bg7 6. Be3 Nf6 7. Nc3 d6 8. Be2
+Bd7 9. O-O O-O 10. Qd2 Rc8 11. f4 (11. f3 {is opening move}) 11... Nxd4 12.
+Bxd4 Bc6 13. Qe3 a6 14. Rad1 Qc7 15. e5 dxe5 16. Bxe5 Qa5 17. Bd4 Rfe8 18. f5
+Nd7 $4 (18... gxf5 19. Qg5 h6 20. Rxf5 hxg5 21. Rxa5 {was ok for black}) 19.
+Bxg7 Kxg7 20. Rxd7 Bxd7 21. Qd4+ Kg8 22. Qxd7 Qb6+ 23. Kh1 Rcd8 24. Qa4 (24.
+Nd5 $1 Rxd7 (24... Qxb2 25. fxg6 hxg6 26. Qg4 $18) 25. Nxb6 Rd2 26. fxg6 hxg6
+27. Bf3 Rxb2 28. c5 $16) 24... Qxb2 25. Qb3 Qxb3 26. axb3 Rd2 27. Bf3 Rd3 28.
+fxg6 hxg6 29. Rc1 b5 $2 (29... Red8) 30. c5 $1 b4 31. Nd5 Rxb3 32. c6 Kf8 33.
+Kg1 e6 34. Bd1 $1 exd5 (34... Ra3 35. Nxb4 $18) 35. Bxb3 Rc8 36. Bxd5 Ke7 37.
+c7 Kd7 38. Bb7 Rxc7 39. Rxc7+ Kxc7 40. Bxa6 b3 41. Kf2 Kd6 42. Ke3 Ke5 43. Kd3
+f5 44. Kc3 Ke4 45. Kxb3 g5 46. h3 Ke3 47. Kc4 Kf2 48. Bb7 Kg3 49. Kc5 f4 50.
+Bf3 Kh4 51. Kd4 Kg3 52. Ke5 1-0
+
+[Event "Warrington Open"]
+[Site "?"]
+[Date "2010.05.08"]
+[Round "3"]
+[White "Richter Hans"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "D85"]
+[WhiteElo "2175"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "96"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8.
+Rb1 O-O 9. Be2 cxd4 10. cxd4 Qa5+ 11. Bd2 Qxa2 12. O-O Bg4 13. Rxb7 Bxf3 14.
+Bxf3 Bxd4 15. Bb4 (15. e5 {is an alternative.After} Na6 {black should be Ok})
+15... Rd8 16. Qc1 Na6 17. Bxe7 Rdc8 ({better was} 17... Rac8 18. Qg5 (18. Qf4 {
+supports f2 square later} Nc5 19. Bxc5 Rxc5 20. Bd1 g5 $1 21. Qf3 Rc1 22. h4
+gxh4 23. Qg4+ Kf8 24. Qf5 Bb6 25. Be2 Rxf1+ 26. Bxf1 Qe6 $11) 18... Re8 19. e5
+Nc5 20. Bf6 (20. Rbb1 h6 $15) (20. Qf4 Ne6 $15) (20. Bxc5 Rxe5 $17) 20... Rb8
+21. Qh6 Ne6 22. Rc7 (22. Qh4 Rxb7 23. Bxb7 Qb2 $11) 22... Rb1 23. Rcc1 Rxc1 24.
+Qxc1 Rb8 25. Bg4 Qb2 $11) 18. Qf4 Nc5 19. e5 Qc4 20. Qg3 $2 (20. Be2 {or}) (20.
+Qg5 {with advantage}) 20... Nd3 $2 (20... Nxb7 21. Bxb7 Rc7 22. Bxa8 Rxe7 $17)
+21. Be2 Qd5 22. Qxd3 $2 (22. Bxd3 Qxb7 23. Bf6 $13) 22... Qxb7 23. Bf6 Qb6 (
+23... Qb2 {was more active}) 24. h4 $2 (24. Qe4) 24... Rc6 (24... Re8 $142) 25.
+Bf3 Rxf6 $1 26. exf6 Rd8 27. Qc4 Qxf6 $17 28. Bd5 Kg7 29. h5 Bb6 30. Bf3 Rd4 (
+30... Rd2 $19) 31. Qc1 Qf4 32. Qxf4 Rxf4 33. hxg6 hxg6 34. Rd1 $2 (34. Re1 $17)
+34... g5 $19 35. Rd5 Kf6 36. Rd6+ Ke7 37. Rd5 g4 38. Re5+ Kf6 39. Re4 Rxe4 40.
+Bxe4 g3 41. Bd5 Ke7 42. Kf1 gxf2 43. g4 f6 44. Bc4 a5 45. Bb5 Kd6 46. Kg2 Kc5
+47. Bd7 Kb4 48. g5 fxg5 0-1
+
+[Event "Warrington Open"]
+[Site "?"]
+[Date "2010.05.09"]
+[Round "4"]
+[White "Vikas R Sharma"]
+[Black "FM Ben Hague"]
+[Result "0-1"]
+[ECO "B04"]
+[WhiteElo "2022"]
+[BlackElo "2306"]
+[Annotator ",vikas"]
+[PlyCount "112"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. e4 Nc6 2. Nf3 Nf6 3. e5 Nd5 4. d4 d6 5. Bc4 $2 ({it forces queen exchange
+with white losing castling rights. my oponent take advantage of this move
+throughout the game and won very nicely} 5. c4 {is main line}) 5... Nb6 6. Bb3
+dxe5 7. Nxe5 Nxe5 8. dxe5 Qxd1+ 9. Kxd1 e6 10. Ke2 Bd7 {threatening Bb5+} 11.
+c4 $2 ({it stops Bb5+ but weakens my position} 11. Rd1 {
+was better way to counter bishops check}) 11... Bc6 12. f3 Nd7 (12... a5 13. a4
+Nd7 {would have created more weaknesses}) 13. Bf4 $2 {
+this pawn has to go, better i should have developed my pieces} h6 $2 (13... g5
+$1 $17) 14. h4 g6 15. Re1 $2 {there is no way to protect the pawn. better
+white should concentrate on its piece development.} g5 16. hxg5 hxg5 17. Bg3 g4
+$1 18. Nc3 gxf3+ 19. gxf3 Rg8 20. Rg1 Bc5 21. Bf2 O-O-O 22. f4 Bxf2 23. Kxf2
+Nc5 24. Rad1 Rh8 25. Rxd8+ Kxd8 26. Rd1+ Ke7 27. Rd2 Rh2+ 28. Ke1 $2 (28. Ke3
+Rh3+ 29. Ke2 Be4 30. Nxe4 Nxe4 31. Rd4 Ng3+ 32. Kf2 c5 $15) 28... Rh4 29. Rd4
+Rxf4 30. Rxf4 Nd3+ 31. Kd2 Nxf4 32. Ke3 Ng6 33. Kd4 f6 34. exf6+ Kxf6 35. Bc2
+Ne7 36. Ke3 Ke5 37. b4 Nf5+ 38. Bxf5 exf5 39. Ne2 Be8 40. Nf4 Bf7 41. Nd3+ Kf6
+42. Kd4 Kg5 43. a4 f4 44. Ne5 Bh5 45. c5 Kf5 46. b5 Be2 47. Nd7 f3 48. b6 axb6
+49. cxb6 c5+ 50. Nxc5 f2 51. Ne4 f1=Q 52. Ng3+ Ke6 53. Nxf1 Bxf1 54. Kc5 Be2
+55. Kb4 Kd6 56. a5 Kc6 0-1
+
+[Event "Warrington Open"]
+[Site "?"]
+[Date "2010.05.09"]
+[Round "5"]
+[White "FM Charleshouse, Glenn L"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "B25"]
+[WhiteElo "2174"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "77"]
+[EventDate "2010.??.??"]
+[TimeControl "100/5400+30:0"]
+
+1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. f4 e6 7. Nf3 Nge7 8. O-O
+O-O 9. Be3 Nd4 10. e5 Nef5 11. Bf2 Nxf3+ 12. Qxf3 Nd4 13. Qd1 dxe5 14. fxe5
+Bxe5 15. Ne4 f5 16. Nxc5 Qc7 $5 17. b4 Bd7 $2 (17... f4 18. c3 (18. gxf4 Rxf4
+19. c3 Nf5 20. d4 Rxf2 $5 21. Rxf2 Bxh2+ 22. Kh1 Bg3 23. Rf1 e5 24. dxe5 Bxe5
+25. Re1 Kg7 $13) 18... Nf5 19. g4 f3 20. Bxf3 Bxh2+ 21. Kg2 Ng7 22. Qe1 Bf4 $13
+) 18. c3 Nb5 19. d4 Bg7 20. Qb3 $16 Rae8 21. Bxb7 Kh8 22. Rad1 Nd6 23. Bg2 Nf7
+24. b5 {unstoppable white pawn storm} Re7 25. a4 e5 26. dxe5 Nxe5 27. Na6 Qc8
+28. Bc5 Be6 29. Qb4 Ref7 30. Bxf8 Rxf8 31. Qe7 $2 (31. Nc5 $18) 31... Bb3 32.
+Nc7 Bf6 33. Qc5 $2 (33. Qd6 {was better square for queen}) 33... Bxd1 34. Rxd1
+Rd8 $2 (34... Rf7 35. Na6 Qxc5+ 36. Nxc5 Rc7 37. Rd5 Nf7 $16) 35. Rxd8+ Qxd8
+36. Nd5 $18 Ng4 37. h3 Ne5 38. Qxa7 Bh4 39. gxh4 1-0
+
+[Event "Staffordshire Chess Congress"]
+[Site "?"]
+[Date "2010.04.10"]
+[Round "?"]
+[White "Steve Braid"]
+[Black "Vikas Sharma"]
+[Result "1/2-1/2"]
+[ECO "B20"]
+[WhiteElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "75"]
+[EventDate "2010.??.??"]
+[TimeControl "180"]
+
+1. e4 c5 2. b3 d6 3. Bb5+ Bd7 4. Bxd7+ Qxd7 5. Bb2 e5 6. Ne2 $2 f5 (6... Qg4)
+7. exf5 Qxf5 8. O-O Nf6 9. f4 $14 Qh5 10. fxe5 Ng4 11. h3 Nxe5 12. Nbc3 Nbc6
+13. d4 cxd4 14. Nxd4 Qxd1 15. Raxd1 $16 O-O-O 16. Ne6 Re8 17. Nxf8 Rhxf8 18.
+Rxf8 Rxf8 19. Rxd6 Re8 20. a3 g6 21. Rd2 Nf7 22. Kf2 Ng5 23. Re2 Rf8+ 24. Ke3
+Ne6 25. Nb5 a6 26. Nd6+ Kc7 27. Ne4 Rf1 28. Nd2 Rd1 29. Nf3 Rb1 30. Bc3 Rd1 31.
+Rd2 Rc1 32. Nd4 Nc5 33. Nxc6 Kxc6 34. Bb2 Re1+ 35. Re2 Rd1 {even though white
+is simply a pawn up. but my last ranked rook was troubling a lot. so, my
+opponent go for repetition of moves. but, he should have tried for win by
+moves such as Kf4} 36. Rd2 Re1+ 37. Re2 Rd1 38. Rd2 1/2-1/2
+
+[Event "Staffordshire Chess Congress"]
+[Site "?"]
+[Date "2010.04.10"]
+[Round "2"]
+[White "Vikas Sharma"]
+[Black "Mike Doran"]
+[Result "1/2-1/2"]
+[ECO "C15"]
+[WhiteElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "52"]
+[EventDate "2010.??.??"]
+[TimeControl "180"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 Nf6 5. e5 Nfd7 6. a3 Ba5 (6... Be7 {
+is usually played here}) 7. b4 Bb6 8. Ng3 O-O 9. Na4 f6 $11 10. exf6 Qxf6 11.
+Be3 Nc6 12. Nxb6 Nxb6 13. f4 Bd7 14. Bd3 Nc4 15. Bxc4 dxc4 16. O-O Ne7 17. c3
+Bc6 18. Qe2 a6 19. Bd2 Qg6 20. Rae1 Bd5 21. Rf2 Nf5 22. Ne4 Rae8 23. Nc5 Rf7
+24. Ne4 Nd6 25. Ng3 Nf5 26. Ne4 Nd6 1/2-1/2
+
+[Event "Staffordshire Chess Congress"]
+[Site "?"]
+[Date "2010.04.10"]
+[Round "3"]
+[White "Golam Ali"]
+[Black "Vikas Sharma"]
+[Result "0-1"]
+[ECO "D94"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "56"]
+[EventDate "2010.??.??"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 Bg7 5. Bd3 $2 (5. Nf3 {
+is main line. now bishop is on the wrong square}) 5... O-O 6. Nf3 c5 $11 7. h3
+cxd4 8. exd4 Nc6 9. a3 Bf5 10. Bxf5 gxf5 11. cxd5 Nxd5 12. O-O e6 $15 13. Qd3
+Rc8 14. Re1 Qd6 15. Nxd5 Qxd5 16. Rd1 Rfd8 17. Be3 (17. Bg5 {was correct} f6
+18. Bh4 $13) 17... f4 $1 18. Bd2 (18. Bxf4 $2 e5 $19) 18... Nxd4 19. Nxd4 Qxd4
+(19... Bxd4 {was more active}) 20. Qe2 $4 (20. Qf3 $17) 20... Qxb2 $4 (20...
+Rc2 {wins a piece}) 21. Rab1 Qxa3 22. Rxb7 f3 23. gxf3 Qd3 24. Qxd3 Rxd3 25.
+Rxa7 Rcd8 26. Ra2 Rxf3 27. Bg5 $4 Rxd1+ 28. Kg2 h6 0-1
+
+[Event "Staffordshire Chess Congress"]
+[Site "?"]
+[Date "2010.04.11"]
+[Round "4"]
+[White "Vikas Sharma"]
+[Black "Nicholas Waiker"]
+[Result "1/2-1/2"]
+[ECO "B30"]
+[WhiteElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "51"]
+[EventDate "2010.??.??"]
+[TimeControl "180"]
+
+1. e4 c5 2. Nf3 Nc6 3. c4 e5 4. d3 d6 5. Be2 Be7 6. O-O f5 7. Nc3 f4 8. Nd5 g5
+9. Ne1 Nf6 10. Bh5+ Kf8 11. Nc2 a5 12. Bd2 Rg8 13. Nxf6 Bxf6 14. Bg4 Qe8 15. h3
+Qf7 16. Bxc8 Rxc8 17. g4 h5 18. Kg2 Ke7 19. Rh1 Rh8 20. Qe2 Rcg8 21. Rag1 Kd7
+22. Bc3 Bd8 23. Qd1 Rh6 24. Na3 Rgh8 25. f3 Qh7 26. Nb5 {black is having clear
+advantage in this position. i took a chance by offering draw here and he
+accepted} 1/2-1/2
+
+[Event "Staffordshire Chess Congress"]
+[Site "?"]
+[Date "2010.04.11"]
+[Round "5"]
+[White "Richard Bryant"]
+[Black "Vikas Sharma"]
+[Result "0-1"]
+[ECO "B25"]
+[BlackElo "2022"]
+[Annotator ",vikas"]
+[PlyCount "88"]
+[EventDate "2010.??.??"]
+[TimeControl "180"]
+
+1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. f4 e6 7. Nf3 Nge7 8. O-O
+O-O 9. g4 (9. Be3 {is main line}) 9... f5 $11 10. gxf5 gxf5 11. Ne2 Ng6 12.
+exf5 Rxf5 13. Qe1 Nb4 $15 14. Qd1 Nd5 15. Ne1 Qh4 16. Bxd5 $2 {
+giving up this fianchetto bishop is not a good idea} Rxd5 17. Ng2 Qh3 18. Ng3
+c4 19. Qf3 cxd3 $17 20. c4 $2 Rd4 21. Bd2 Rxc4 22. Qxd3 Rd4 23. Qe3 Ne7 24.
+Rac1 Bd7 25. Qe2 Rd5 (25... Bb5 $5 26. Qxb5 Rxd2 27. Qxb7 Rf8 $19) 26. Be3 $2
+Bb5 $19 27. Qc2 Bxf1 28. Rxf1 Nf5 29. Bf2 Nxg3 30. Bxg3 Qf5 31. Qc7 Qf7 32. Qc4
+Bxb2 33. Kh1 Bg7 34. Ne3 Rd2 35. Qb4 Rd4 36. Qa3 b5 37. f5 e5 38. Kg1 e4 39. f6
+Rd3 40. Qb4 Rxe3 41. fxg7 Rf3 42. Re1 d5 43. Qxb5 e3 44. Qd3 Rxg3+ 0-1[Event "Above 2000"]
+
+[Event "4th Parsvnath International"]
+[Site "?"]
+[Date "2006.01.17"]
+[Round "4"]
+[White "Simonenko, Sergei"]
+[Black "Vikas R, Sharma"]
+[Result "0-1"]
+[ECO "D94"]
+[WhiteElo "2401"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "64"]
+
+1. d4 Nf6 2. Nf3 g6 3. c4 Bg7 4. Nc3 d5 5. e3 O-O 6. Bd2 b6 (6... c5 {or}) (
+6... c6) 7. b4 c5 8. bxc5 bxc5 9. Rc1 $6 (9. dxc5 Nc6 $11) 9... cxd4 10. Nxd4
+$2 (10. exd4) 10... e5 $17 11. Nb3 d4 12. Nb5 a6 13. Ba5 Qe7 (13... Qd7 14. Nc7
+Ra7 15. Nd5 Nxd5 16. cxd5 Qxd5) 14. Nc7 Ra7 15. Nd5 Nxd5 16. cxd5 dxe3 17. fxe3
+Qh4+ 18. Kd2 Rd7 19. Bc4 Nc6 20. Bb6 $2 (20. Qf3 $19) 20... Nb4 21. Nc5 Rxd5+
+$1 22. Bxd5 Nxd5 23. Ba5 Nxe3 $1 24. Qe2 Bh6 25. Kc3 Qd4+ 26. Kb3 Be6+ 27. Nxe6
+Rb8+ 28. Ka3 fxe6 29. Rhf1 Nxf1 30. Rxf1 Bg5 31. Rf8+ Kxf8 32. Qf3+ Kg8 0-1
+
+[Event "4th Parsvnath International"]
+[Site "?"]
+[Date "2006.01.18"]
+[Round "5"]
+[White "Vikas R, Sharma"]
+[Black "Rishipal, Singh"]
+[Result "0-1"]
+[ECO "A80"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "98"]
+
+1. d4 f5 2. Bg5 g6 3. e3 Bg7 4. Nf3 Nf6 5. Nbd2 d6 6. Bc4 e6 7. Qe2 O-O 8. e4
+h6 9. Bxf6 Bxf6 10. exf5 d5 11. Bb3 exf5 12. O-O-O a5 13. a4 Nc6 14. c3 Qd6 15.
+Rhe1 Kg7 16. Ne5 Ne7 17. f4 c6 18. g4 fxg4 19. Nxg4 Bh4 20. Rg1 $2 (20. Rf1)
+20... Rxf4 21. Rdf1 $2 (21. Bc2) 21... Bf5 $2 (21... Bxg4 22. Rxg4 Rxg4 23.
+Qxg4 Qxh2 $19) 22. Ne5 Rxf1+ 23. Qxf1 Rf8 24. Ndf3 Be4 25. Qh3 Bf2 26. Rf1 Be3+
+27. Nd2 Rxf1+ 28. Qxf1 Qe6 29. Kd1 Qf5 30. Qxf5 Bxf5 31. Bc2 Bf4 32. Ndf3 g5
+33. b4 axb4 34. cxb4 Bc8 35. Nd3 Bd6 36. b5 Bg4 37. Ke2 cxb5 38. Kf2 Bxf3 39.
+Kxf3 Nf5 40. Bd1 Nxd4+ 41. Kg2 bxa4 42. Bxa4 b5 43. Bd1 b4 44. Nc1 Bf4 45. Nb3
+Nf5 46. Be2 Kf6 47. h3 Ke5 48. Kf3 Nd4+ 49. Nxd4 Kxd4 0-1
+
+[Event "4th Parsvnath International"]
+[Site "?"]
+[Date "2006.01.18"]
+[Round "6"]
+[White "Sohan, Phadke"]
+[Black "Vikas R, Sharma"]
+[Result "1-0"]
+[ECO "B87"]
+[WhiteElo "2143"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "55"]
+
+{Recently, in July 2012 I met Sohan in a Chess tournament in Pune. During talk,
+we recall our this game played 6 years before. Sohan now a 2300+ rated player
+said this was his immortal game!} 1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5.
+Nc3 a6 6. Bc4 e6 7. Bb3 b5 8. Qf3 Qb6 9. Be3 Qb7 10. O-O-O Nbd7 11. Rhe1 Nc5
+12. Bd5 $6 exd5 13. exd5 Kd8 $2 (13... Bg4 14. Bg5+ Kd7 15. Qf4 Bxd1 16. Bxf6
+gxf6 17. Kxd1 b4 18. Qxf6 Kc7 {and black is safe}) 14. Nc6+ $18 Kc7 15. Bxc5
+dxc5 16. Na5 Qa7 17. Nxb5+ $2 (17. d6+ $1 Kb6 (17... Bxd6 18. Rxd6 $18) 18. b4
+cxb4 19. Nc4+ bxc4 20. Na4+ Ka5 21. Re5+ Kxa4 22. Qc6+ Ka3 23. Ra5#) 17... axb5
+18. d6+ Kb6 (18... Bxd6 19. Qc6+ Kb8 20. Qxb5+ Kc7 21. Qc6+ Kb8 22. Qxd6+ Qc7
+23. Nc6+ Kb7 $11) 19. Qc6+ Kxa5 20. Re3 b4 21. a3 $2 (21. Rd4 $1 {is mate in 4}
+) 21... Be6 22. axb4+ Kxb4 23. c3+ Kb3 24. Qb5+ Ka2 25. c4 Rb8 26. Qxb8 Qa4 27.
+Ra3+ Qxa3 28. bxa3 1-0
+
+
+[Event "M.P. State Senior 2001"]
+[Site "?"]
+[Date "2001.06.12"]
+[Round "?"]
+[White "Vinod Sharma"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "B87"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "41"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e6 7. Bb3 b5 8. Bg5
+h6 9. Bxf6 Qxf6 10. Qd2 Be7 11. O-O-O O-O 12. Kb1 Bb7 (12... Nd7 $2 13. Nf5
+exf5 14. Nd5) 13. Rhe1 Nc6 14. Nxc6 Bxc6 15. Qe3 a5 $2 (15... Rfe8) 16. Bd5
+Bxd5 17. exd5 e5 18. Nxb5 a4 19. f4 Rab8 20. c4 Qg6+ 21. Qd3 1-0
+
+[Event "M.P. State Senior 2001"]
+[Site "?"]
+[Date "2001.06.13"]
+[Round "?"]
+[White "Vikas R Sharma"]
+[Black "Irshad Ahmed"]
+[Result "1-0"]
+[ECO "C64"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "85"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nd4 5. Nxd4 Bxd4 6. c3 Bb6 7. d4 c6 8.
+Bc4 Qe7 $2 (8... d6) 9. a4 $2 (9. dxe5 Qxe5 10. Nd2 Nf6 11. Nf3 $16) 9... Nf6
+10. a5 Bc7 11. f4 exf4 $2 (11... d6 12. fxe5 dxe5 13. Bg5 O-O $13) 12. Bxf4 (
+12. e5 Nd5 13. Bxd5 cxd5 14. Bxf4 $16) 12... Bxf4 13. Rxf4 d5 14. e5 Nd7 $2 (
+14... Ne4 15. Bd3 f5 16. Qh5+ g6 17. Qh6 $14) 15. Bd3 $16 Nf8 16. Nd2 Ng6 17.
+Rf2 Be6 18. Qc2 O-O 19. Nf3 Bg4 20. Raf1 Rac8 21. b4 b6 22. Qd2 c5 23. h3 Bxf3
+24. Rxf3 c4 25. Bf5 Rc7 $2 (25... Nh4 26. Rg3 Nxf5 27. Rxf5 Rc6) 26. Qa2 $2 (
+26. Qc2 {nice way to stop Nh4}) 26... Nh4 27. Rf4 Qg5 28. Qf2 Nxf5 29. Rxf5 Qd8
+$2 (29... Qg6 {stops e6}) 30. e6 bxa5 $2 (30... Qe8 31. Qg3 Re7 32. exf7+ Rexf7
+33. Rxf7 Rxf7 34. Rxf7 Kxf7 35. Qf4+ Kg8 36. Qd6 $16) 31. exf7+ Kh8 32. bxa5
+$18 Rd7 33. Qa2 $2 (33. Re1 $1 $18) 33... h6 $2 (33... g6 34. Qe2 Qc7 35. Re5
+Kg7 36. Qe3) 34. Qa3 g6 35. Rf6 Kg7 36. Qc5 Qa8 37. Rc6 (37. a6 $18) 37... Qd8
+(37... Qb8 $1 38. Rff6 Qb1+ 39. Kh2 Qb8+ 40. Rcd6 Rxd6 41. Qxd6 Qxd6+ 42. Rxd6
+$16) 38. Rff6 Re7 39. Rxg6+ Kxf7 40. Rcf6+ Ke8 41. Qc6+ Qd7 42. Qa8+ Qd8 43.
+Rxf8+ 1-0

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:encryption="http://www.jasypt.org/schema/encryption"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+						http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+						http://www.jasypt.org/schema/encryption http://www.jasypt.org/schema/encryption/jasypt-spring31-encryption-1.xsd">
+
+	<bean
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
+		id="messageSource" p:basenames="WEB-INF/i18n/messages"
+		p:fallbackToSystemLocale="false" />
+
+	<encryption:encryptor-config id="eConf"
+		password-env-name="APP_ENCRYPTION_PASSWORD" algorithm="PBEWithMD5AndDES" />
+	<encryption:string-encryptor id="stringEnc"
+		config-bean="eConf" />
+	<encryption:encryptable-property-placeholder
+		encryptor="stringEnc" location="WEB-INF/spring/*.properties" />
+
+	<context:component-scan base-package="com.vikas" />
+
+	<aop:aspectj-autoproxy />
+
+	<!-- Aspect -->
+	<bean id="logAspect" class="com.vikas.aspect.LoggingAspect" />
+
+	<bean
+		class="org.springframework.security.authentication.encoding.ShaPasswordEncoder"
+		id="passwordEncoder" />
+
+	<import resource="webmvc-config.xml" />
+	<import resource="db-config.xml" />
+	<import resource="mail-config.xml" />
+
+</beans>

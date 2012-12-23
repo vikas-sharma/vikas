@@ -1,0 +1,23 @@
+.container {
+	position: relative;
+	height: 400px;
+}
+
+.left-element {
+	position: absolute;
+	left: 0;
+	width: 30%;
+	height: 400px;
+	font: 14px/180% Verdana;
+	overflow:auto;
+}
+
+.left-element a {
+	text-decoration: none;
+}
+
+.right-element {
+	position: absolute;
+	right: 0;
+	width: 70%;
+}

@@ -13,8 +13,7 @@
 		<intercept-url pattern="/admin.htm" access="hasRole('ROLE_ADMIN')" />
 
 		<form-login login-processing-url="/j_spring_security_check"
-			login-page="/login.htm" authentication-failure-url="/login.htm?login_error=t"
-			default-target-url="/" />
+			login-page="/login.htm" authentication-failure-url="/login.htm?login_error=t" />
 
 		<logout logout-success-url="/" />
 

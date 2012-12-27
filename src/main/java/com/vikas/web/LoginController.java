@@ -1,16 +1,21 @@
 package com.vikas.web;
 
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+
+import net.tanesha.recaptcha.ReCaptcha;
+import net.tanesha.recaptcha.ReCaptchaResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.SessionAttributes;
-import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
@@ -22,28 +27,63 @@ import com.vikas.service.LoginService;
  * @author Vikas Sharma
  */
 @Controller
-@SessionAttributes({ "person" })
 public class LoginController {
 
 	@Autowired
 	LoginService loginService;
 
+	@Autowired
+	private ReCaptcha reCaptcha;
+
 	@RequestMapping(value = "/register.htm", method = RequestMethod.GET)
-	public String register(Model model) {
+	public String register(Model model, HttpServletRequest request) {
 
 		Person person = new Person();
+
+		person.setCountry(loginService.getCountry(request.getRemoteAddr()));
 		model.addAttribute("person", person);
+
+		List<String> countryList = loginService.getCountryList();
+		model.addAttribute("countryList", countryList);
+
+		String reCaptchaHtml = reCaptcha.createRecaptchaHtml(null, null);
+		model.addAttribute("reCaptchaHtml", reCaptchaHtml);
 
 		return "register";
 	}
 
 	@RequestMapping(value = "/register.htm", method = RequestMethod.POST)
 	public String createAccount(@ModelAttribute("person") @Valid Person person,
-			SessionStatus sessionStatus) {
-
-		sessionStatus.setComplete();
+			HttpServletRequest request,
+			@RequestParam("recaptcha_challenge_field") String challenge,
+			@RequestParam("recaptcha_response_field") String response,
+			Model model, BindingResult result) {
 
 		// TODO write custom validation logic
+
+		String ipAddress = request.getRemoteAddr();
+		ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(ipAddress,
+				challenge, response);
+
+		if (!reCaptchaResponse.isValid()) {
+			result.rejectValue("captcha", "errors.badCaptcha");
+		}
+
+		String html = reCaptcha.createRecaptchaHtml(null, null);
+		model.addAttribute("reCaptchaHtml", html);
+
+		if (result.hasErrors()) {
+
+			List<String> countryList = loginService.getCountryList();
+			model.addAttribute("countryList", countryList);
+
+			return "register";
+		}
+
+		person.setIpAddress(ipAddress);
+		// person.setDateCreated(new Date());
+
+		person.setName(person.getName().toLowerCase());
 
 		loginService.createAuthKey(person);
 
@@ -81,10 +121,7 @@ public class LoginController {
 	}
 
 	@RequestMapping(value = "/forgot.htm", method = RequestMethod.POST)
-	public ModelAndView forgot(@ModelAttribute("person") Person person,
-			SessionStatus sessionStatus) {
-
-		sessionStatus.setComplete();
+	public ModelAndView forgot(@ModelAttribute("person") Person person) {
 
 		Person p = loginService.findByEmailAddress(person.getEmailAddress());
 
@@ -121,10 +158,7 @@ public class LoginController {
 	}
 
 	@RequestMapping(value = "/password_reset.htm", method = RequestMethod.POST)
-	public String passwordReset(@ModelAttribute("person") Person person,
-			SessionStatus sessionStatus) {
-
-		sessionStatus.setComplete();
+	public String passwordReset(@ModelAttribute("person") Person person) {
 
 		loginService.resetPassword(person);
 

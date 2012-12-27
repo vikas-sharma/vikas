@@ -3,8 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <div id="breadcrumb">
-	<a href="${pageContext.request.contextPath}">Home</a> >>
-	<a href="${pageContext.request.contextPath}/register.htm">Join Now</a>
+	<a href="${pageContext.request.contextPath}">Home</a> >> <a
+		href="${pageContext.request.contextPath}/register.htm">Join Now</a>
 	<hr />
 </div>
 
@@ -61,20 +61,20 @@
 			</td>
 			<td><form:errors path="gender" cssClass="error" /></td>
 		</tr>
+
 		<tr>
 			<td><spring:message code="label.country" /> :</td>
 			<td><form:select path="country">
-					<form:options items="${countryList}" itemValue="name"
-						itemLabel="name" />
+					<form:options items="${countryList}" />
 				</form:select></td>
 			<td><form:errors path="country" cssClass="error" /></td>
 		</tr>
 
-<!-- 		<tr> -->
-<%-- 			<td><spring:message code="label.word_verification" /> :</td> --%>
-<%-- 			<td>${reCaptchaHtml}</td> --%>
-<%-- 			<td><form:errors path="captcha" cssClass="error" /></td> --%>
-<!-- 		</tr> -->
+		<tr>
+			<td><spring:message code="label.word_verification" /> :</td>
+			<td>${reCaptchaHtml}</td>
+			<td><form:errors path="captcha" cssClass="error" /></td>
+		</tr>
 
 		<tr>
 			<td colspan="3"><input type="submit" value="Create My Account"></td>

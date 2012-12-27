@@ -1,5 +1,7 @@
 package com.vikas.service;
 
+import java.util.List;
+
 import com.vikas.domain.Person;
 
 /**
@@ -25,4 +27,8 @@ public interface LoginService {
 	Person validatePerson(long pid, Integer authKey);
 
 	void resetPassword(Person person);
+
+	List<String> getCountryList();
+
+	String getCountry(String remoteAddr);
 }

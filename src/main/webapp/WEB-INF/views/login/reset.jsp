@@ -16,6 +16,12 @@
 
 <form:form modelAttribute="person">
 
+	<form:hidden path="personId" />
+	<form:hidden path="name" />
+	<form:hidden path="firstName" />
+	<form:hidden path="lastName" />
+	<form:hidden path="gender" />
+
 	<table border=0 align="center">
 		<tr>
 			<td><spring:message code="label.password" /> :</td>

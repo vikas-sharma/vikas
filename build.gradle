@@ -105,4 +105,7 @@ dependencies {
 
     compile "org.jasypt:jasypt:1.9.0"
 	compile "org.jasypt:jasypt-spring31:1.9.0"
+
+	compile "net.tanesha.recaptcha4j:recaptcha4j:0.0.7"
+
 }

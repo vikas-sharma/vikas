@@ -1,6 +1,8 @@
 package com.vikas.service;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -154,6 +156,28 @@ public class LoginServiceImpl implements LoginService {
 		person.setEncodedPassword(encodedPassword);
 
 		loginDAO.update(person);
+	}
+
+	@Override
+	public List<String> getCountryList() {
+
+		List<String> countries = new ArrayList<String>();
+
+		countries.add("India");
+		countries.add("US");
+		countries.add("UK");
+		countries.add("Russia");
+		countries.add("China");
+		countries.add("Japan");
+		countries.add("Spain");
+		countries.add("Germany");
+
+		return countries;
+	}
+
+	@Override
+	public String getCountry(String remoteAddr) {
+		return "India";
 	}
 
 }

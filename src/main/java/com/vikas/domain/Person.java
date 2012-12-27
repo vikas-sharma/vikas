@@ -60,6 +60,9 @@ public class Person implements UserDetails {
 	@Transient
 	private Date dateCreated;
 
+	@Transient
+	private String captcha;
+
 	private Integer authKey;
 	private String status;
 
@@ -214,5 +217,13 @@ public class Person implements UserDetails {
 
 	public void setPersonRole(PersonRole personRole) {
 		this.personRole = personRole;
+	}
+
+	public String getCaptcha() {
+		return captcha;
+	}
+
+	public void setCaptcha(String captcha) {
+		this.captcha = captcha;
 	}
 }

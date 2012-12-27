@@ -21,6 +21,10 @@
 		resource requests to the container's default Servlet -->
 	<mvc:default-servlet-handler />
 
+	<bean id="reCaptcha" class="net.tanesha.recaptcha.ReCaptchaImpl"
+		p:publicKey="${recaptcha.publicKey}" p:privateKey="${recaptcha.privateKey}">
+	</bean>
+
 	<!-- Selects a static view for rendering without the need for an explicit 
 		controller -->
 	<mvc:view-controller path="/" view-name="home" />
@@ -45,13 +49,10 @@
 
 	<!-- locale change -->
 
-	<!--
-		In Spring MVC application, if you do not configure the Spring’s
-		LocaleResolver, it will use the default AcceptHeaderLocaleResolver,
-		which does not allow to change the locale. To solve it, try declare a
-		SessionLocaleResolver bean in the Spring bean configuration file, it
-		should be suits in most cases
-	-->
+	<!-- In Spring MVC application, if you do not configure the Spring’s LocaleResolver, 
+		it will use the default AcceptHeaderLocaleResolver, which does not allow 
+		to change the locale. To solve it, try declare a SessionLocaleResolver bean 
+		in the Spring bean configuration file, it should be suits in most cases -->
 	<bean id="localeResolver"
 		class="org.springframework.web.servlet.i18n.SessionLocaleResolver"
 		p:defaultLocale="en">
@@ -59,11 +60,9 @@
 
 	<!-- theme change -->
 
-	<!--
-		Resolves localized <theme_name>.properties files in the classpath to
-		allow for theme support
-	-->
-	<bean id="themeSource" 
+	<!-- Resolves localized <theme_name>.properties files in the classpath to 
+		allow for theme support -->
+	<bean id="themeSource"
 		class="org.springframework.ui.context.support.ResourceBundleThemeSource"
 		p:basenamePrefix="theme-" />
 

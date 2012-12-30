@@ -11,6 +11,7 @@
 
 		<!-- Configure these elements to secure URIs in your application -->
 		<intercept-url pattern="/admin.htm" access="hasRole('ROLE_ADMIN')" />
+		<intercept-url pattern="/" />
 
 		<form-login login-processing-url="/j_spring_security_check"
 			login-page="/login.htm" authentication-failure-url="/login.htm?login_error=t" />

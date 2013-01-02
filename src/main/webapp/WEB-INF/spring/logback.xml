@@ -36,6 +36,24 @@
 		</encoder>
 	</appender>
 
+	<appender name="vikas" class="ch.qos.logback.core.FileAppender">
+		<file>${vikasworld.root}/WEB-INF/logs/vikas.log</file>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="engine" class="ch.qos.logback.core.FileAppender">
+		<file>${vikasworld.root}/WEB-INF/logs/engine.log</file>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
 	<logger name="org.springframework" level="debug" additivity="false">
 		<appender-ref ref="spring" />
 	</logger>
@@ -50,6 +68,14 @@
 
 	<logger name="org.hibernate.type" additivity="false">
 		<appender-ref ref="hibernate-sql" />
+	</logger>
+
+	<logger name="com.vikas" additivity="false">
+		<appender-ref ref="vikas" />
+	</logger>
+
+	<logger name="com.vikas.engine" additivity="false">
+		<appender-ref ref="engine" />
 	</logger>
 
 	<root>

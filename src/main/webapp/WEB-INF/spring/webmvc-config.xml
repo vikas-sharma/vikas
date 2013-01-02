@@ -29,6 +29,7 @@
 		controller -->
 	<mvc:view-controller path="/" view-name="home" />
 	<mvc:view-controller path="/login.htm" view-name="login" />
+	<mvc:view-controller path="/success.htm" view-name="success" />
 	<mvc:view-controller path="/chess/index.htm"
 		view-name="chess" />
 	<mvc:view-controller path="/chess/favourites.htm"

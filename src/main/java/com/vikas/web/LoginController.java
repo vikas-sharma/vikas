@@ -16,8 +16,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.vikas.domain.Person;
 import com.vikas.service.LoginService;
@@ -91,7 +90,7 @@ public class LoginController {
 
 		loginService.sendActivationMail(person);
 
-		return "success";
+		return "redirect:success.htm";
 	}
 
 	@RequestMapping(value = "/activate.htm", method = RequestMethod.GET)
@@ -121,7 +120,8 @@ public class LoginController {
 	}
 
 	@RequestMapping(value = "/forgot.htm", method = RequestMethod.POST)
-	public ModelAndView forgot(@ModelAttribute("person") Person person) {
+	public String forgot(@ModelAttribute("person") Person person,
+			RedirectAttributes redirectAttributes) {
 
 		Person p = loginService.findByEmailAddress(person.getEmailAddress());
 
@@ -129,15 +129,15 @@ public class LoginController {
 
 			p = loginService.findByUsername(person.getName());
 			if (p == null) {
-				return new ModelAndView(new RedirectView(
-						"/vikasworld/forgot.htm?msg=fail"));
+				redirectAttributes.addAttribute("msg", "fail");
+				return "redirect:forgot.htm";
 			}
 		}
 
 		loginService.sendResetPasswordMail(p);
 
-		return new ModelAndView(new RedirectView(
-				"/vikasworld/forgot.htm?msg=success"));
+		redirectAttributes.addAttribute("msg", "success");
+		return "redirect:forgot.htm";
 	}
 
 	@RequestMapping(value = "/password_reset.htm", method = RequestMethod.GET)
@@ -162,6 +162,6 @@ public class LoginController {
 
 		loginService.resetPassword(person);
 
-		return "login";
+		return "redirect:login.htm";
 	}
 }

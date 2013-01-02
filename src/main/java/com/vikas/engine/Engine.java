@@ -2,7 +2,12 @@ package com.vikas.engine;
 
 import java.util.ArrayList;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public final class Engine implements Constants {
+
+	private static Logger LOGGER = LoggerFactory.getLogger(Engine.class);
 
 	private int[][] POOL = new int[64][256];
 
@@ -35,12 +40,12 @@ public final class Engine implements Constants {
 		if (entry != 0) {
 			int bestMove = (int)((entry >>> 23) & 2097151L);
 			int value = (int)((entry >>> 8) & 32767L) - 16000;
-			System.out.println("move = " + bestMove + ", depth = " + depth + ", score = " + value);
+			LOGGER.debug("move = {}, depth = {}, score = {}", bestMove, depth, value);
 		} else {
-			System.out.println("depth = " + depth);
+			LOGGER.debug("depth = {}", depth);
 		}
 
-		System.out.print("PV: ");
+		LOGGER.debug("PV:");
 		int bestMove = 0;
 		for (int d = 1; d <= depth; d++) {
 
@@ -55,11 +60,10 @@ public final class Engine implements Constants {
 			if (pgn == null) {
 				break;
 			}
-			System.out.print(" " + pgn);
+			LOGGER.debug(" {}", pgn);
 
 			Engine.makeMove(startBoard, bestMove);
 		}
-		System.out.println();
 
 		String result = board.bestMove + "XXX ";
 		if (score == -16000) { // computer lose

@@ -1,5 +1,6 @@
 package com.vikas.dao;
 
+import java.util.Date;
 import java.util.List;
 
 import org.hibernate.Query;
@@ -58,6 +59,7 @@ public class LoginDAOImpl implements LoginDAO {
 		}
 
 		person.setStatus("Active");
+		person.setActivated(new Date());
 
 		tx.commit();
 

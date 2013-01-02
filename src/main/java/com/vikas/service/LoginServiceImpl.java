@@ -59,9 +59,8 @@ public class LoginServiceImpl implements LoginService {
 				person.getPassword(), null);
 		person.setEncodedPassword(encodedPassword);
 
-		person.setIpAddress("ipAddress");
-		person.setDateCreated(new Date());
 		person.setStatus("InActive");
+		person.setCreated(new Date());
 
 		PersonRole personRole = new PersonRole();
 		personRole.setRole(1);

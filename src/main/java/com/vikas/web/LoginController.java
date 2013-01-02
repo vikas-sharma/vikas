@@ -80,7 +80,6 @@ public class LoginController {
 		}
 
 		person.setIpAddress(ipAddress);
-		// person.setDateCreated(new Date());
 
 		person.setName(person.getName().toLowerCase());
 

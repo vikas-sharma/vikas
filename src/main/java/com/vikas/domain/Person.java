@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 
@@ -42,6 +44,7 @@ public class Person implements UserDetails {
 	private String emailAddress;
 
 	@Email
+	@Transient
 	private String reenterEmailAddress;
 
 	@NotNull
@@ -57,8 +60,11 @@ public class Person implements UserDetails {
 
 	private String ipAddress;
 
-	@Transient
-	private Date dateCreated;
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date created;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date activated;
 
 	@Transient
 	private String captcha;
@@ -187,12 +193,20 @@ public class Person implements UserDetails {
 		this.ipAddress = ipAddress;
 	}
 
-	public Date getDateCreated() {
-		return dateCreated;
+	public Date getCreated() {
+		return created;
 	}
 
-	public void setDateCreated(Date dateCreated) {
-		this.dateCreated = dateCreated;
+	public void setCreated(Date created) {
+		this.created = created;
+	}
+
+	public Date getActivated() {
+		return activated;
+	}
+
+	public void setActivated(Date activated) {
+		this.activated = activated;
 	}
 
 	public Integer getAuthKey() {
@@ -226,4 +240,15 @@ public class Person implements UserDetails {
 	public void setCaptcha(String captcha) {
 		this.captcha = captcha;
 	}
+
+	// work with EntityManager in JPA
+	// @PrePersist
+	// protected void onCreate() {
+	// created = new Date();
+	// }
+	//
+	// @PreUpdate
+	// protected void onUpdate() {
+	// updated = new Date();
+	// }
 }

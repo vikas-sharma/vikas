@@ -13,8 +13,11 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -31,15 +34,18 @@ public class Person implements UserDetails {
 	@GeneratedValue
 	private Long personId;
 
-	@NotNull
+	@Size(min = 3, max = 20)
+	@Pattern(regexp = "[a-z][0-9a-z_]*")
 	@Column(unique = true)
 	private String name;
 
+	@Size(min = 6, max = 20)
 	@Transient
 	private String password;
 
 	private String encodedPassword;
 
+	@NotEmpty
 	@Email
 	private String emailAddress;
 
@@ -47,15 +53,18 @@ public class Person implements UserDetails {
 	@Transient
 	private String reenterEmailAddress;
 
-	@NotNull
+	@Size(min = 1, max = 20)
+	@Pattern(regexp = "[a-z]*")
 	private String firstName;
 
-	@NotNull
+	@Size(min = 1, max = 20)
+	@Pattern(regexp = "[a-z]*")
 	private String lastName;
 
 	@NotNull
 	private String gender;
 
+	@NotNull
 	private String country;
 
 	private String ipAddress;

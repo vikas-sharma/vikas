@@ -20,6 +20,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.vikas.domain.Person;
 import com.vikas.service.LoginService;
+import com.vikas.web.validation.LoginValidator;
 
 /**
  * 
@@ -27,6 +28,9 @@ import com.vikas.service.LoginService;
  */
 @Controller
 public class LoginController {
+
+	@Autowired
+	private LoginValidator loginValidator;
 
 	@Autowired
 	LoginService loginService;
@@ -52,13 +56,15 @@ public class LoginController {
 	}
 
 	@RequestMapping(value = "/register.htm", method = RequestMethod.POST)
-	public String createAccount(@ModelAttribute("person") @Valid Person person,
-			HttpServletRequest request,
+	public String createAccount(HttpServletRequest request,
 			@RequestParam("recaptcha_challenge_field") String challenge,
 			@RequestParam("recaptcha_response_field") String response,
-			Model model, BindingResult result) {
+			@Valid Person person, BindingResult result, Model model) {
 
-		// TODO write custom validation logic
+		String name = person.getName().toLowerCase();
+		person.setName(name);
+
+		loginValidator.validate(person, result);
 
 		String ipAddress = request.getRemoteAddr();
 		ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(ipAddress,

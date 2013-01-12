@@ -89,11 +89,7 @@ public class LoginController {
 
 		person.setName(person.getName().toLowerCase());
 
-		loginService.createAuthKey(person);
-
 		loginService.createAccount(person, "ROLE_USER");
-
-		loginService.sendActivationMail(person);
 
 		return "redirect:success.htm";
 	}
@@ -103,6 +99,10 @@ public class LoginController {
 			@RequestParam int authKey) {
 
 		boolean result = loginService.activatePerson(pid, authKey);
+
+		if (!result) {
+			// TODO message user about invalid pid or authKey
+		}
 
 		return "login";
 	}
@@ -128,20 +128,14 @@ public class LoginController {
 	public String forgot(@ModelAttribute("person") Person person,
 			RedirectAttributes redirectAttributes) {
 
-		Person p = loginService.findByEmailAddress(person.getEmailAddress());
+		boolean success = loginService.sendResetPasswordMail(person);
 
-		if (p == null) {
-
-			p = loginService.findByUsername(person.getName());
-			if (p == null) {
-				redirectAttributes.addAttribute("msg", "fail");
-				return "redirect:forgot.htm";
-			}
+		if (success) {
+			redirectAttributes.addAttribute("msg", "success");
+		} else {
+			redirectAttributes.addAttribute("msg", "fail");
 		}
 
-		loginService.sendResetPasswordMail(p);
-
-		redirectAttributes.addAttribute("msg", "success");
 		return "redirect:forgot.htm";
 	}
 

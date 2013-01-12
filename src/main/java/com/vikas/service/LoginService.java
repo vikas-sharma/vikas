@@ -10,19 +10,11 @@ import com.vikas.domain.Person;
  */
 public interface LoginService {
 
-	void createAuthKey(Person person);
-
 	void createAccount(Person person, String role);
 
 	boolean activatePerson(long pid, int authKey);
 
-	Person findByUsername(String username);
-
-	Person findByEmailAddress(String emailAddress);
-
-	void sendActivationMail(Person person);
-
-	void sendResetPasswordMail(Person person);
+	boolean sendResetPasswordMail(Person person);
 
 	Person validatePerson(long pid, Integer authKey);
 
@@ -31,4 +23,6 @@ public interface LoginService {
 	List<String> getCountryList();
 
 	String getCountry(String remoteAddr);
+
+	Person findByUsername(String username);
 }

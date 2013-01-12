@@ -6,7 +6,6 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,8 +28,7 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public void persist(Person person) {
 
-		Session session = sessionFactory.openSession();
-		Transaction tx = session.beginTransaction();
+		Session session = sessionFactory.getCurrentSession();
 
 		/*
 		 * Because we are supposed to maintain the coherence of the object graph
@@ -42,15 +40,12 @@ public class LoginDAOImpl implements LoginDAO {
 		person.getPersonRole().setPerson(person);
 
 		session.save(person);
-
-		tx.commit();
 	}
 
 	@Override
 	public boolean activatePerson(long pid, Integer authKey) {
 
-		Session session = sessionFactory.openSession();
-		Transaction tx = session.beginTransaction();
+		Session session = sessionFactory.getCurrentSession();
 
 		Person person = (Person) session.get(Person.class, pid);
 
@@ -61,15 +56,13 @@ public class LoginDAOImpl implements LoginDAO {
 		person.setStatus("Active");
 		person.setActivated(new Date());
 
-		tx.commit();
-
 		return true;
 	}
 
 	@Override
 	public Person findByUsername(String username) {
 
-		Session session = sessionFactory.openSession();
+		Session session = sessionFactory.getCurrentSession();
 		Query query = session.createQuery("from Person where name = :name ");
 		query.setParameter("name", username);
 
@@ -85,7 +78,7 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public Person findByEmailAddress(String emailAddress) {
 
-		Session session = sessionFactory.openSession();
+		Session session = sessionFactory.getCurrentSession();
 		Query query = session
 				.createQuery("from Person where emailAddress = :emailAddress ");
 		query.setParameter("emailAddress", emailAddress);
@@ -102,20 +95,16 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public Person findByPID(long pid) {
 
-		Session session = sessionFactory.openSession();
+		Session session = sessionFactory.getCurrentSession();
 
-		Person person = (Person) session.get(Person.class, pid);
-
-		return person;
+		return (Person) session.get(Person.class, pid);
 	}
 
 	@Override
 	public void update(Person person) {
 
-		Session session = sessionFactory.openSession();
-		Transaction tx = session.beginTransaction();
+		Session session = sessionFactory.getCurrentSession();
 		session.update(person);
-		tx.commit();
 	}
 
 }

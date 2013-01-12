@@ -18,9 +18,11 @@
 
 	<form:hidden path="personId" />
 	<form:hidden path="name" />
+	<form:hidden path="emailAddress" />
 	<form:hidden path="firstName" />
 	<form:hidden path="lastName" />
 	<form:hidden path="gender" />
+	<form:hidden path="country" />
 
 	<table border=0 align="center">
 		<tr>

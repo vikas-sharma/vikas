@@ -12,6 +12,8 @@ import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.security.authentication.encoding.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.StringUtils;
 
 import com.vikas.dao.LoginDAO;
 import com.vikas.domain.Person;
@@ -46,14 +48,10 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public void createAuthKey(Person person) {
-
-		int authKey = 10000000 + (int) (Math.random() * 99999999);
-		person.setAuthKey(authKey);
-	}
-
-	@Override
+	@Transactional
 	public void createAccount(Person person, String role) {
+
+		createAuthKey(person);
 
 		String encodedPassword = passwordEncoder.encodePassword(
 				person.getPassword(), null);
@@ -68,25 +66,17 @@ public class LoginServiceImpl implements LoginService {
 		person.setPersonRole(personRole);
 
 		loginDAO.persist(person);
+
+		sendActivationMail(person);
 	}
 
-	@Override
-	public boolean activatePerson(long pid, int authKey) {
-		return loginDAO.activatePerson(pid, authKey);
+	private void createAuthKey(Person person) {
+
+		int authKey = 10000000 + (int) (Math.random() * 99999999);
+		person.setAuthKey(authKey);
 	}
 
-	@Override
-	public Person findByUsername(String username) {
-		return loginDAO.findByUsername(username);
-	}
-
-	@Override
-	public Person findByEmailAddress(String emailAddress) {
-		return loginDAO.findByEmailAddress(emailAddress);
-	}
-
-	@Override
-	public void sendActivationMail(Person person) {
+	private void sendActivationMail(Person person) {
 
 		StringBuilder message = new StringBuilder();
 		message.append("Dear ")
@@ -104,38 +94,70 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
-	public void sendResetPasswordMail(Person person) {
+	@Transactional
+	public boolean activatePerson(long pid, int authKey) {
+		return loginDAO.activatePerson(pid, authKey);
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public Person findByUsername(String username) {
+		return loginDAO.findByUsername(username);
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public boolean sendResetPasswordMail(Person person) throws MailException {
+
+		Person p = null;
+		if (StringUtils.hasText(person.getEmailAddress())) {
+			p = loginDAO.findByEmailAddress(person.getEmailAddress());
+		}
+
+		if (p == null) {
+
+			if (StringUtils.hasText(person.getName())) {
+				p = loginDAO.findByUsername(person.getName());
+			}
+			if (p == null) {
+				return false;
+			}
+		}
 
 		StringBuilder message = new StringBuilder();
 		message.append("Forgot your password, ")
-				.append(person.getFirstName())
+				.append(p.getFirstName())
 				.append(" ")
-				.append(person.getLastName())
+				.append(p.getLastName())
 				.append("\n\nWe received a request to reset the password for your account.")
 				.append("\n\nTo reset your password, click on the link below (or copy and paste the URL into your browser):")
 				.append("\nhttp://localhost:8080/vikasworld/password_reset.htm?pid=")
-				.append(person.getPersonId()).append("&authKey=")
-				.append(person.getAuthKey())
-				.append("\n\nRegards\n\nVikas Sharma");
+				.append(p.getPersonId()).append("&authKey=")
+				.append(p.getAuthKey()).append("\n\nRegards\n\nVikas Sharma");
 
-		sendMail(person, message.toString());
+		try {
+			sendMail(p, message.toString());
+		} catch (MailException e) {
+			LOGGER.error(e.getMessage());
+			return false;
+		}
+
+		return true;
 	}
 
-	private void sendMail(Person person, String message) {
+	private void sendMail(Person person, String message) throws MailException {
 
 		LOGGER.debug("Mail message is {}", message);
+		LOGGER.debug("Mail sent to {}", person.getEmailAddress());
 
 		SimpleMailMessage msg = new SimpleMailMessage(this.templateMessage);
 		msg.setTo(person.getEmailAddress());
 		msg.setText(message);
-		try {
-			this.mailSender.send(msg);
-		} catch (MailException ex) {
-			LOGGER.error(ex.getMessage());
-		}
+		this.mailSender.send(msg);
 	}
 
 	@Override
+	@Transactional(readOnly = true)
 	public Person validatePerson(long pid, Integer authKey) {
 
 		Person person = loginDAO.findByPID(pid);
@@ -148,6 +170,7 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	@Override
+	@Transactional
 	public void resetPassword(Person person) {
 
 		String encodedPassword = passwordEncoder.encodePassword(

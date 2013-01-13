@@ -25,6 +25,7 @@
 <a href="http://www.chessbase.com/" target="_blank">Chessbase</a><BR/>
 <a href="http://www.chess.com/" target="_blank">Chess</a><BR/>
 <a href="http://www.chesshere.com" target="_blank">Chess Here</a><BR/>
+<a href="http://www.chessworld.net" target="_blank">Chess World</a><BR/>
 <a href="http://www.timeforchess.com" target="_blank">Time for Chess</a><BR/>
 
 <H3>chess Theory</H3>
@@ -95,6 +96,7 @@
 <a href="http://www.olimpbase.org" target="_blank">Encyclopedia of Team Chess</a><BR/>
 <a href="http://chessflash.com/" target="_blank">Chess Flash</a><BR/>
 <a href="http://www.rybkachess.com" target="_blank">Rybka Chess</a><BR/>
+<a href="http://geniusprophecy.com" target="_blank">GeniusProphecy Chess</a><BR/>
 
 <H3>Live videos/games/results</H3>
 

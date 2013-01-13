@@ -16,7 +16,7 @@
 			</sec:authorize>
 
 			<sec:authorize ifAnyGranted="ROLE_ADMIN, ROLE_USER, ROLE_FAMILY">
-				<td><a href="<c:url value='j_spring_security_logout' />">
+				<td><a href="<c:url value='/j_spring_security_logout' />">
 						Logout</a></td>
 			</sec:authorize>
 

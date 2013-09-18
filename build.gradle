@@ -7,13 +7,14 @@ repositories {
 
 ext {
 
-	tomcatHome = "D:\\software\\apache-tomcat-7.0.27"
+	tomcatHome = "D:\\software\\apache-tomcat-7.0.42"
 
 	slf4jVersion = "1.7.0"
-	logbackVersion = "1.0.7"
+	logbackVersion = "1.0.13"
 	aspectjVersion = "1.6.12"
-	springVersion = "3.1.2.RELEASE"
-	springSecurityVersion = "3.1.2.RELEASE"
+	springVersion = "3.2.4.RELEASE"
+	springSecurityVersion = "3.1.4.RELEASE"
+	hibernateVersion = "4.2.5.Final"
 	jacksonVersion = "1.5.5"
 }
 
@@ -70,12 +71,12 @@ dependencies {
     compile "org.hsqldb:hsqldb:2.2.9"
 
     // Hibernate dependencies
-    compile "org.hibernate:hibernate-core:4.1.6.Final"
+    compile "org.hibernate:hibernate-core:$hibernateVersion"
     compile "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final"
 
     compile ("org.hibernate:hibernate-validator:4.2.0.Final") {
-	exclude group: "javax.xml.bind", module: "jaxb-api" 
-	exclude group: "com.sun.xml.bind", module: "jaxb-impl"
+        exclude group: "javax.xml.bind", module: "jaxb-api"
+        exclude group: "com.sun.xml.bind", module: "jaxb-impl"
     }
 
     compile "javax.validation:validation-api:1.0.0.GA"

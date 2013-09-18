@@ -8,8 +8,6 @@ import javax.validation.Valid;
 import net.tanesha.recaptcha.ReCaptcha;
 import net.tanesha.recaptcha.ReCaptchaResponse;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,9 +28,6 @@ import com.vikas.web.validation.LoginValidator;
  */
 @Controller
 public class LoginController {
-
-	private static Logger LOGGER = LoggerFactory
-			.getLogger(LoginController.class);
 
 	@Autowired
 	private LoginValidator loginValidator;
@@ -65,11 +60,6 @@ public class LoginController {
 			@RequestParam("recaptcha_challenge_field") String challenge,
 			@RequestParam("recaptcha_response_field") String response,
 			@Valid Person person, BindingResult result, Model model) {
-
-		LOGGER.debug("scheme {}", request.getScheme());
-		LOGGER.debug("server name {}", request.getServerName());
-		LOGGER.debug("port {}", request.getServerPort());
-		LOGGER.debug("request uri {}", request.getRequestURI());
 
 		String name = person.getName().toLowerCase();
 		person.setName(name);

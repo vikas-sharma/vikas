@@ -15,7 +15,7 @@ ext {
 	springVersion = "3.2.4.RELEASE"
 	springSecurityVersion = "3.1.4.RELEASE"
 	hibernateVersion = "4.2.5.Final"
-	jacksonVersion = "1.5.5"
+	jacksonVersion = "2.2.3"
 }
 
 task deployToTomcat(dependsOn: "build") << {
@@ -95,10 +95,8 @@ dependencies {
 
     compile "org.apache.tiles:tiles-jsp:2.2.2"
 
-    compile "org.codehaus.jackson:jackson-core-asl:$jacksonVersion"
-    compile "org.codehaus.jackson:jackson-mapper-asl:$jacksonVersion"
-    compile "org.codehaus.jackson:jackson-core-lgpl:$jacksonVersion"
-    compile "org.codehaus.jackson:jackson-mapper-lgpl:$jacksonVersion"
+    compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
 
     compile "javax.mail:mail:1.4.5"
 

@@ -9,9 +9,9 @@ ext {
 
 	tomcatHome = "D:\\software\\apache-tomcat-7.0.42"
 
-	slf4jVersion = "1.7.0"
+	slf4jVersion = "1.7.5"
 	logbackVersion = "1.0.13"
-	aspectjVersion = "1.6.12"
+	aspectjVersion = "1.7.3"
 	springVersion = "3.2.4.RELEASE"
 	springSecurityVersion = "3.1.4.RELEASE"
 	hibernateVersion = "4.2.5.Final"

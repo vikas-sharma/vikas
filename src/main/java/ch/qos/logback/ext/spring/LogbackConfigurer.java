@@ -15,21 +15,18 @@
  */
 package ch.qos.logback.ext.spring;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.net.URL;
+
+import org.springframework.util.ResourceUtils;
+import org.springframework.util.SystemPropertyUtils;
+
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.classic.selector.ContextSelector;
 import ch.qos.logback.classic.util.ContextSelectorStaticBinder;
 import ch.qos.logback.core.joran.spi.JoranException;
-import ch.qos.logback.ext.spring.web.LogbackConfigListener;
-import ch.qos.logback.ext.spring.web.LogbackConfigServlet;
-import ch.qos.logback.ext.spring.web.WebLogbackConfigurer;
-
-import org.springframework.util.ResourceUtils;
-import org.springframework.util.SystemPropertyUtils;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.net.URL;
 
 /**
  * Convenience class that features simple methods for custom Log4J configuration.

@@ -15,17 +15,19 @@
  */
 package ch.qos.logback.ext.spring.web;
 
-import ch.qos.logback.core.joran.spi.JoranException;
-import ch.qos.logback.ext.spring.LogbackConfigurer;
+import java.io.FileNotFoundException;
+import java.lang.reflect.Method;
+
+import javax.servlet.ServletContext;
+
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.util.ResourceUtils;
 import org.springframework.util.SystemPropertyUtils;
 import org.springframework.web.util.WebUtils;
 
-import javax.servlet.ServletContext;
-import java.io.FileNotFoundException;
-import java.lang.reflect.Method;
+import ch.qos.logback.core.joran.spi.JoranException;
+import ch.qos.logback.ext.spring.LogbackConfigurer;
 
 /**
  * Convenience class that performs custom Logback initialization for web environments,
@@ -201,7 +203,6 @@ public class WebLogbackConfigurer {
      * @return {@code true} if the webapp's root should be exposed; otherwise, {@code false}
      * @see #EXPOSE_WEB_APP_ROOT_PARAM
      */
-    @SuppressWarnings({"BooleanMethodNameMustStartWithQuestion"})
     private static boolean exposeWebAppRoot(ServletContext servletContext) {
         String exposeWebAppRootParam = servletContext.getInitParameter(EXPOSE_WEB_APP_ROOT_PARAM);
         return (exposeWebAppRootParam == null || Boolean.valueOf(exposeWebAppRootParam));

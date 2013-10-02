@@ -1,10 +1,12 @@
-vikasworld
-==========
+vikas
+=====
 
-right click and select Git bash while on D:/work/vikasworld folder.
+right click and select Git bash while on D:/work/vikas folder.
 
 now you are on:
 vikas@VIKAS-PC /D/work/myrepo (master) # remember, master is the name of local repository
+
+$ git clone https://github.com/vikas-sharma/vikas.git # equivalent to checkout in svn
 
 $ git init   # You now have a .git directory
 
@@ -13,16 +15,16 @@ $ git config --global user.email vikas.sharma.in@gmail.com # first time Git setu
 
 $ git config core.autocrlf false
 
-$ git remote add vikasworld https://github.com/vikas-sharma/vikas.git # Push an existing repository.
+$ git remote add vikas https://github.com/vikas-sharma/vikas.git # Push an existing repository.
 
 $ git add .  # You've added the working directory files to the index
 $ git commit -m "first commit" # You now have one commit.
 
 $ git status # check status
 
-$ git pull vikasworld master # first pull in case there are some files to be merged.
+$ git pull vikas master # first pull in case there are some files to be merged.
 
-$ git push vikasworld master # now, push to update external repository
+$ git push vikas master # now, push to update external repository
 
 $ git log # to check changes
 

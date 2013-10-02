@@ -106,5 +106,6 @@ dependencies {
 	compile "org.jasypt:jasypt-spring31:1.9.1"
 
 	compile "net.tanesha.recaptcha4j:recaptcha4j:0.0.7"
-
+	
+	compile "org.kohsuke:geoip:1.2.8"
 }

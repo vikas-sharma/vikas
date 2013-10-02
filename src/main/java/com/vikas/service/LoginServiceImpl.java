@@ -1,6 +1,7 @@
 package com.vikas.service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
+import com.maxmind.geoip.LookupService;
 import com.vikas.dao.LoginDAO;
 import com.vikas.domain.Person;
 import com.vikas.domain.PersonRole;
@@ -193,11 +195,24 @@ public class LoginServiceImpl implements LoginService {
 			}
 		}
 
+		Collections.sort(countries);
+
 		return countries;
 	}
 
 	@Override
 	public String getCountry(String remoteAddr) {
-		return "India";
+
+		try {
+			String dbfile = "/usr/share/GeoIP/GeoIP.dat";
+			LookupService cl = new LookupService(dbfile,
+					LookupService.GEOIP_MEMORY_CACHE);
+
+			return cl.getCountry(remoteAddr).getName();
+		} catch (Exception e) {
+			LOGGER.error("Cannot get country name fron GeoIP. {}",
+					e.getMessage());
+			return "India";
+		}
 	}
 }

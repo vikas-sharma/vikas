@@ -3,6 +3,7 @@ package com.vikas.service;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.security.authentication.encoding.PasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
@@ -32,9 +33,6 @@ public class LoginServiceImpl implements LoginService {
 	@Autowired
 	private LoginDAO loginDAO;
 
-	@Autowired
-	PasswordEncoder passwordEncoder;
-
 	private MailSender mailSender;
 
 	public void setMailSender(MailSender mailSender) {
@@ -53,8 +51,8 @@ public class LoginServiceImpl implements LoginService {
 
 		createAuthKey(person);
 
-		String encodedPassword = passwordEncoder.encodePassword(
-				person.getPassword(), null);
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		String encodedPassword = passwordEncoder.encode(person.getPassword());
 		person.setEncodedPassword(encodedPassword);
 
 		person.setStatus("InActive");
@@ -173,8 +171,8 @@ public class LoginServiceImpl implements LoginService {
 	@Transactional
 	public void resetPassword(Person person) {
 
-		String encodedPassword = passwordEncoder.encodePassword(
-				person.getPassword(), null);
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		String encodedPassword = passwordEncoder.encode(person.getPassword());
 		person.setEncodedPassword(encodedPassword);
 
 		loginDAO.update(person);
@@ -185,14 +183,15 @@ public class LoginServiceImpl implements LoginService {
 
 		List<String> countries = new ArrayList<String>();
 
-		countries.add("India");
-		countries.add("US");
-		countries.add("UK");
-		countries.add("Russia");
-		countries.add("China");
-		countries.add("Japan");
-		countries.add("Spain");
-		countries.add("Germany");
+		Locale[] locales = Locale.getAvailableLocales();
+		for (Locale locale : locales) {
+
+			String name = locale.getDisplayCountry();
+			if (!"".equals(name) && !countries.contains(name)) {
+
+				countries.add(name);
+			}
+		}
 
 		return countries;
 	}
@@ -201,5 +200,4 @@ public class LoginServiceImpl implements LoginService {
 	public String getCountry(String remoteAddr) {
 		return "India";
 	}
-
 }

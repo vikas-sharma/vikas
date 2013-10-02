@@ -29,9 +29,12 @@
 
 	</http>
 
+	<beans:bean id="encoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+
 	<authentication-manager>
 		<authentication-provider user-service-ref="customUserDetailsService">
-			<password-encoder hash="sha" />
+			<password-encoder ref="encoder" />
 		</authentication-provider>
 	</authentication-manager>
 

@@ -9,6 +9,7 @@ import java.util.Locale;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.MailException;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
@@ -31,6 +32,9 @@ public class LoginServiceImpl implements LoginService {
 
 	private static Logger LOGGER = LoggerFactory
 			.getLogger(LoginServiceImpl.class);
+
+	@Value("#{myProps['context.path']}")
+	private String contextPath;
 
 	@Autowired
 	private LoginDAO loginDAO;
@@ -83,9 +87,9 @@ public class LoginServiceImpl implements LoginService {
 				.append(person.getFirstName())
 				.append(" ")
 				.append(person.getLastName())
-				.append(", welcome to vikasworld.com")
-				.append("\n\nclick or copy this link to your browser to activate your account:")
-				.append("\nhttp://localhost:8080/vikasworld/activate.htm?pid=")
+				.append(", welcome to chessband.com")
+				.append("\n\nclick or copy this link to your browser to activate your account:\n")
+				.append(contextPath).append("/chessband/activate.htm?pid=")
 				.append(person.getPersonId()).append("&authKey=")
 				.append(person.getAuthKey())
 				.append("\n\nRegards\n\nVikas Sharma");
@@ -130,8 +134,9 @@ public class LoginServiceImpl implements LoginService {
 				.append(" ")
 				.append(p.getLastName())
 				.append("\n\nWe received a request to reset the password for your account.")
-				.append("\n\nTo reset your password, click on the link below (or copy and paste the URL into your browser):")
-				.append("\nhttp://localhost:8080/vikasworld/password_reset.htm?pid=")
+				.append("\n\nTo reset your password, click on the link below (or copy and paste the URL into your browser):\n")
+				.append(contextPath)
+				.append("/chessband/password_reset.htm?pid=")
 				.append(p.getPersonId()).append("&authKey=")
 				.append(p.getAuthKey()).append("\n\nRegards\n\nVikas Sharma");
 

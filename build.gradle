@@ -70,6 +70,8 @@ dependencies {
 
     compile "org.hsqldb:hsqldb:2.2.9"
 
+    compile "mysql:mysql-connector-java:5.0.8"
+
     // Hibernate dependencies
     compile "org.hibernate:hibernate-core:$hibernateVersion"
     compile "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final"

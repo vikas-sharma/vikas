@@ -22,10 +22,6 @@
 	<!-- Aspect -->
 	<bean id="logAspect" class="com.vikas.aspect.LoggingAspect" />
 
-	<bean
-		class="org.springframework.security.authentication.encoding.ShaPasswordEncoder"
-		id="passwordEncoder" />
-
 	<import resource="webmvc-config.xml" />
 	<import resource="db-config.xml" />
 	<import resource="mail-config.xml" />

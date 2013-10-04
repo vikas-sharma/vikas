@@ -82,7 +82,6 @@ dependencies {
     }
 
     compile "javax.validation:validation-api:1.1.0.Final"
-    compile "cglib:cglib-nodep:3.0"
     compile "javax.transaction:jta:1.1"
 
     compile "commons-pool:commons-pool:1.6"
@@ -95,7 +94,12 @@ dependencies {
     }
     compile "commons-codec:commons-codec:1.8"
 
-    compile "org.apache.tiles:tiles-jsp:2.2.2"
+    compile "org.apache.tiles:tiles-request-api:1.0.3"
+    compile "org.apache.tiles:tiles-api:3.0.1"
+    compile "org.apache.tiles:tiles-core:3.0.1"
+    compile "org.apache.tiles:tiles-servlet:3.0.1"
+    compile "org.apache.tiles:tiles-jsp:3.0.1"
+    compile "org.apache.tiles:tiles-el:3.0.1"
 
     compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
     compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"

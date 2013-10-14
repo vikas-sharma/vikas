@@ -1,106 +1,111 @@
 package com.vikas.dao;
 
 import java.util.Date;
-import java.util.List;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import javax.sql.DataSource;
+
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
 import com.vikas.domain.Person;
+import com.vikas.domain.PersonMapper;
 
 /**
  * 
  * @author Vikas Sharma
  */
-@Repository
 public class LoginDAOImpl implements LoginDAO {
 
-	@Autowired
-	private SessionFactory sessionFactory;
+	private JdbcTemplate jdbcTemplate;
+	private SimpleJdbcInsert insertPerson;
+
+	public void setDataSource(DataSource dataSource) {
+
+		jdbcTemplate = new JdbcTemplate(dataSource);
+		insertPerson = new SimpleJdbcInsert(dataSource).withTableName("PERSON")
+				.usingGeneratedKeyColumns("PERSON_ID");
+	}
 
 	@Override
-	public void persist(Person person) {
+	public void addPerson(Person person) {
 
-		Session session = sessionFactory.getCurrentSession();
+		SqlParameterSource parameters = new BeanPropertySqlParameterSource(
+				person);
+		Number personId = insertPerson.executeAndReturnKey(parameters);
 
-		/*
-		 * Because we are supposed to maintain the coherence of the object graph
-		 * and, more important, because we configured the EmployeeDetail entity
-		 * with an ID generator which gets the ID of PersonRole from its person
-		 * property. So obviously, if this property is null, Hibernate can't
-		 * generate the ID.
-		 */
-		person.getPersonRole().setPerson(person);
+		String sql = "INSERT INTO PERSON_ROLE (PERSON_ID, ROLE) VALUES (?, ?)";
 
-		session.save(person);
+		jdbcTemplate.update(sql, personId.longValue(), person.getPersonRole()
+				.getRole());
+
+		person.setPersonId(personId.longValue());
 	}
 
 	@Override
 	public boolean activatePerson(long pid, Integer authKey) {
 
-		Session session = sessionFactory.getCurrentSession();
-
-		Person person = (Person) session.get(Person.class, pid);
+		Person person = findByPID(pid);
 
 		if (person == null || !authKey.equals(person.getAuthKey())) {
 			return false;
 		}
 
-		person.setStatus("Active");
-		person.setActivated(new Date());
+		String sql = "UPDATE PERSON SET STATUS = ?, ACTIVATED = ? WHERE PERSON_ID = ?";
+
+		jdbcTemplate.update(sql, "Active", new Date(), pid);
 
 		return true;
 	}
 
 	@Override
+	public Person findByPID(long pid) {
+
+		String sql = "SELECT * FROM PERSON WHERE PERSON_ID = ?";
+
+		return jdbcTemplate.queryForObject(sql, new PersonMapper(), pid);
+	}
+
+	@Override
 	public Person findByUsername(String username) {
 
-		Session session = sessionFactory.getCurrentSession();
-		Query query = session.createQuery("from Person where name = :name ");
-		query.setParameter("name", username);
+		String sql = "SELECT * FROM PERSON WHERE NAME = ?";
 
-		List<Person> persons = query.list();
-
-		if (persons.size() == 0) {
+		Person person = null;
+		try {
+			person = jdbcTemplate.queryForObject(sql, new PersonMapper(),
+					username);
+		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
 
-		return (Person) persons.get(0);
+		return person;
 	}
 
 	@Override
 	public Person findByEmailAddress(String emailAddress) {
 
-		Session session = sessionFactory.getCurrentSession();
-		Query query = session
-				.createQuery("from Person where emailAddress = :emailAddress ");
-		query.setParameter("emailAddress", emailAddress);
+		String sql = "SELECT * FROM PERSON WHERE EMAIL_ADDRESS = ? LIMIT 1";
 
-		List<Person> persons = query.list();
-
-		if (persons.size() == 0) {
+		Person person = null;
+		try {
+			person = jdbcTemplate.queryForObject(sql, new PersonMapper(),
+					emailAddress);
+		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
 
-		return (Person) persons.get(0);
+		return person;
 	}
 
 	@Override
-	public Person findByPID(long pid) {
+	public void updatePassword(long pid, String encodedPassword) {
 
-		Session session = sessionFactory.getCurrentSession();
+		String sql = "UPDATE PERSON SET ENCODED_PASSWORD = ? WHERE PERSON_ID = ?";
 
-		return (Person) session.get(Person.class, pid);
-	}
-
-	@Override
-	public void update(Person person) {
-
-		Session session = sessionFactory.getCurrentSession();
-		session.update(person);
+		jdbcTemplate.update(sql, encodedPassword, pid);
 	}
 
 }

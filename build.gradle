@@ -7,7 +7,7 @@ repositories {
 
 ext {
 
-	tomcatHome = "D:\\software\\apache-tomcat-7.0.42"
+	tomcatHome = "D:\\software\\apache-tomcat-6.0.37"
 
 	slf4jVersion = "1.7.5"
 	logbackVersion = "1.0.13"
@@ -109,9 +109,9 @@ dependencies {
     compile "junit:junit:4.11"
 
     compile "org.jasypt:jasypt:1.9.1"
-	compile "org.jasypt:jasypt-spring31:1.9.1"
+    compile "org.jasypt:jasypt-spring31:1.9.1"
 
-	compile "net.tanesha.recaptcha4j:recaptcha4j:0.0.7"
-	
-	compile "org.kohsuke:geoip:1.2.8"
+    compile "net.tanesha.recaptcha4j:recaptcha4j:0.0.7"
+
+    compile "org.kohsuke:geoip:1.2.8"
 }

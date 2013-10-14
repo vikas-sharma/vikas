@@ -8,7 +8,7 @@ import com.vikas.domain.Person;
  */
 public interface LoginDAO {
 
-	void persist(Person person);
+	void addPerson(Person person);
 
 	boolean activatePerson(long pid, Integer authKey);
 
@@ -18,5 +18,5 @@ public interface LoginDAO {
 
 	Person findByPID(long pid);
 
-	void update(Person person);
+	void updatePassword(long pid, String encodedPassword);
 }

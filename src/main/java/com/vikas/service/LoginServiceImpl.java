@@ -6,8 +6,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.MailException;
@@ -29,9 +27,6 @@ import com.vikas.domain.PersonRole;
  */
 @Service
 public class LoginServiceImpl implements LoginService {
-
-	private static Logger LOGGER = LoggerFactory
-			.getLogger(LoginServiceImpl.class);
 
 	@Value("#{myProps['context.path']}")
 	private String contextPath;
@@ -69,7 +64,7 @@ public class LoginServiceImpl implements LoginService {
 
 		person.setPersonRole(personRole);
 
-		loginDAO.persist(person);
+		loginDAO.addPerson(person);
 
 		sendActivationMail(person);
 	}
@@ -89,7 +84,7 @@ public class LoginServiceImpl implements LoginService {
 				.append(person.getLastName())
 				.append(", welcome to chessband.com")
 				.append("\n\nclick or copy this link to your browser to activate your account:\n")
-				.append(contextPath).append("/chessband/activate.htm?pid=")
+				.append(contextPath).append("/activate.htm?pid=")
 				.append(person.getPersonId()).append("&authKey=")
 				.append(person.getAuthKey())
 				.append("\n\nRegards\n\nVikas Sharma");
@@ -143,7 +138,6 @@ public class LoginServiceImpl implements LoginService {
 		try {
 			sendMail(p, message.toString());
 		} catch (MailException e) {
-			LOGGER.error(e.getMessage());
 			return false;
 		}
 
@@ -151,9 +145,6 @@ public class LoginServiceImpl implements LoginService {
 	}
 
 	private void sendMail(Person person, String message) throws MailException {
-
-		LOGGER.debug("Mail message is {}", message);
-		LOGGER.debug("Mail sent to {}", person.getEmailAddress());
 
 		SimpleMailMessage msg = new SimpleMailMessage(this.templateMessage);
 		msg.setTo(person.getEmailAddress());
@@ -180,9 +171,8 @@ public class LoginServiceImpl implements LoginService {
 
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 		String encodedPassword = passwordEncoder.encode(person.getPassword());
-		person.setEncodedPassword(encodedPassword);
 
-		loginDAO.update(person);
+		loginDAO.updatePassword(person.getPersonId(), encodedPassword);
 	}
 
 	@Override
@@ -215,8 +205,6 @@ public class LoginServiceImpl implements LoginService {
 
 			return cl.getCountry(remoteAddr).getName();
 		} catch (Exception e) {
-			LOGGER.error("Cannot get country name fron GeoIP. {}",
-					e.getMessage());
 			return "India";
 		}
 	}

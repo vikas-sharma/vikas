@@ -10,7 +10,7 @@ ext {
 	tomcatHome = "D:\\software\\apache-tomcat-6.0.37"
 
 	slf4jVersion = "1.7.5"
-	logbackVersion = "1.0.13"
+	logbackVersion = "0.9.30"
 	aspectjVersion = "1.7.3"
 	springVersion = "3.2.4.RELEASE"
 	springSecurityVersion = "3.1.4.RELEASE"

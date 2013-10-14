@@ -4,31 +4,31 @@
 
 	<!-- Appenders -->
 	<appender name="general" class="ch.qos.logback.core.FileAppender">
-		<File>${app.root}/WEB-INF/logs/app.log</File>
-		<Append>true</Append>
+		<file>/home/vikas/web-root/logs/app.log</file>
+		<append>true</append>
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} %t %-5p %c{2} - %m%n</pattern>
 		</encoder>
 	</appender>
 
 	<appender name="spring" class="ch.qos.logback.core.FileAppender">
-		<File>${app.root}/WEB-INF/logs/spring.log</File>
-		<Append>true</Append>
+		<file>/home/vikas/web-root/logs/spring.log</file>
+		<append>true</append>
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} %t %-5p %c{2} - %m%n</pattern>
 		</encoder>
 	</appender>
 
 	<appender name="hibernate" class="ch.qos.logback.core.FileAppender">
-		<File>${app.root}/WEB-INF/logs/hibernate.log</File>
-		<Append>true</Append>
+		<file>/home/vikas/web-root/logs/hibernate.log</file>
+		<append>true</append>
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} %t %-5p %c{2} - %m%n</pattern>
 		</encoder>
 	</appender>
 
 	<appender name="hibernate-sql" class="ch.qos.logback.core.FileAppender">
-		<file>${app.root}/WEB-INF/logs/hibernate-sql.log</file>
+		<file>/home/vikas/web-root/logs/hibernate-sql.log</file>
 
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
@@ -37,7 +37,7 @@
 	</appender>
 
 	<appender name="vikas" class="ch.qos.logback.core.FileAppender">
-		<file>${app.root}/WEB-INF/logs/vikas.log</file>
+		<file>/home/vikas/web-root/logs/vikas.log</file>
 
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
@@ -46,7 +46,7 @@
 	</appender>
 
 	<appender name="engine" class="ch.qos.logback.core.FileAppender">
-		<file>${app.root}/WEB-INF/logs/engine.log</file>
+		<file>/home/vikas/web-root/logs/engine.log</file>
 
 		<encoder>
 			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n

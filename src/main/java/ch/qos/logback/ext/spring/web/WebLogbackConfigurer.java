@@ -120,9 +120,9 @@ public class WebLogbackConfigurer {
      */
     public static void initLogging(ServletContext servletContext) {
         // Expose the web app root system property.
-        if (exposeWebAppRoot(servletContext)) {
-            WebUtils.setWebAppRootSystemProperty(servletContext);
-        }
+//        if (exposeWebAppRoot(servletContext)) {
+//            WebUtils.setWebAppRootSystemProperty(servletContext);
+//        }
 
         // Only perform custom Logback initialization in case of a config file.
         String location = servletContext.getInitParameter(CONFIG_LOCATION_PARAM);

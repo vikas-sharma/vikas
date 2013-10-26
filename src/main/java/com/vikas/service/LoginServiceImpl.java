@@ -26,6 +26,7 @@ import com.vikas.domain.PersonRole;
  * @author Vikas Sharma
  */
 @Service
+@Transactional
 public class LoginServiceImpl implements LoginService {
 
 	@Value("#{myProps['context.path']}")

@@ -60,6 +60,7 @@ public class LoginDAOHibImpl implements LoginDAO {
 		Query query = session.createQuery("from Person where name = :name ");
 		query.setParameter("name", username);
 
+		@SuppressWarnings("unchecked")
 		List<Person> persons = query.list();
 
 		if (persons.size() == 0) {
@@ -77,6 +78,7 @@ public class LoginDAOHibImpl implements LoginDAO {
 				.createQuery("from Person where emailAddress = :emailAddress ");
 		query.setParameter("emailAddress", emailAddress);
 
+		@SuppressWarnings("unchecked")
 		List<Person> persons = query.list();
 
 		if (persons.size() == 0) {
@@ -97,6 +99,15 @@ public class LoginDAOHibImpl implements LoginDAO {
 	@Override
 	public void updatePassword(long pid, String encodedPassword) {
 
+		Session session = sessionFactory.getCurrentSession();
+
+		Person person = (Person) session.get(Person.class, pid);
+
+		if (person == null) {
+			return;
+		}
+
+		person.setEncodedPassword(encodedPassword);
 	}
 
 }

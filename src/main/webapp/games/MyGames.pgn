@@ -12,7 +12,7 @@
 [PlyCount "53"]
 [TimeControl "60"]
 
-{553MB, Fritz10.ctg} 1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 Nc6 5. Bd3 g6 6. Bc2
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 Nc6 5. Bd3 g6 6. Bc2
 Bg7 7. O-O O-O 8. d4 cxd4 9. cxd4 d5 10. e5 Ne4 11. Nc3 Nxc3 12. bxc3 Na5 13.
 Re1 Qc7 $11 14. Bd2 Nc4 15. Bf4 Qa5 16. Bg5 Re8 17. Nd2 $2 (17. Rb1 $11 {Now,
 black could play either Na3 or h6 leads to unclear positions.}) 17... Qxc3 18.
@@ -36,7 +36,7 @@ $16 {only move to save the game} 23. Bxh6 Bxh6 24. Qxh6 Be6) 23. Bxd5 $18 Rd8
 [PlyCount "75"]
 [TimeControl "60"]
 
-{553MB, Fritz10.ctg} 1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 Nc6 5. Bd3 d5 6. e5 Nd7
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. h3 Nc6 5. Bd3 d5 6. e5 Nd7
 7. e6 fxe6 8. Ng5 Nf6 9. Qc2 Qc7 10. O-O c4 11. Bxh7 Nxh7 12. Qg6+ Kd7 13.
 Qxe6+ Ke8 14. Qf7+ Kd7 15. Nxh7 Rxh7 16. Qf5+ e6 17. Qxh7 Qe5 18. d4 cxd3 19.
 Qxd3 g5 20. Qe3 Qh8 21. Qxg5 Bd6 22. Bf4 e5 23. Bg3 Kc7 24. Na3 a6 25. Qg6 Ne7
@@ -58,7 +58,7 @@ Qd3 Nd4 33. Nc4 Bb5 34. a4 Bxc4 35. Qxc4 Nf5 36. Qe6 Rxg3 37. fxg3 Qf8 38. Rf1
 [PlyCount "108"]
 [TimeControl "60"]
 
-{553MB, Fritz10.ctg} 1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. e3
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. e3
 c5 7. dxc5 Qa5 8. Rc1 dxc4 9. Bxc4 Qxc5 10. Bb3 Qa5 11. O-O Nc6 12. Qe2 Bg4 13.
 h3 Bxf3 14. Qxf3 Rad8 15. Rfd1 Rxd1+ 16. Rxd1 Rd8 17. Rxd8+ Qxd8 18. Qe2 a6 19.
 Na4 b5 20. Nc3 Na5 21. Qd1 Qxd1+ 22. Bxd1 e6 23. Bf3 Nd7 24. Be2 Nb6 25. Nd1
@@ -82,7 +82,7 @@ Kc3 Nh4 39. g3 Nf3 40. Kxb3 g5 41. Kc4 Ng1 42. Kd3 Nxh3 43. f4 Kf5 44. Nc3 Kg4
 [PlyCount "59"]
 [TimeControl "60"]
 
-{553MB, Fritz10.ctg} 1. Nf3 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Qa4+ Nc6 6.
+1. Nf3 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Qa4+ Nc6 6.
 Ne5 Nxc3 7. dxc3 Bd7 8. Nxd7 Qxd7 9. Bf4 O-O-O 10. e4 e5 11. Be3 Bc5 12. Rd1
 Qe7 13. Bxc5 Qxc5 14. Rxd8+ Rxd8 15. Bb5 Nd4 16. Bc4 Ne6 17. O-O Ng5 18. Bb3 f5
 19. exf5 e4 20. h4 Nh3+ 21. gxh3 gxf5 22. Rd1 Qe7 23. Rxd8+ Kxd8 24. Qd4+ Kc8
@@ -102,7 +102,7 @@ Qe7 13. Bxc5 Qxc5 14. Rxd8+ Rxd8 15. Bb5 Nd4 16. Bc4 Ne6 17. O-O Ng5 18. Bb3 f5
 [PlyCount "103"]
 [TimeControl "60"]
 
-{553MB, Fritz10.ctg} 1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6.
+1. e4 e6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nd7 5. Nf3 Ngf6 6.
 Bd3 Nxe4 7. Bxe4 Nf6 8. Bd3 Be7 9. O-O O-O 10. Qe2 b6 11. Bg5 Bb7 12. Rad1 h6
 13. Bh4 Nh5 14. Bg3 Nxg3 15. hxg3 Bf6 16. c3 Bxf3 17. Qxf3 g6 18. Rfe1 Bg7 19.
 Bc4 Qd6 20. b4 a5 21. b5 Rad8 22. Rd3 Rfe8 23. Qg4 Rd7 24. Qh4 Rde7 25. Rf3 Rd7
@@ -126,7 +126,7 @@ fxg5+ Kxg5 52. Kf3 1-0
 [PlyCount "107"]
 [TimeControl "60"]
 
-{553MB, Fritz10.ctg} 1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Qb6 6. Nb3
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. Bd3 Qb6 6. Nb3
 Qc7 7. O-O Nf6 8. Bg5 Be7 9. f4 d6 10. c4 Nbd7 11. Kh1 b6 12. Qe2 Bb7 13. N1d2
 O-O 14. Nf3 e5 15. f5 Rac8 16. Rac1 Rfe8 17. Bb1 Qb8 18. Nbd2 Qa8 19. Rfe1 Bc6
 20. Bd3 Nc5 21. Bc2 b5 22. b4 Ncd7 23. Bb3 Nb6 24. c5 dxc5 25. Bxf6 Bxf6 26.
@@ -1327,8 +1327,7 @@ Rxf8+ 1-0
 [PlyCount "99"]
 [TimeControl "60"]
 
-1. e4 {[%emt 0:00:00]} e5 {[%eval 0,0] [%emt 0:
-00:00]} 2. Nf3 Nf6 3. d4 Nxe4 4. Bd3 d5 5. Nxe5 Bd6 6. O-O O-O 7. c4 Nf6 8. Bg5
+1. e4 e5 2. Nf3 Nf6 3. d4 Nxe4 4. Bd3 d5 5. Nxe5 Bd6 6. O-O O-O 7. c4 Nf6 8. Bg5
 h6 (8... dxc4 {is opening move}) 9. Bh4 (9. Bxf6 Qxf6 10. cxd5 Bxe5 11. dxe5
 Qxe5 12. Nc3 $32) 9... Nc6 10. Nxc6 bxc6 11. Qf3 $2 (11. Nd2) 11... Be7 $2 (
 11... g5 $1 12. Bg3 Bg4 13. Qe3 Re8 $32) 12. Nc3 Bg4 (12... dxc4 $142 13. Qxc6
@@ -1382,8 +1381,8 @@ Bd1 1-0
 [PlyCount "75"]
 [TimeControl "60"]
 
-1. e4 {[%emt 0:00:00]} c5 2. c3 e6 3. d4 d5 4.
-exd5 exd5 5. Nf3 Nc6 6. Be2 Nf6 7. O-O c4 $2 (7... Be7 {is opening move}) 8. b3
+1. e4 c5 2. c3 e6 3. d4 d5 4. exd5 exd5 5. Nf3 Nc6
+6. Be2 Nf6 7. O-O c4 $2 (7... Be7 {is opening move}) 8. b3
 cxb3 9. axb3 Be7 10. Ne5 O-O 11. Kh1 Ne4 12. f3 Nd6 13. Bd3 Bf5 14. Ba3 Bxd3
 15. Qxd3 f6 16. Ng4 Nf7 17. Ne3 Re8 18. Bxe7 Rxe7 19. Nd2 Qd7 20. Nf5 Ree8 (
 20... Re6 $142) 21. Rfe1 a6 22. Nf1 g6 23. N5e3 Rad8 24. Re2 Kg7 25. Rae1 Ng5
@@ -1404,7 +1403,7 @@ Re7+ 1-0
 [PlyCount "78"]
 [TimeControl "60"]
 
-1. e4 {[%emt 0:00:00]} e6 2. f4 d5 3. e5 c5 4.
+1. e4 e6 2. f4 d5 3. e5 c5 4.
 Nf3 Nc6 5. c3 d4 6. d3 Nh6 7. Nbd2 Be7 8. c4 Qa5 9. Ke2 $2 {if it was played
 online, I would have call it mouse slip.} Bd7 10. Ne4 f5 11. Nf2 O-O-O 12. Bd2
 Qc7 13. h4 Rdf8 14. g3 Ng4 $17 15. Nxg4 $2 fxg4 16. Nh2 Nxe5 $1 17. Bg2 (17.

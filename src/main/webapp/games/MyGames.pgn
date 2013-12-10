@@ -651,7 +651,7 @@ missed this wonderful combination on the last move of the first time control})
 [EventDate "2010.??.??"]
 [TimeControl "90"]
 
-1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 dxe4 5. a3 Bxc3+ 6. Nxc3 Nc6 7. Bb5 Nge7
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Ne2 dxe4 5. a3 Bxc3+ 6. Nxc3 Nc6 7. Bb5 Nge7
 8. Nxe4 Qd5 (8... O-O 9. c3 e5 {is good for black}) 9. Qd3 f5 10. Ng3 Qxg2 11.
 Bg5 O-O 12. O-O-O {
 white has compensation for the pawn with a very good attacking chances} Qh3 13.
@@ -1041,7 +1041,7 @@ moves such as Kf4} 36. Rd2 Re1+ 37. Re2 Rd1 38. Rd2 1/2-1/2
 [EventDate "2010.??.??"]
 [TimeControl "180"]
 
-1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 Nf6 5. e5 Nfd7 6. a3 Ba5 (6... Be7 {
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Ne2 Nf6 5. e5 Nfd7 6. a3 Ba5 (6... Be7 {
 is usually played here}) 7. b4 Bb6 8. Ng3 O-O 9. Na4 f6 $11 10. exf6 Qxf6 11.
 Be3 Nc6 12. Nxb6 Nxb6 13. f4 Bd7 14. Bd3 Nc4 15. Bxc4 dxc4 16. O-O Ne7 17. c3
 Bc6 18. Qe2 a6 19. Bd2 Qg6 20. Rae1 Bd5 21. Rf2 Nf5 22. Ne4 Rae8 23. Nc5 Rf7
@@ -1113,6 +1113,39 @@ Rac1 Bd7 25. Qe2 Rd5 (25... Bb5 $5 26. Qxb5 Rxd2 27. Qxb7 Rf8 $19) 26. Be3 $2
 Bb5 $19 27. Qc2 Bxf1 28. Rxf1 Nf5 29. Bf2 Nxg3 30. Bxg3 Qf5 31. Qc7 Qf7 32. Qc4
 Bxb2 33. Kh1 Bg7 34. Ne3 Rd2 35. Qb4 Rd4 36. Qa3 b5 37. f5 e5 38. Kg1 e4 39. f6
 Rd3 40. Qb4 Rxe3 41. fxg7 Rf3 42. Re1 d5 43. Qxb5 e3 44. Qd3 Rxg3+ 0-1[Event "Above 2000"]
+
+[Event "4th Parsvnath International"]
+[Site "?"]
+[Date "2006.01.14"]
+[Round "1"]
+[White "Vikas R Sharma"]
+[Black "Asefi Zahiruddin"]
+[Result "0-1"]
+[ECO "D44"]
+[BlackElo "2055"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "120"]
+[TimeControl "60"]
+
+1. d4 Nf6 2. Nf3 d5 3. c4 e6 4.
+Nc3 c6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5 hxg5 10. Bxg5 Nbd7 11.
+exf6 Bb7 12. g3 Qb6 13. Bg2 O-O-O 14. O-O c5 15. d5 Ne5 $2 (15... b4 {is the
+main line}) 16. Qe2 $16 Nd3 17. dxe6 fxe6 18. b3 Bxg2 19. Kxg2 Qc6+ 20. f3 b4
+21. Ne4 c3 22. Nf2 Nb2 23. Rfe1 Rd5 24. h4 e5 25. Qe4 Kb7 26. Re2 c4 27. Bc1
+cxb3 28. Bxb2 cxb2 29. Rxb2 bxa2 30. Rbxa2 Bc5 31. Nd3 Rxd3 32. Qxd3 $18 Bd4
+33. Ra6 Bb6 34. Qe4 (34. Qb3 $142 {white should take advantage of black's
+unsafe king}) 34... Qxe4 35. fxe4 Rf8 36. R6a4 a5 37. Rxa5 $2 (37. Rf1 {should
+be easy win}) 37... Bxa5 38. Rxa5 Kc6 $2 (38... Rxf6 39. Ra1 b3 40. h5 Kc7 41.
+g4 Rb6 42. g5 Kd7 {is difficult for white to find a win here.}) 39. Rxe5 (39.
+Ra1 {should be winning}) 39... Rxf6 40. Ra5 (40. h5 b3 41. Rd5 Rd6 42. Rf5 Rd2+
+43. Kh3 {should wins}) 40... Kb6 (40... Rf8 41. Ra1 {should also win}) 41. Ra1
+Kc5 42. e5 Re6 43. Kf3 Kd4 44. Kf4 b3 45. Rb1 Kc3 46. Kf5 $18 Re8 47. e6 Rf8+
+48. Ke5 Rf3 49. g4 Re3+ 50. Kf5 Kc2 51. Rf1 b2 52. g5 $2 (52. Rf2+ Kc3 53. Rxb2
+Kxb2 {is simple win}) 52... Rf3+ 53. Rxf3 b1=Q 54. Rf4 $2 (54. e7 $8 $18) 54...
+Qb5+ $11 55. Kf6 Qc6 $2 (55... Qb8 $11) 56. g6 $2 (56. Rf2+ {is winning}) 56...
+Qd6 $2 (56... Qc3+ {is draw}) 57. Rc4+ $2 (57. Rf2+ {is winning}) 57... Kd3 $11
+58. Rc8 Qf4+ 59. Kg7 Qxh4 60. Kf7 Qf4+ {White lose on time in the drawn
+position} 0-1
 
 [Event "4th Parsvnath International"]
 [Site "?"]
@@ -1198,6 +1231,77 @@ Nxe5 f6 13. Qh5+ g6 14. Nxg6 hxg6 15. Qxh8 cxd4 $13) 12. d5 Qb6 13. Nc3 Nf6 14.
 Qe2 Bd7 15. d6 e6 $4 (15... O-O-O $14) 16. Bxf6 gxf6 17. Nd5 $18 Qa5 18. Nxf6+
 Kd8 19. Nxd7 Bg7 20. Nde5 Kc8 21. Nxf7 Kb8 22. Nxh8 Bxh8 23. Qxe6 Bxb2 24. d7
 Ka7 25. Qe7 Rd8 26. Ne5 Bxe5 27. Qxe5 Qb6 28. Qd6 $4 0-1
+
+[Event "4th Parsvnath International"]
+[Site "?"]
+[Date "2006.01.19"]
+[Round "7"]
+[White "Vikas R Sharma"]
+[Black "Hemant Sharma"]
+[Result "1/2-1/2"]
+[ECO "D58"]
+[BlackElo "2023"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "74"]
+[TimeControl "60"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 e6 4.
+Nc3 Be7 5. Bg5 O-O 6. e3 h6 7. Bh4 b6 8. Bd3 dxc4 9. Bxc4 Bb7 10. O-O Ne4 11.
+Bxe7 Qxe7 12. Rc1 Rc8 13. Bd3 Nxc3 14. Rxc3 c5 15. Qc2 Nd7 16. Be4 Bxe4 17.
+Qxe4 cxd4 18. Nxd4 Nc5 19. Qc2 Qd7 20. Rc1 a5 21. Nb3 Rab8 22. Nxc5 Rxc5 23.
+Rxc5 bxc5 24. b3 Rd8 25. h3 Qd2 26. a3 Qxc2 27. Rxc2 Rc8 28. Kf1 Kf8 29. Ke2
+Ke7 30. b4 axb4 31. axb4 Kd6 32. Rd2+ Ke7 33. Rc2 Kd6 34. Rd2+ Kc6 35. bxc5 Rc7
+36. Rd8 Kxc5 37. Rg8 f6 1/2-1/2
+
+
+[Event "4th Parsvnath International"]
+[Site "?"]
+[Date "2006.01.20"]
+[Round "8"]
+[White "Vikas R Sharma"]
+[Black "Swayams Mishra"]
+[Result "0-1"]
+[ECO "D44"]
+[BlackElo "2061"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "112"]
+
+1. d4 d5 2. Nf3 Nf6 3. c4 c6 4. Nc3 e6 5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5
+9. Nxg5 hxg5 10. Bxg5 Nbd7 11. exf6 Bb7 12. g3 c5 13. d5 Qb6 14. Bg2 O-O-O 15.
+O-O b4 16. Na4 Qa6 17. a3 b3 18. Nc3 Nb6 19. Qg4 Nxd5 20. Nxd5 Bxd5 21. Bxd5
+Rxd5 22. Rad1 Rxd1 23. Rxd1 c3 24. bxc3 $2 (24. Qf3 Bd6 25. Qxc3 $16) 24... Bd6
+25. Qe4 Kc7 26. h4 $2 (26. Bf4) 26... Qc6 $2 (26... b2) 27. Qc4 $2 (27. Qe2 {
+stops b2}) 27... Rb8 28. Rb1 b2 29. Qe2 Qb5 30. Qc2 Qb3 31. Qh7 Kc6 32. h5 Qxc3
+33. Qxf7 Qd3 34. Qg6 c4 35. Qxd3 cxd3 36. Bd2 Be5 37. g4 Bxf6 38. g5 Rg8 39. f4
+Bd4+ $17 40. Kg2 Kd5 41. Kf3 Kc4 42. Ke4 Bc3 43. Bxc3 Kxc3 44. Rxb2 Kxb2 45.
+Kxd3 $11 Kxa3 46. h6 Rh8 47. Ke4 Kb4 48. Ke5 $2 (48. f5 $1 exf5+ 49. Kxf5 a5
+50. g6 Rxh6 {should be draw}) 48... a5 $19 49. Kf6 a4 50. Kg7 Rc8 51. h7 a3 52.
+h8=Q Rxh8 53. Kxh8 a2 54. g6 a1=Q+ 55. g7 Qh1+ 56. Kg8 Qh6 0-1
+
+[Event "4th Parsvnath International"]
+[Site "?"]
+[Date "2005.01.21"]
+[Round "9"]
+[White "Anmol Rajdan"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "B53"]
+[WhiteElo "1913"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "100"]
+[TimeControl "60"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Qxd4 Nc6 5. Bb5 Bd7 6. Bxc6 Bxc6 7. Nc3 Nf6 8.
+Bg5 e6 9. O-O-O Be7 10. Rhe1 O-O 11. Kb1 Qc7 12. Qd2 Rfd8 13. Nd4 Rab8 14. f3
+b5 15. g4 b4 16. Nce2 Ba8 17. h4 a5 18. Ng3 a4 19. h5 (19. Nh5 Ne8 20. Bxe7
+Qxe7 $11) 19... Ne8 20. Bxe7 Qxe7 21. g5 Nc7 22. f4 Nb5 $2 (22... a3) 23. Qxb4
+Qe8 24. Nxb5 Rxb5 25. Qd2 $2 (25. Qa3 $16 {with no compensation for black})
+25... Rdb8 $44 26. b3 $2 (26. Qxd6 Rxb2+ 27. Ka1 Rxc2 28. Rb1 $13) 26... axb3
+27. cxb3 Rxb3+ $1 28. axb3 Rxb3+ 29. Qb2 $2 (29. Kc1 Qc6+ 30. Qc2 Rc3 $17)
+29... Rxb2+ $19 30. Kxb2 f6 31. gxf6 gxf6 32. Kc3 d5 33. exd5 Bxd5 34. Kd3 Qb5+
+35. Ke3 Qb3+ 36. Rd3 Qb6+ 37. Kd2 Qb4+ 38. Rc3 Qxf4+ 39. Ree3 f5 40. Ne2 Qh6
+41. Nd4 f4 42. Rh3 e5 43. Rc8+ Kf7 44. Rc7+ Kf6 45. Rd7 Qg5 46. Rd6+ Ke7 47.
+Rxd5 Qg2+ 48. Ne2 Qxd5+ 49. Ke1 Qg2 50. Ra3 f3 0-1
 
 [Event "Indore Open Chess Tournament"]
 [Site "?"]

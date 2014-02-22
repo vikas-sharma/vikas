@@ -16,6 +16,8 @@ ext {
 	springSecurityVersion = "3.2.0.RELEASE"
 	hibernateVersion = "4.3.1.Final"
 	jacksonVersion = "2.3.0"
+	tilesVersion = "3.0.3"
+	jasyptVersion = "1.9.1"
 }
 
 task deployToTomcat(dependsOn: "build") << {
@@ -77,7 +79,7 @@ dependencies {
 
     // Hibernate dependencies
     compile "org.hibernate:hibernate-core:$hibernateVersion"
-    compile "org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final"
+    compile "org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final"
 
     compile ("org.hibernate:hibernate-validator:4.3.1.Final") {
         exclude group: "javax.xml.bind", module: "jaxb-api"
@@ -98,11 +100,12 @@ dependencies {
     compile "commons-codec:commons-codec:1.9"
 
     compile "org.apache.tiles:tiles-request-api:1.0.3"
-    compile "org.apache.tiles:tiles-api:3.0.3"
-    compile "org.apache.tiles:tiles-core:3.0.3"
-    compile "org.apache.tiles:tiles-servlet:3.0.3"
-    compile "org.apache.tiles:tiles-jsp:3.0.3"
-    compile "org.apache.tiles:tiles-el:3.0.3"
+
+    compile "org.apache.tiles:tiles-api:$tilesVersion"
+    compile "org.apache.tiles:tiles-core:$tilesVersion"
+    compile "org.apache.tiles:tiles-servlet:$tilesVersion"
+    compile "org.apache.tiles:tiles-jsp:$tilesVersion"
+    compile "org.apache.tiles:tiles-el:$tilesVersion"
 
     compile "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
     compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
@@ -111,8 +114,8 @@ dependencies {
 
     compile "junit:junit:4.11"
 
-    compile "org.jasypt:jasypt:1.9.1"
-    compile "org.jasypt:jasypt-spring31:1.9.1"
+    compile "org.jasypt:jasypt:$jasyptVersion"
+    compile "org.jasypt:jasypt-spring31:$jasyptVersion"
 
     compile "net.tanesha.recaptcha4j:recaptcha4j:0.0.7"
 

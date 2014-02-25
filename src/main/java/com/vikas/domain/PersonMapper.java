@@ -31,6 +31,11 @@ public class PersonMapper implements RowMapper<Person> {
 		person.setAuthKey(rs.getInt("AUTH_KEY"));
 		person.setStatus(rs.getString("STATUS"));
 
+		PersonRole personRole = new PersonRole();
+		personRole.setPerson(person);
+		personRole.setRole(rs.getInt("ROLE"));
+		person.setPersonRole(personRole);
+
 		return person;
 	}
 }

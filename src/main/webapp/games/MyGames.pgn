@@ -1,3 +1,188 @@
+[Event "Late prof Alurkar Memorial Rapid"]
+[Site "?"]
+[Date "2014.02.16"]
+[Round "1"]
+[White "Vikas R Sharma"]
+[Black "guest"]
+[Result "1-0"]
+[ECO "C70"]
+[WhiteElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "29"]
+[TimeControl "45"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 d6 6. O-O Na5 7. d4 Bg4 $2 (7...
+exd4 8. Qxd4 Bb7 9. Bg5 Ne7 10. Re1 $14) 8. dxe5 dxe5 $4 (8... Bxf3 9. Qxf3
+Nxb3 10. axb3 dxe5 11. Nc3 $16) 9. Bxf7+ $18 Ke7 10. Qe1 $1 Bxf3 11. Bxg8 h6
+12. Qxa5 Rxg8 13. Qa3+ Kf6 14. Qxf3+ Kg6 15. Qf5# 1-0
+
+[Event "Late prof Alurkar Memorial Rapid"]
+[Site "?"]
+[Date "2014.02.16"]
+[Round "2"]
+[White "guest"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "D92"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "50"]
+[TimeControl "45"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. g3 $2 (6. cxd5 $2 Nxd5 7.
+Nxd5 Qxd5 8. Bxc7 Nc6 9. e3 Bf5 10. Be2 (10. a3 Rac8 11. Bg3 Bc2 12. Qe2 Na5
+13. Nd2 e5 14. Qb5 Qxb5 15. Bxb5 exd4 16. exd4 Bxd4 $17) 10... Rac8 11. Bg3
+Qa5+ 12. Qd2 (12. Kf1 Nb4 $44) 12... Nb4 13. O-O Rc2 14. Qe1 Rxb2 15. Nh4 Be4
+$15) (6. e3 {is the main line}) 6... c5 (6... dxc4) 7. e3 $2 (7. dxc5 Ne4 $5 8.
+Nxd5 Bxb2 9. Rb1 Bc3+ 10. Bd2 (10. Nxc3 Nxc3 11. Qxd8 Rxd8 12. Rc1 Nxa2) 10...
+Bg7 11. Bg2 Na6) 7... Nc6 8. dxc5 Qa5 (8... Ne4 $1 9. Rc1 Bg4 10. cxd5 Bxc3+
+11. bxc3 Bxf3 12. Qxf3 Qxd5 $15) 9. Qb3 $2 (9. Rc1 dxc4 10. Qa4 Qxc5 11. Qxc4
+Qh5 12. Bg2 Be6 $15) 9... dxc4 $2 (9... Ne4 10. Rc1 dxc4 11. Qxc4 Nxc3 12. bxc3
+e5 13. Bg5 h6 14. Bh4 Be6 $19) 10. Bxc4 $2 (10. Qxc4) 10... Ne4 11. Rc1 (11.
+O-O Nxc3 12. bxc3 e5 13. Bg5 h6 14. Nh4 Qxc5 15. Nxg6 Na5 16. Be7 Qxc4 17. Qxc4
+Nxc4 18. Nxf8 Bxf8 $19) 11... e5 12. Ng5 Nxg5 13. Bxg5 h6 14. Bh4 g5 15. Bxg5
+hxg5 16. h4 g4 17. Kf1 Qb4 18. Ne4 Qxb3 19. Bxb3 Kh8 20. h5 f5 21. Ng5 Bh6 22.
+Nf7+ Kg7 23. Rd1 Rxf7 24. Bxf7 Kxf7 25. Rd6 Be6 0-1
+
+[Event "Late prof Alurkar Memorial Rapid"]
+[Site "?"]
+[Date "2014.02.16"]
+[Round "3"]
+[White "Vikas R Sharma"]
+[Black "Sagar Patil"]
+[Result "1-0"]
+[ECO "C14"]
+[WhiteElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "75"]
+[TimeControl "45"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e5 Nfd7 6. Bxe7 Qxe7 7. f4 a6 8. Nf3
+O-O 9. Qd2 c5 10. O-O-O Nc6 11. g4 (11. dxc5 {is the opening move}) 11... b5
+12. Qe3 cxd4 13. Nxd4 Qc5 14. Qg1 $2 (14. Nce2) 14... Nxd4 15. Qxd4 Bb7 16. Bg2
+Rac8 17. Rhe1 a5 $2 (17... b4 18. Qxc5 Nxc5 19. Ne2 f6 $11) 18. Qxc5 Rxc5 19.
+a3 $2 (19. Ne4 dxe4 20. Rxd7 Rfc8 21. c3 $14) 19... Rfc8 20. Rd2 Nb6 $2 (20...
+b4 21. axb4 axb4 22. Ne2 Ra8 23. Rd4 Ra1+ 24. Kd2 Rxe1 25. Kxe1 Ba6 26. Rxb4
+Bxe2 27. Kxe2 Rxc2+ $15) 21. Bf1 Nc4 22. Bxc4 Rxc4 23. Nxb5 Rxf4 24. Nd6 Rb8
+25. h3 Ba6 26. Rg2 f6 27. exf6 Rxf6 28. g5 Rf1 29. Rxf1 Bxf1 30. Rg3 Ba6 $2 (
+30... d4) 31. Re3 Kf8 $2 (31... Rb6 32. Rxe6 Bb5 $1 33. c4 $1 dxc4 (33... Bd7
+34. c5 Rc6 35. Re7 Rxc5+ 36. Kd2 Rc7 37. b4 $18 {Black in Zugzwang}) 34. Re5
+Bd7 35. Nxc4 Rc6 36. b3 Be6 37. Rxa5 $14) 32. Rxe6 $16 Bf1 33. Re3 Bg2 34. Rg3
+Rd8 35. Nb7 Rb8 36. Nxa5 Be4 37. Nc6 Rc8 38. Nd4 {wins after some moves.} 1-0
+
+[Event "Late prof Alurkar Memorial Rapid"]
+[Site "?"]
+[Date "2014.02.16"]
+[Round "4"]
+[White "Vikas R Sharma"]
+[Black "Ketan Khaire"]
+[Result "1-0"]
+[ECO "C15"]
+[WhiteElo "2010"]
+[BlackElo "2098"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "113"]
+[TimeControl "45"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Ne2 Nf6 5. e5 Ne4 6. a3 Nxc3 7. Nxc3 Bxc3+ 8.
+bxc3 c5 (8... O-O) 9. Qg4 g6 10. Be2 h5 11. Qf4 Nc6 12. O-O c4 13. a4 $6 {this
+makes pawn vulnerable to attack and give black a chance to create a-pawn
+passer in the endgame.} Ne7 14. Qf6 Rh7 15. Bg5 Nc6 16. Qxd8+ Nxd8 17. Bxd8
+Kxd8 {good bishop vs bad bishop. but, how to break the closed position?} 18. f4
+Bd7 19. Kf2 Ke7 20. Kg3 Bc6 21. Kh4 Rhh8 22. a5 a6 23. Kg5 Rag8 24. Rfb1 Bb5
+25. Rh1 Rb8 26. g4 hxg4 27. Kxg4 Kd7 28. h4 Rh7 29. Kg5 Rbh8 30. Rab1 Kc7 {
+dead draw after Ke7. I appreciate my opponent for fighting instead of draw.}
+31. h5 gxh5 32. Rxh5 Rg8+ 33. Kf6 Rg6+ 34. Ke7 Rhg7 35. Rh8 $1 {only move to
+save the game} f5+ 36. Kf8 Rd7 37. Bh5 (37. Rbh1 Rg3 38. R1h6 Rxc3 39. Bh5 Rxc2
+40. Bf7 Rd8+ 41. Ke7 Rxh8 42. Rxh8 Bd7 43. Bxe6 Bxe6 44. Kxe6 Rd2 45. Kxd5 c3
+46. Rh1) 37... Rg3 (37... Rg2 38. Rh6 Rxc2 39. Rxe6 Rxc3 40. Be8 Rd8 41. Re7+
+Kc8 42. Kf7 Bxe8+ 43. Rxe8 Rxe8 44. Kxe8 {should be draw}) 38. Rh6 Rd8+ (38...
+Rh3 39. Rg1) 39. Ke7 Rxc3 40. Kxe6 Rxc2 41. Rh7+ Kb8 42. Bf3 Bc6 43. Kxf5 Rd2
+$2 (43... Rf2 44. Bh5 Rf8+ 45. Rf7 Rxf7+ 46. Bxf7 $13) 44. e6 Rxd4 45. e7 Re8 (
+45... Rg8 46. Rf7 Rc8 47. Rf8 Rd3 48. Bg4 {should win}) (45... Rc8 46. Ke5 $18)
+46. Bh5 $18 Bd7+ 47. Ke5 Re4+ 48. Kd6 Bf5 49. Bxe8 Bxh7 50. Rh1 Bf5 51. Bd7 Bg6
+52. Be6 Be8 53. Rh8 Ka7 54. Rxe8 c3 55. Rc8 Rc4 56. e8=Q c2 57. Ra8# 1-0
+
+[Event "Late prof Alurkar Memorial Rapid"]
+[Site "?"]
+[Date "2014.02.16"]
+[Round "5"]
+[White "Kiran Panditrao"]
+[Black "Vikas R Sharma"]
+[Result "1-0"]
+[ECO "B99"]
+[WhiteElo "2069"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "77"]
+[TimeControl "45"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 e6 7. f4 Be7 8. Qf3
+Qc7 9. O-O-O Nbd7 10. Bd3 h6 11. Bh4 g5 12. fxg5 Ne5 13. Qe2 Nfg4 14. Nf3 hxg5
+15. Bg3 Nxf3 16. gxf3 Ne5 17. h4 gxh4 18. f4 Nxd3+ 19. Rxd3 Bd7 20. Qe1 h3 $2 (
+20... Bb5 21. Rd1 h3 22. f5 Bc4 $13) 21. Bf2 d5 $2 {too risky move. overlooked
+white's 25th move in the game.} (21... Bf6 22. Rdxh3 Rxh3 23. Rxh3 O-O-O) 22.
+exd5 Qxf4+ 23. Kb1 O-O-O (23... Qf5 $16) 24. Bg3 $18 Qb4 (24... Qf5 25. Ne4 e5
+26. Rf1 Qh5 27. d6 Bh4 28. Qa5 Kb8 29. Nc5 Ka7 30. Rb3 Bc6 31. Qb6+ Ka8 32.
+Nxb7 Qe2 33. Re1 Qc4 34. Nxd8 $18) 25. Qe5 $18 Bd6 26. Qxd6 Qxd6 27. Bxd6 Rdg8
+28. b3 e5 29. Bxe5 Rh5 30. Bh2 Rg4 31. Rg3 Rxg3 32. Bxg3 Rg5 33. Rg1 f5 34. Bh2
+Rxg1+ 35. Bxg1 f4 36. Kc1 f3 37. Ne4 Kd8 38. Kd2 Bf5 39. Nf2 1-0
+
+[Event "Late prof Alurkar Memorial Rapid"]
+[Site "?"]
+[Date "2014.02.15"]
+[Round "6"]
+[White "guest"]
+[Black "Vikas R Sharma"]
+[Result "0-1"]
+[ECO "B87"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "86"]
+[TimeControl "45"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bc4 e6 7. Bb3 b5 8. O-O
+Be7 9. Qd3 $2 (9. Qf3 {is the main line}) 9... O-O 10. h3 Qc7 11. Be3 Nbd7 12.
+f3 Nc5 13. Qd2 Bb7 14. Rfd1 Rac8 15. a3 Nxb3 16. Nxb3 Nd7 (16... d5 17. exd5
+Nxd5 18. Nxd5 Bxd5 $15) 17. Bd4 Nb6 $2 (17... f5 $1 18. exf5 Rxf5 19. Re1 e5
+20. Bf2 Nb6 $15) 18. Na5 Ba8 19. Qf2 Nd7 20. Nb3 Bf6 (20... e5 21. Be3 f5 22.
+exf5 Rxf5 $15) 21. Qg3 (21. Bxf6 Nxf6 $11) 21... Ne5 22. Rd2 $2 Qe7 $15 23. Rb1
+$2 (23. Na5 Qd8 $1) 23... Bh4 24. Qf4 $2 (24. Qh2 Nc4 25. Re2 e5 26. Nd5 Bxd5
+27. exd5 Qb7 $17) 24... Bg5 $19 25. Qg3 Bxd2 26. Nxd2 f6 27. Nb3 Nc4 28. Ne2 d5
+29. exd5 e5 30. Bc3 Bxd5 31. Bb4 Qa7+ 32. Qf2 Qxf2+ 33. Kxf2 Rfd8 34. Nc3 Bf7
+35. Ne4 Bg6 36. Bc3 Bxe4 37. fxe4 Nxa3 38. Rc1 Nc4 39. Ke2 Nd6 40. Kf3 b4 41.
+Bxb4 Nxe4 42. Ba5 Ng5+ 43. Ke3 Rd6 {won after few moves} 0-1
+
+[Event "Late prof Alurkar Memorial Rapid"]
+[Site "?"]
+[Date "2014.02.16"]
+[Round "7"]
+[White "Vikas R Sharma"]
+[Black "guest"]
+[Result "1-0"]
+[ECO "C88"]
+[WhiteElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "101"]
+[TimeControl "45"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. d4
+exd4 9. e5 Ne8 10. Nxd4 Nxd4 11. Qxd4 c5 12. Qe4 Nc7 13. c3 $2 (13. c4 {is the
+line}) 13... d5 14. exd6 Bxd6 15. Rd1 (15. Be3) 15... Qf6 $1 16. Bc2 (16. Rxd6
+$2 {is a trap} Qxd6 17. Bf4 Qb6 18. Bxc7 Qxc7 19. Qxa8 Bb7 20. Qa7 Ra8 $17)
+16... g6 17. Nd2 $2 (17. Qf3 {is the only move}) 17... Bf5 18. Qf3 Qe5 (18...
+Bxh2+ 19. Kf1 Be5 20. Bxf5 Qxf5 21. Qxf5 gxf5 22. Nf3 $44) 19. Bxf5 Qxh2+ 20.
+Kf1 gxf5 21. Qh3 (21. Qxf5 Qh1+ 22. Ke2 Rfe8+ 23. Ne4 Qxg2 24. Be3 Qxe4 25.
+Qxe4 Rxe4 26. Rxd6 $44) 21... Qxh3 22. gxh3 Rad8 23. Nf3 Be7 24. Bh6 Rxd1+ 25.
+Rxd1 Rd8 26. Re1 Bf6 27. Ne5 Re8 (27... Ne6 $15) 28. Nd7 Rxe1+ 29. Kxe1 Be7 30.
+Ke2 f6 31. Kd3 Kf7 32. c4 Ne6 $2 {black goes into wrong direction to trap the
+bishop.} 33. Nb8 bxc4+ 34. Kxc4 f4 $2 35. Nxa6 $16 Bd6 (35... Kg6 36. Kd5) 36.
+a4 Ke7 37. a5 Kd7 38. b4 cxb4 39. Nxb4 Nd8 (39... Bxb4 40. Kxb4 Kc6 41. Kc4 Kd6
+42. a6 Kc6 43. a7 Kb7 44. Kd5 Nd8 45. Bxf4 Kxa7 46. Kd6 Kb7 47. Ke7 Kc8 48.
+Kxf6 Kd7 49. h4 Ke8 50. Bh6 Nc6 51. Kg7 $18) 40. Nd5 Be5 41. Bxf4 Kc6 42. Nb4+
+Kb7 43. Bxe5 fxe5 44. Kd5 $18 Nf7 45. h4 Nh6 46. f3 Nf5 47. h5 Ng3 48. Kxe5
+Nxh5 49. f4 Ng7 50. f5 h5 51. f6 1-0
+
 [Event "Above 2000"]
 [Site "?"]
 [Date "2012.07.14"]

@@ -71,7 +71,7 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public Person findByUsername(String username) {
 
-		String sql = "SELECT * FROM PERSON WHERE NAME = ?";
+		String sql = "SELECT * FROM person p INNER JOIN person_role pr ON p.person_id = pr.person_id WHERE name = ?";
 
 		Person person = null;
 		try {

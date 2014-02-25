@@ -116,7 +116,6 @@ dependencies {
 
     compile "org.jasypt:jasypt:$jasyptVersion"
     compile "org.jasypt:jasypt-spring31:$jasyptVersion"
-    compile "org.jasypt:jasypt-springsecurity3:$jasyptVersion"
 
     compile "net.tanesha.recaptcha4j:recaptcha4j:0.0.7"
 

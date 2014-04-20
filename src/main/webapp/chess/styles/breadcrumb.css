@@ -1,0 +1,43 @@
+.breadCrumb
+{
+ display: block;
+ height: 21px;
+ width: auto;
+ padding:5px;
+ border:solid 1px #dedede;
+ background:#fff;
+}
+.breadCrumb ul
+{
+ margin: 0;
+ padding: 0;
+ height: 21px;
+ display: block;
+}
+.breadCrumb ul li
+{
+ display: block;
+ float: left;
+ position: relative;
+ height: 21px;
+ overflow: hidden;
+ line-height: 21px;
+ margin: 0px 6px 0px 0;
+ padding: 0px 10px 0px 0;
+ font-size: .9167em;
+ background: url(../../images/rightarrow.gif) no-repeat 100% 0;
+}
+.breadCrumb ul li a
+{
+ display: block;
+ position: relative;
+ height: 21px;
+ line-height: 21px;
+ overflow: hidden;
+ float: left;
+}
+.breadCrumbHolder
+{
+ margin:0 0 -20px 0;
+}
+.breadcurmbdecoration{text-decoration: none;font-size: 12px;color:#0072C6;cursor: pointer;}

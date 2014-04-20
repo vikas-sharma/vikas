@@ -28,7 +28,7 @@
 	<legend>
 		<a href="iccVideos.htm"><spring:message code="home_link_iccVideos" /></a>
 	</legend>
-	<spring:message code="title_iccVideos" />
+	<spring:message htmlEscape="false" code="title_iccVideos" />
 </fieldset>
 
 <p></p>
@@ -37,5 +37,5 @@
 	<legend>
 		<a href="favourites.htm">Favourites</a>
 	</legend>
-	Favourite Chess Links
+	<spring:message code="title_favouriteChessLinks" />
 </fieldset>

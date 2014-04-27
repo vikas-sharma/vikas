@@ -29,7 +29,7 @@ import com.vikas.domain.PersonRole;
 @Transactional
 public class LoginServiceImpl implements LoginService {
 
-	@Value("#{myProps['context.path']}")
+	@Value("${context.path}")
 	private String contextPath;
 
 	@Autowired

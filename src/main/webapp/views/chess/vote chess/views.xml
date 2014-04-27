@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition extends="default" name="voteChess">
+		<put-attribute name="import_files" value="/views/chess/voteChess/import_files.jsp"/>
+	</definition>
+
+	<definition extends="voteChess" name="listGames">
+		<put-attribute name="body" value="/views/chess/voteChess/listGames.jsp" />
+	</definition>
+
+	<definition extends="voteChess" name="join">
+		<put-attribute name="body" value="/views/chess/voteChess/join.jsp" />
+	</definition>
+
+	<definition extends="voteChess" name="opponentTurn">
+		<put-attribute name="body" value="/views/chess/voteChess/opponentTurn.jsp" />
+	</definition>
+
+	<definition extends="voteChess" name="myTurn">
+		<put-attribute name="body" value="/views/chess/voteChess/myTurn.jsp" />
+	</definition>
+
+	<definition extends="voteChess" name="myTurnVoted">
+		<put-attribute name="body" value="/views/chess/voteChess/myTurnVoted.jsp" />
+	</definition>
+
+</tiles-definitions>

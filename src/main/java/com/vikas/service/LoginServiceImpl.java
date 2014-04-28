@@ -8,6 +8,7 @@ import java.util.Locale;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.mail.MailException;
 import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
@@ -28,6 +29,9 @@ import com.vikas.domain.PersonRole;
 @Service
 @Transactional
 public class LoginServiceImpl implements LoginService {
+
+	@Autowired
+	private ReloadableResourceBundleMessageSource messageSource;
 
 	@Value("${context.path}")
 	private String contextPath;
@@ -78,19 +82,14 @@ public class LoginServiceImpl implements LoginService {
 
 	private void sendActivationMail(Person person) {
 
-		StringBuilder message = new StringBuilder();
-		message.append("Dear ")
-				.append(person.getFirstName())
-				.append(" ")
-				.append(person.getLastName())
-				.append(", welcome to chessband.com")
-				.append("\n\nclick or copy this link to your browser to activate your account:\n")
-				.append(contextPath).append("/activate.htm?pid=")
-				.append(person.getPersonId()).append("&authKey=")
-				.append(person.getAuthKey())
-				.append("\n\nRegards\n\nVikas Sharma");
+		Object[] args = new Object[] { person.getFirstName(),
+				person.getLastName(), contextPath, person.getPersonId(),
+				person.getAuthKey() };
 
-		sendMail(person, message.toString());
+		String message = messageSource.getMessage("mail.activation", args,
+				Locale.US);
+
+		sendMail(person, message);
 	}
 
 	@Override
@@ -124,20 +123,15 @@ public class LoginServiceImpl implements LoginService {
 			}
 		}
 
-		StringBuilder message = new StringBuilder();
-		message.append("Forgot your password, ")
-				.append(p.getFirstName())
-				.append(" ")
-				.append(p.getLastName())
-				.append("\n\nWe received a request to reset the password for your account.")
-				.append("\n\nTo reset your password, click on the link below (or copy and paste the URL into your browser):\n")
-				.append(contextPath)
-				.append("/chessband/password_reset.htm?pid=")
-				.append(p.getPersonId()).append("&authKey=")
-				.append(p.getAuthKey()).append("\n\nRegards\n\nVikas Sharma");
+		Object[] args = new Object[] { person.getFirstName(),
+				person.getLastName(), contextPath, person.getPersonId(),
+				person.getAuthKey() };
+
+		String message = messageSource.getMessage("mail.activation", args,
+				Locale.US);
 
 		try {
-			sendMail(p, message.toString());
+			sendMail(p, message);
 		} catch (MailException e) {
 			return false;
 		}

@@ -17,7 +17,7 @@ import com.vikas.dao.LoginDAOImpl;
 @Configuration
 @EnableTransactionManagement
 public class DbConfig {
-
+	
 	@Value("${database.driverClassName}")
 	private String driverClassName;
 
@@ -31,7 +31,7 @@ public class DbConfig {
 	private String password;
 
 	/**
-	 * t's not necessary to explicitly have the "destroyMethod" parameter on the
+	 * it's not necessary to explicitly have the "destroyMethod" parameter on the
 	 * Bean annotation because Spring will infer it. In this case, it will
 	 * notice that the DataSource bean has a close() method available and so
 	 * will automatically register it as the destroyMethod.
@@ -48,7 +48,6 @@ public class DbConfig {
 		ds.setPassword(password);
 
 		return ds;
-
 	}
 
 	@Bean

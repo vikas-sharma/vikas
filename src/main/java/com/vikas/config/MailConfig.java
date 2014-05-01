@@ -36,6 +36,12 @@ public class MailConfig {
 	@Value("${mail.subject}")
 	private String subject;
 
+	@Value("${mail.smtp.auth}")
+	private String smtpAuth;
+
+	@Value("${mail.smtp.debug}")
+	private String smtpDebug;
+
 	@Bean
 	public JavaMailSenderImpl mailSender() {
 
@@ -44,12 +50,11 @@ public class MailConfig {
 		mailSender.setPort(Integer.parseInt(port));
 		mailSender.setProtocol(protocol);
 		mailSender.setUsername(username);
-		mailSender.setPassword("password");
+		mailSender.setPassword(password);
 
 		Properties javaMailProperties = new Properties();
-		javaMailProperties.setProperty("mail.smtps.auth", "true");
-		javaMailProperties.setProperty("mail.smtps.starttls.enable", "true");
-		javaMailProperties.setProperty("mail.smtps.debug", "true");
+		javaMailProperties.setProperty("mail.smtp.auth", smtpAuth);
+		javaMailProperties.setProperty("mail.smtp.debug", smtpDebug);
 
 		mailSender.setJavaMailProperties(javaMailProperties);
 

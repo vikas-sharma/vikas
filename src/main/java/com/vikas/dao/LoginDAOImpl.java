@@ -63,7 +63,7 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public Person findByPID(long pid) {
 
-		String sql = "SELECT * FROM PERSON WHERE PERSON_ID = ?";
+		String sql = "SELECT * FROM person p INNER JOIN person_role pr ON p.person_id = pr.person_id WHERE PERSON_ID = ?";
 
 		return jdbcTemplate.queryForObject(sql, new PersonMapper(), pid);
 	}
@@ -87,7 +87,7 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public Person findByEmailAddress(String emailAddress) {
 
-		String sql = "SELECT * FROM PERSON WHERE EMAIL_ADDRESS = ? LIMIT 1";
+		String sql = "SELECT * FROM person p INNER JOIN person_role pr ON p.person_id = pr.person_id WHERE EMAIL_ADDRESS = ? LIMIT 1";
 
 		Person person = null;
 		try {

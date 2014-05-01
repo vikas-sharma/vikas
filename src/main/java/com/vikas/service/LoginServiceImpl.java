@@ -123,15 +123,8 @@ public class LoginServiceImpl implements LoginService {
 			}
 		}
 
-		Object[] args = new Object[] { person.getFirstName(),
-				person.getLastName(), contextPath, person.getPersonId(),
-				person.getAuthKey() };
-
-		String message = messageSource.getMessage("mail.activation", args,
-				Locale.US);
-
 		try {
-			sendMail(p, message);
+			sendActivationMail(p);
 		} catch (MailException e) {
 			return false;
 		}

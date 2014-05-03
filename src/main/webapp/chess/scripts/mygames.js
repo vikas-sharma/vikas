@@ -369,7 +369,7 @@ function changeFocusToCurrentMove() {
 	}
 
 	if (oldMoveNo != -1) {
-		document.getElementById('pgn_' + oldMoveNo).style.background = "#FEFDE8";
+		document.getElementById('pgn_' + oldMoveNo).style.background = "white";
 	}
 	document.getElementById('pgn_' + currentMoveNo).style.background = "gray";
 	oldMoveNo = currentMoveNo;
@@ -394,8 +394,8 @@ function filter(opt, length) {
 	if (opt == 'all') {
 		loadGame(1);
 	} else if (opt == 'imgm') {
-		loadGame(26);
+		loadGame(39);
 	} else {
-		loadGame(5);
+		loadGame(15);
 	}
 }

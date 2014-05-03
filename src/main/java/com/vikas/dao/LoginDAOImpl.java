@@ -63,7 +63,7 @@ public class LoginDAOImpl implements LoginDAO {
 	@Override
 	public Person findByPID(long pid) {
 
-		String sql = "SELECT * FROM person p INNER JOIN person_role pr ON p.person_id = pr.person_id WHERE PERSON_ID = ?";
+		String sql = "SELECT * FROM person p INNER JOIN person_role pr ON p.person_id = pr.person_id WHERE p.PERSON_ID = ?";
 
 		return jdbcTemplate.queryForObject(sql, new PersonMapper(), pid);
 	}

@@ -83,8 +83,9 @@ public class LoginServiceImpl implements LoginService {
 	private void sendActivationMail(Person person) {
 
 		Object[] args = new Object[] { person.getFirstName(),
-				person.getLastName(), contextPath, person.getPersonId(),
-				person.getAuthKey() };
+				person.getLastName(), contextPath,
+				String.valueOf(person.getPersonId()),
+				String.valueOf(person.getAuthKey()) };
 
 		String message = messageSource.getMessage("mail.activation", args,
 				Locale.US);

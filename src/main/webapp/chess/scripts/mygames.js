@@ -45,7 +45,16 @@ var playMode = false;
 
 var loading_flag = false;
 
+var lastKey = 0;
+
 function loadGame(gameNo) {
+
+	if (lastKey != 0) {
+		document.getElementById('game_' + lastKey).style.background = "white";
+	}
+	document.getElementById('game_' + gameNo).style.background = "gray";
+	lastKey = gameNo;
+
 	loading_flag = true;
 
 	$("#pgn_string").html("Loading...");
@@ -149,7 +158,7 @@ function goback() {
 	if (piece == PAWN && capturedPiece == EMPTY) { // if no piece on to square
 		var sq_diff = from_sq - to_sq;
 		if ((sq_diff == 7 || sq_diff == 9 || sq_diff == -7 || sq_diff == -9)) { // enpassant
-																				// move
+			// move
 			if (currentMoveNo % 2 == 0) { // white side
 				$("#square_" + (to_sq + 8)).append(bpawn);
 			} else {
@@ -242,7 +251,7 @@ function goforward(autoPlay) {
 		sq_diff = from_sq - to_sq;
 		if (piece == PAWN
 				&& (sq_diff == 7 || sq_diff == 9 || sq_diff == -7 || sq_diff == -9)) { // enpassant
-																						// move
+			// move
 			if (currentMoveNo % 2 == 0) { // white side
 				to_piece = $("#square_" + (to_sq + 8)).children("img");
 			} else {
@@ -366,17 +375,17 @@ function changeFocusToCurrentMove() {
 	oldMoveNo = currentMoveNo;
 }
 
-function filter(opt) {
+function filter(opt, length) {
 
-	for ( var i = 1; i <= 36; i++) {
+	for ( var i = 1; i <= length; i++) {
 		$("#game_" + i).show();
 		if (opt == 'imgm') {
-			if (i != 26 && i != 37) {
+			if (i != 39 && i != 51) {
 				$("#game_" + i).hide();
 			}
 		} else if (opt == 'fav') {
-			if (i != 2 && i != 9 && i != 14 && i != 21 && i != 22 && i != 26
-					&& i != 28 && i != 29 && i != 34 && i != 36 && i != 37) {
+			if (i != 15 && i != 22 && i != 27 && i != 34 && i != 35 && i != 39
+					&& i != 41 && i != 42 && i != 49 && i != 50 && i != 51) {
 				$("#game_" + i).hide();
 			}
 		}

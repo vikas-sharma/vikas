@@ -1003,15 +1003,15 @@ fxe6 Bd2 35. Rxa3 g6 36. Rxa6 Kg7 37. Ra7+ Kf6 38. Rf7+ Kg5 39. e7 Bxb4 40. Rf8
 [EventDate "2010.??.??"]
 [TimeControl "100/5400+30:0"]
 
-1. d4 {This was my first game against any GM} Nf6 2. c4 g6 3. Nc3 d5 4. cxd5
+1. d4 {This was my first game against a GM} Nf6 2. c4 g6 3. Nc3 d5 4. cxd5
 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 O-O 8. Ne2 c5 9. h4 {i got out of book here.
 } Nc6 10. Be3 Qa5 ({book says} 10... cxd4 11. cxd4 Qd6 12. Rc1 Rd8 13. d5 Ne5
 14. Qb3 Bd7) 11. Kf1 Rd8 12. Qb3 e6 13. h5 Qc7 ({
 during the game, i thought of playing} 13... cxd4 14. cxd4 Nxd4 15. Nxd4 Bxd4
 16. Bxd4 Rxd4 17. hxg6 hxg6 {and after} 18. Qe3 {
-i was thinking its winning for white. But i missed} Qe5 {
+i thought its winning for white. But i missed} Qe5 {
 black is simply a pawn up.}) 14. hxg6 hxg6 15. Bg5 Re8 $2 (15... Rd7 {
-will keep pressure on the d-file}) 16. Bd3 e5 17. d5 Na5 18. Qa3 f6 19. Be3 c4
+will maintain pressure on d-file}) 16. Bd3 e5 17. d5 Na5 18. Qa3 f6 19. Be3 c4
 20. Bc2 Bd7 21. g3 b6 22. Kg2 Kf7 23. f3 (23. f4 {
 was very aggressive. even though there is no direct threat from white}) 23...
 Rh8 24. g4 Rxh1 25. Rxh1 Rh8 26. Rxh8 Bxh8 27. Bh6 Qc5 $6 (27... Qd8 $1 $11)
@@ -1025,15 +1025,13 @@ Bf2 Bf8 68. Bg3 Bd6 69. Bh2 Ka6 70. Ng3 Bf8 71. Bg1 Kb6 72. Be3 Nd6 73. Bd1 Bd7
 74. Be2 Bb5 75. Nh5 Ne8 76. Kb2 Be7 77. Bf2 Bf8 78. Bf1 Be7 79. Bg3 Bd6 80. Bh2
 Be7 {
 the position is zugzwang and it should be draw if black keep playing carefully}
-81. a4 $4 Ba6 (81... Bxa4 {i should have simply taken this pawn with the
-threat of Bd1 next move. But, i did not calculate this move because first i
-got very tired after playing 80 accurate moves against a GM and secondly wrong
-assumption of GM cannot mistake and their might be some hidden agenda behind
-the move.}) 82. Kc2 {still the position is in zugzwang.} Bd6 83. Kd2 Kc7 84.
-Bg1 Kb6 85. Be3 Be7 {The idea behind playing Be7 whenever white bishop coming
-to e3 square was that i didnt want to take any risk after Nxf6  sacrifice and
-then Bxg5.} 86. Ke1 Kc7 87. Ng3 Bf8 88. Nf5 Kb6 89. Kf2 Nd6 90. Kg3 Ne8 91. Kh3
-Nd6 92. Ng3 Ne8 93. Nf5 Nd6 94. Bf2 Ne8 95. d6 $3 {
+81. a4 $4 Ba6 (81... Bxa4 {i should have taken the pawn with the threat of Bd1
+next move. But, did not calculate the move as i was very tired after playing
+80 accurate moves.}) 82. Kc2 {still the position is in zugzwang.} Bd6 83. Kd2
+Kc7 84. Bg1 Kb6 85. Be3 Be7 {The idea behind playing Be7 whenever white bishop
+coming to e3 square was that i didnt want to take any risk after Nxf6 sacrifice
+and then Bxg5.} 86. Ke1 Kc7 87. Ng3 Bf8 88. Nf5 Kb6 89. Kf2 Nd6 90. Kg3 Ne8
+91. Kh3 Nd6 92. Ng3 Ne8 93. Nf5 Nd6 94. Bf2 Ne8 95. d6 $3 {
 and white got a breakthrough at last!} Nxd6 96. Ne3 Bb7 97. Bxc4 Nxc4 98. Nxc4+
 Ka6 99. Nb2 Bc6 100. c4 Kb6 101. Kg2 Be7 102. Kf1 Bd7 103. Ke2 Be6 104. Kd3 Bd7
 105. Kc3 Bd6 106. Kb3 Be7 107. Nd1 Bc6 108. Nc3 Bf8 109. Nd5+ Bxd5 110. cxd5

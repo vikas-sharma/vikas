@@ -1,6 +1,6 @@
 package com.vikas.web;
 
-import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,7 +24,7 @@ public class MyGamesController {
 	@RequestMapping(value = "/myGames.htm", method = RequestMethod.GET)
 	public String viewGames(ModelMap model) {
 
-		HashMap<Integer, String> games = pgnParserService.listGames();
+		Map<Integer, String> games = pgnParserService.listGames();
 
 		model.addAttribute("games", games);
 		return "myGames";

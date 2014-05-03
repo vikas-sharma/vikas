@@ -1,10 +1,12 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <div id="breadcrumb">
-	<a href="${pageContext.request.contextPath}">Home</a> >>
-	<a href="${pageContext.request.contextPath}/chess/index.htm">Chess</a> >>
-	<a href="${pageContext.request.contextPath}/chess/myGames.htm">My Games</a>
+	<a href="${pageContext.request.contextPath}">Home</a> >> <a
+		href="${pageContext.request.contextPath}/chess/index.htm">Chess</a> >>
+	<a href="${pageContext.request.contextPath}/chess/myGames.htm">My
+		Games</a>
 	<hr />
 </div>
 
@@ -24,7 +26,7 @@
 
 			<H3>
 				Filter: <SELECT
-					ONCHANGE="filter(this.options[this.selectedIndex].value);">
+					ONCHANGE="filter(this.options[this.selectedIndex].value, <c:out value='${fn:length(games)}'/>);">
 					<OPTION VALUE="all" SELECTED>All games
 					<OPTION VALUE="imgm">Games against IM/GM
 					<OPTION VALUE="fav">My Favourite
@@ -36,7 +38,7 @@
 				<div id="game_${game.key}">
 					<a href="#"
 						onclick="loadGame(<c:out value='${game.key}'/>);return false;"><c:out
-							value='${game.key}. ${game.value}' /></a><BR />
+							value='${game.value}' /></a><BR />
 				</div>
 
 			</c:forEach>
@@ -62,17 +64,17 @@
 		</div>
 		<div id="pgn_string" class="pgn-window"></div>
 
-		<input id="beginBtn" type='image' src="/vikas/images/rewind.png"
+		<input id="beginBtn" type='image' src="/images/rewind.png"
 			alt='|<' onclick='javascript:begin()'> <input
-			id="backwardBtn" type='image' src="/vikas/images/prev.png"
+			id="backwardBtn" type='image' src="/images/prev.png"
 			alt='<' onclick='javascript:goback()'> <input id="playBtn"
-			type='image' src="/vikas/images/play.png" alt='>>'
+			type='image' src="/images/play.png" alt='>>'
 			onclick='javascript:play()'> <input id="pauseBtn"
-			type='image' src="/vikas/images/pause.png" alt='||'
+			type='image' src="/images/pause.png" alt='||'
 			onclick='javascript:pause()'> <input id="forwardBtn"
-			type='image' src="/vikas/images/next.png" alt='>'
+			type='image' src="/images/next.png" alt='>'
 			onclick='javascript:goforward()'> <input id="endBtn"
-			type='image' src="/vikas/images/fastf.png" alt='>|'
+			type='image' src="/images/fastf.png" alt='>|'
 			onclick='javascript:end()'>
 
 	</div>

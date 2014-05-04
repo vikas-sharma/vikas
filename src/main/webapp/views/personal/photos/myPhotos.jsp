@@ -18,17 +18,39 @@
 <div class="container">
 
 <div class="left-element">
-	<a href="#" onclick="loadAlbum(1);return false;">Scotland trip</a><BR/>
-	<a href="#" onclick="loadAlbum(2);return false;">Madame Tussauds</a><BR/>
-	<a href="#" onclick="loadAlbum(3);return false;">Wales trip</a><BR/>
-	<a href="#" onclick="loadAlbum(4);return false;">Ironbridge</a><BR/>
-	<a href="#" onclick="loadAlbum(5);return false;">zsl london zoo</a><BR/>
-	<a href="#" onclick="loadAlbum(6);return false;">London trip</a><BR/>
-	<a href="#" onclick="loadAlbum(7);return false;">Balaji</a><BR/>
-	<a href="#" onclick="loadAlbum(8);return false;">Snowfall</a><BR/>
-	<a href="#" onclick="loadAlbum(9);return false;">Telford garden</a><BR/>
-	<a href="#" onclick="loadAlbum(10);return false;">RAF museum</a><BR/>
-	<a href="#" onclick="loadAlbum(11);return false;">Football match</a><BR/>
+	<div id="photo_1">
+		<a href="#" onclick="loadAlbum(1);return false;">Scotland trip</a><BR/>
+	</div>
+	<div id="photo_2">
+		<a href="#" onclick="loadAlbum(2);return false;">Madame Tussauds</a><BR/>
+	</div>
+	<div id="photo_3">
+		<a href="#" onclick="loadAlbum(3);return false;">Wales trip</a><BR/>
+	</div>
+	<div id="photo_4">
+		<a href="#" onclick="loadAlbum(4);return false;">Ironbridge</a><BR/>
+	</div>
+	<div id="photo_5">
+		<a href="#" onclick="loadAlbum(5);return false;">zsl london zoo</a><BR/>
+	</div>
+	<div id="photo_6">
+		<a href="#" onclick="loadAlbum(6);return false;">London trip</a><BR/>
+	</div>
+	<div id="photo_7">
+		<a href="#" onclick="loadAlbum(7);return false;">Balaji</a><BR/>
+	</div>
+	<div id="photo_8">
+		<a href="#" onclick="loadAlbum(8);return false;">Snowfall</a><BR/>
+	</div>
+	<div id="photo_9">
+		<a href="#" onclick="loadAlbum(9);return false;">Telford garden</a><BR/>
+	</div>
+	<div id="photo_10">
+		<a href="#" onclick="loadAlbum(10);return false;">RAF museum</a><BR/>
+	</div>
+	<div id="photo_11">
+		<a href="#" onclick="loadAlbum(11);return false;">Football match</a><BR/>
+	</div>
 </div>
 
 <div class="right-element">
@@ -69,3 +91,7 @@
 
 </div>
 </div>
+
+<script>
+	loadAlbum(1);
+</script>

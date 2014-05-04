@@ -18,14 +18,30 @@
 <div class="container">
 
 <div class="left-element">
-	<a href="#" onclick="loadFamilyAlbum(1);return false;">Mummy Papaji</a><BR/>
-	<a href="#" onclick="loadFamilyAlbum(2);return false;">Ma Bapuji</a><BR/>
-	<a href="#" onclick="loadFamilyAlbum(3);return false;">Nanaji</a><BR/>
-	<a href="#" onclick="loadFamilyAlbum(4);return false;">Jijaji</a><BR/>
-	<a href="#" onclick="loadFamilyAlbum(5);return false;">Manas</a><BR/>
-	<a href="#" onclick="loadFamilyAlbum(6);return false;">My childhood</a><BR/>
-	<a href="#" onclick="loadFamilyAlbum(7);return false;">chacha-chachi marriage album</a><BR/>
-	<a href="#" onclick="loadFamilyAlbum(8);return false;">papaji foreign tours</a><BR/>
+	<div id="photo_1">
+		<a href="#" onclick="loadFamilyAlbum(1);return false;">Mummy Papaji</a><BR/>
+	</div>
+	<div id="photo_2">
+		<a href="#" onclick="loadFamilyAlbum(2);return false;">Ma Bapuji</a><BR/>
+	</div>
+	<div id="photo_3">
+		<a href="#" onclick="loadFamilyAlbum(3);return false;">Nanaji</a><BR/>
+	</div>
+	<div id="photo_4">
+		<a href="#" onclick="loadFamilyAlbum(4);return false;">Jijaji</a><BR/>
+	</div>
+	<div id="photo_5">
+		<a href="#" onclick="loadFamilyAlbum(5);return false;">Manas</a><BR/>
+	</div>
+	<div id="photo_6">
+		<a href="#" onclick="loadFamilyAlbum(6);return false;">My childhood</a><BR/>
+	</div>
+	<div id="photo_7">
+		<a href="#" onclick="loadFamilyAlbum(7);return false;">chacha-chachi marriage album</a><BR/>
+	</div>
+	<div id="photo_8">
+		<a href="#" onclick="loadFamilyAlbum(8);return false;">papaji foreign tours</a><BR/>
+	</div>
 </div>
 
 <div class="right-element">
@@ -57,3 +73,7 @@
 
 </div>
 </div>
+
+<script>
+	loadFamilyAlbum(1);
+</script>

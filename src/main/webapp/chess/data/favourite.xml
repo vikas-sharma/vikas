@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<favourite>
+	<head name="Online Chess">
+		<information>
+			<title>ICC</title>
+			<url>http://www.chessclub.com/</url>
+		</information>
+		<information>
+			<title>Chessbase</title>
+			<url>http://www.chessbase.com/</url>
+		</information>
+		<information>
+			<title>Chess</title>
+			<url>http://www.chess.com/</url>
+		</information>
+		<information>
+			<title>Chess Here</title>
+			<url>http://www.chesshere.com/</url>
+		</information>
+		<information>
+			<title>Chess World</title>
+			<url>http://www.chessworld.net</url>
+		</information>
+		<information>
+			<title>Time for Chess</title>
+			<url>http://www.timeforchess.com/</url>
+		</information>
+	</head>
+	<head name="Chess Theory">
+		<information>
+			<title>Chess Tempo</title>
+			<url>http://www.chesstempo.com/</url>
+		</information>
+		<information>
+			<title>Chessdom</title>
+			<url>http://www.chessdom.com/</url>
+		</information>
+		<information>
+			<title>ChessBomb</title>
+			<url>http://chessbomb.com/</url>
+		</information>
+		<information>
+			<title>GM Square</title>
+			<url>http://www.gmsquare.com/</url>
+		</information>
+		<information>
+			<title>Bookup Chess</title>
+			<url>http://www.bookup.com/</url>
+		</information>
+		<information>
+			<title>GM Chess</title>
+			<url>http://www.gmchess.com/</url>
+		</information>
+		<information>
+			<title>Chess Mentor</title>
+			<url>http://www.chessmentor.com/</url>
+		</information>
+	</head>
+	<head name="GrandMaster Sites">
+		<information>
+			<title>Vishy Anand</title>
+			<url>http://www.tnq.in/vishwa.html</url>
+		</information>
+		<information>
+			<title>Magnus Carlsen</title>
+			<url>http://www.magnuscarlsen.com/</url>
+		</information>
+		<information>
+			<title>Natalia Pogonina</title>
+			<url>http://pogonina.com/</url>
+		</information>
+		<information>
+			<title>Vladimar Kramnik</title>
+			<url>http://www.kramnik.com/</url>
+		</information>
+		<information>
+			<title>Alexandra Kosteniuk</title>
+			<url>http://kosteniuk.com/</url>
+		</information>
+		<information>
+			<title>Peter Svidler</title>
+			<url>http://www.psvidler.net</url>
+		</information>
+		<information>
+			<title>Nigel Davies</title>
+			<url>http://www.tigerchess.com/</url>
+		</information>
+		<information>
+			<title>Abhijit Kunte</title>
+			<url>http://kuntechessacademy.com/</url>
+		</information>
+		<information>
+			<title>Michael Adams</title>
+			<url>http://www.michaeladamschess.co.uk</url>
+		</information>
+		<information>
+			<title>Max Euwe</title>
+			<url>http://www.maxeuwe.nl</url>
+		</information>
+		<information>
+			<title>Gata Kamasky</title>
+			<url>http://www.01chess.com/</url>
+		</information>
+		<information>
+			<title>Simon Williams</title>
+			<url>http://www.gingergm.com/</url>
+		</information>
+	</head>
+	<head name="Forums">
+		<information>
+			<title>Talk Chess</title>
+			<url>http://talkchess.com/forum/index.php</url>
+		</information>
+		<information>
+			<title>Chess Ninja</title>
+			<url>http://www.chessninja.com/</url>
+		</information>
+		<information>
+			<title>Chess Arch</title>
+			<url>http://www.chessarch.com/</url>
+		</information>
+	</head>
+	<head name="Blogs">
+		<information>
+			<title>GM Igor Smirnov</title>
+			<url>http://checkmate64.blogspot.ro</url>
+		</information>
+		<information>
+			<title>Sagar Shah</title>
+			<url>http://sagarteacheschess.blogspot.in</url>
+		</information>
+	</head>
+	<head name="Organization Sites">
+		<information>
+			<title>FIDE</title>
+			<url>http://www.fide.com/</url>
+		</information>
+		<information>
+			<title>ICCF</title>
+			<url>http://www.iccf.com/</url>
+		</information>
+		<information>
+			<title>Live Chess Ratings</title>
+			<url>http://www.2700chess.com/</url>
+		</information>
+		<information>
+			<title>Indian Chess Fed</title>
+			<url>http://www.aicf.in</url>
+		</information>
+		<information>
+			<title>Mumbai Chess Fed</title>
+			<url>http://www.mumbaichess.org</url>
+		</information>
+		<information>
+			<title>Delhi Chess Fed</title>
+			<url>http://www.delhichess.com/</url>
+		</information>
+		<information>
+			<title>Tamil Chess Fed</title>
+			<url>http://tamilchess.com/</url>
+		</information>
+		<information>
+			<title>Shropshire Chess Org</title>
+			<url>http://www.shropshirechess.org</url>
+		</information>
+		<information>
+			<title>Russian Chess Org</title>
+			<url>http://www.ruschess.com/</url>
+		</information>
+	</head>
+	<head name="Opening/Endgame Databases">
+		<information>
+			<title>TWIC</title>
+			<url>http://www.chess.co.uk/twic/twic.html</url>
+		</information>
+		<information>
+			<title>Chess Games</title>
+			<url>http://www.chessgames.com/</url>
+		</information>
+		<information>
+			<title>365 Chess</title>
+			<url>http://www.365chess.com/</url>
+		</information>
+		<information>
+			<title>Master Chess Games</title>
+			<url>http://masterchessgames.com/indexNew.php</url>
+		</information>
+		<information>
+			<title>PGN Mentor</title>
+			<url>http://www.pgnmentor.com/files.html</url>
+		</information>
+		<information>
+			<title>Endgame Tablespace</title>
+			<url>http://www.k4it.de/egtb/endgame.php?lang=en</url>
+		</information>
+	</head>
+	<head name="Resources">
+		<information>
+			<title>Chess records</title>
+			<url>http://www.xs4all.nl/~timkr/records/records.htm</url>
+		</information>
+		<information>
+			<title>Chessville</title>
+			<url>http://www.chessville.com/</url>
+		</information>
+		<information>
+			<title>Chessopolis</title>
+			<url>http://www.chessopolis.com/</url>
+		</information>
+		<information>
+			<title>Chess Vibes</title>
+			<url>http://www.chessvibes.com/</url>
+		</information>
+		<information>
+			<title>Russian Chess in English</title>
+			<url>http://www.chessintranslation.com/</url>
+		</information>
+		<information>
+			<title>Gothic Chess</title>
+			<url>http://www.gothicchess.com/</url>
+		</information>
+		<information>
+			<title>Chess Cafe</title>
+			<url>http://www.chesscafe.com/</url>
+		</information>
+		<information>
+			<title>KnightVision Chess</title>
+			<url>http://kvchess.com/</url>
+		</information>
+		<information>
+			<title>Rybka Chess</title>
+			<url>http://www.rybkachess.com/</url>
+		</information>
+		<information>
+			<title>GeniusProphecy Chess</title>
+			<url>http://geniusprophecy.com/</url>
+		</information>
+	</head>
+	<head name="Live videos/games/results">
+		<information>
+			<title>Russia Chess Videos</title>
+			<url>http://video.russiachess.org</url>
+		</information>
+		<information>
+			<title>Chess Results</title>
+			<url>http://chess-results.com/</url>
+		</information>
+		<information>
+			<title>Chess Tournaments Live</title>
+			<url>http://www.monroi.com/</url>
+		</information>
+		<information>
+			<title>Chess Movies</title>
+			<url>http://chessmovies.com/</url>
+		</information>
+	</head>
+</favourite>

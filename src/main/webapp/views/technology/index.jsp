@@ -1,14 +1,30 @@
 Java
 
+what is Unicode
+
 Serialization vs Externalization
 
 Hierarchy of Error
 
-What is Preverification and Obfuscation? Which one is used first?
+What is Preverification and Obfuscation? Which one is used first? (Obfuscation first)
+
+How to make an unreachable Object rechable in java
+
+Life cycle of JSON object
 
 Why wait should be called inside a loop?
 
 CountDownlatch vs CyclicBarrier
+
+How can multiple threads access synchronized block (Semaphores)
+
+What is Counting Semaphore and Binary Semaphore
+
+What is Exchanger
+
+What are Atomic classes
+
+Making an array as volatile does not make entries in the array volatile. true
 
 Why enum can extend interface but not class?
 
@@ -26,11 +42,19 @@ Copy method or clone method inside Cloneable or Object?
 
 What is ThreadLocal
 
+how to implement LinkedList with next node and a random next node?
+
+What is unmodifiable collections
+
 ArrayList vs LinkedList
 
 TreeMap vs BinaryTree
 
 TreeMap vs Sorted Map
+
+HashSet - how it checks for duplicacy
+
+Arrays.sort vs Collections.sort which one is faster
 
 Do you require hashcode for element in ArrayList? (only Map and Set)
 
@@ -42,6 +66,8 @@ How to implement your own HashMap
 
 How to iterate alternate element in ArrayList
 
+Which collection you will use for unique and ordered collection
+
 What will be the size of ArrayList if we add an element in the loop. Will it throw exception? (Yes, size will increase)
 
 HashTable and Vector since 1.0 and Collection APIs since 1.2
@@ -52,9 +78,18 @@ How to maintain insertion order for HashMap
 
 What is ListIterator
 
-What is BlockingQueue
 
-How to sort a list and set
+What is Queue, BlockingQueue, DeQueue, and BlockingDeque
+
+What are Lock, ReadWriteLock and Condition interfaces
+
+What are ReentrantLock, ReentrantReadWriteLock
+
+How to sort a list, set, and HashSet
+
+Advantages of EnumSet
+
+What is Fork/Join in Java 7
 
 What are fail fast and fail safe properties in Iterator
 
@@ -64,6 +99,8 @@ StringBuffer vs StringBuilder
 
 Why to go for junit instead of main method?
 
+what is JMX
+
 How to solve memory leaks problem in java
 
 How to solve out of memory error
@@ -71,6 +108,8 @@ How to solve out of memory error
 Java object are passed by value or reference?
 
 What is constructor chaining
+
+What is exception chaining
 
 What is the purpose of Marker Interface?
 
@@ -88,9 +127,11 @@ Hashcode and equals methods contract
 
 Which one to use: synchronizedMap, Hashtable, and ConcurrentHashmap
 
+Which one's performance is better contains method of List or binarySearch method?
+
 Date and Time design issue prior to Java 8
 
-Singleton in clustered environment
+Singleton in clustered environment or in multiple class loader
 
 Good practices to avoid null pointer exceptions
 
@@ -108,15 +149,27 @@ How volatile and static variables work differently in multithreaded environment?
 
 notify vs notifyAll
 
+Why wait, notify always inside synchronized block?
+
 CGlib vs byte proxy
 
 heap and stack
 
-DOM vs SAX parsers
+Does GC in java happens in Perm gen of Heap? (JVM dependent)
 
-Jaxp vs JaxB
+DOM vs SAX vs STAX parsers
+
+Jaxp vs JaxB. Why JaxB, it consumes too much memory
 
 SOAP vs REST
+
+what is endpoint in web-service
+
+What is top-down and bottom-up approaches in web-services
+
+What are CDATA and PDATA in xml (Character and Parse)
+
+What is LDAP
 
 What is the input for web-service. what tool you have used?
 
@@ -124,11 +177,9 @@ Circular reference
 
 how to set null values for the Java primitives (PreparedStatement.setNull)
 
-Isolation level
+how to decide Isolation level
 
 How to find out all the interfaces implemented by a class (reflection)
-
-Factory, Abstract Factory pattern example
 
 Advantages of enum, generics
 
@@ -139,6 +190,8 @@ How to synchronize constructor (of no use)
 Configuration Management (Git vs SVN vs CVS vs VSS vs Rational Clear Case)
 
 In MOM, how can we force a message to be deliver to a particular receiver?
+
+JMS acknowledgement sent to whom?
 
 When to use singleton class?
 
@@ -169,7 +222,9 @@ Where ResultSet data is stored as it's an interface?
 
 UpdateableResultSet
 
-RowSet
+Connected vs Disconnected RowSet
+
+What will happen if we do not close the Connection, Statement or ResultSet
 
 Thread One writer and multiple read synchronization
 
@@ -209,6 +264,14 @@ class B {final static m()} class D extends B { m()}
 Whether code works:
 class B {show()} interface I { show()}
 class D extends B implements I {show()}
+
+What will happend in the below code:
+System.out = System.in; // compile time error
+System.out.println("test");
+
+How to write multiplication of two very large nos. without overflow 
+
+Can we write private constructor inside abstract class? (Yes)
 
 How to read file
 
@@ -252,6 +315,47 @@ What shall (Math.NAN != Math.NAN) returns?
 
 When we synchronized a class. Lock is assigned to whom? (obtains a lock on the class)
 
+Can we have private constructor in Servlet class?
+
+How to implement servlet chaining
+
+Classloader hierarchy. Different types of class loaders.
+
+what is 2-phase commit
+
+Java Objects' are passed by value or reference?
+
+what is dangling pointers
+
+Comparable vs Comparator
+
+how to create Annotation types
+
+what is UUID in serialization
+
+writeObject, readObject, where they are defined
+
+how to delete cookie
+
+Attack aim to prevent legitimate access to service by user (Denied of Service)
+
+xsc:whitespace (no normalisation)
+
+what is parameterised concept in SLF4J
+
+is log4j thread-safe
+
+why debug logging inside if (isDebugEnabled)
+
+jdbc new features (automatic loading of drivers)
+
+what is jar sealing
+
+what is the use of Admin Server and Managed server in Weblogic
+
+how to implement generic stack
+
+
 
 EJB
 
@@ -265,12 +369,49 @@ What are Transaction attributes
 
 How to figure out whether code is stateless or stateful session bean
 
+how client state is maintained in staetful session bean
+
+Can we use HttpSession inside Stateless Session bean
+
+What happen when session bean throws exception
+
+how user defined exception can be send from EJB server to client
+
+On server side, how to determine request is coming from which browser?
+
+How Apache is configured (Module)
+
+
 
 UML and OOPS
+
+99.9% Availability. What does it mean from the architect point of view.
+
+How to do project estimation
+
+What is SCM
+
+Reliability vs Performance trade off
+
+Difference between Class and Object diagram
+
+Sequence diagram
+
+Activity diagram
+
+Component diagram
 
 Example of Encapsulation
 
 What is Open Closed Principle
+
+Dependency Inversion Principle
+
+Interface Segregation Principle
+
+Single Responsibility Principle
+
+Liskov's Substitution principle
 
 Difference between interface and abstract class
 
@@ -278,11 +419,15 @@ statically typed vs dynamic language
 
 Design for reading bulk data (Chunk oriented processing)
 
+Why java don't have default argument feature like C
+
 Throw an exception early and catch an exception late. Why?
 
 Procedure vs Function
 
 Composition vs Aggregation
+
+disadvantages of dependency injection
 
 Cohesion vs Coupling
 
@@ -304,13 +449,53 @@ Vertical vs Horizontal scaling
 
 Scalability (Clustering, load balances)
 
+What are Creational. Structural, and Behavioural design patterns
+
 Template and Service Locator design patterns
 
+Business Delegate design pattern
+
+Decorator design pattern
+
+Factory, Abstract Factory pattern example
+
+Strategy vs State pattern
+
+Observer, Mediator design pattern
+
+Visitor design pattern
+
+What is the need to go the need to go through double dispatch in Visitor pattern
+
+MVC vs MVP
+
+Synchronizer token pattern (multiple submit problem)
+
 XML vs Annotations
+
+It's better to have an Apache server handling all the http requests and route it to App server to handle dynamic pages. true
+
+Contractor and Employee. How you will associate these 2 classes object. Contractor is not an Employee.
+
+Does architects decides till deployment, maintenance, bug fixing strategies.
+
+Does architects decides team resources
 
 
 
 Spring Framework
+
+Spring configaration using xml vs annotation vs javaconfig
+
+Which class Spring use to implement different Collections (LinkedHashmap, ArrayList, LinkedHashSet)
+
+Why it implemented using these classes (to preserve order)
+
+How to change default concrete Collection classes
+
+replicate method in Spring
+
+Spring OpenSessionInViewFilter
 
 Spring design pattern
 
@@ -326,9 +511,15 @@ What is DataAccessException
 
 What is bean wiring
 
+ApplicationContext vs BeanFactory
+
 How will you call getInstance() of Singleton from Spring configuration file?
 
 Spring and Hibernate integration
+
+how to configure struts in Spring
+
+Difference in Spring and EJB transaction
 
 Can we use PUT, DELETE etc in Spring RequestMapping
 
@@ -346,7 +537,11 @@ What are inner beans
 
 View Resolvers
 
-How to create bean using factory-method
+Transaction propagation in Spring
+
+Nested Transaction in Spring
+
+How to create bean using factory-method with parameter
 
 How to implements 5 modes of wiring.
 
@@ -354,11 +549,40 @@ Which extra parameter is required with session scope
 
 Limitations of CGlib
 
+How multiple submit problem is handled in Spring MVC
+
+How many objects will be created below:
+<bean id="emp1" class="Emp" scope="singleton" />
+<bean id="emp2" class="Emp" scope="singleton" />
+
+what is method injection
+
+In Spring, how multiple request is handled by Singleton object. Isn't it the problem of multi-threading
+
+@Service Service Locator pattern is used. How will you cache ServiceLocator in Spring
+
+How to handle browser refresh in Spring (RedirectView, PRG)
+
+If form in struts have 200 fields then which data-structure you will use? (Map)
+
+how to maintain order in AOP (@Order)
+
+Spring team recommend: only annotate concrete class witg @Transactional, as opposed to interfces. true
+(annotations are not inherited. annotation at interface will only work in case of interface based proxies)
+
 
 
 Hibernate Framework
 
+how to improve hibernate query performance
+
+How Hibernate does inheritance of domain classes
+
+Open View Session Filter and it's use
+
 Hibernate Object life-cycle or state
+
+When to use bag in hibernate
 
 different Hibernate generators
 
@@ -366,9 +590,13 @@ Criteria vs HQL
 
 session.load vs session.get
 
+session.evict(object) will it detach object
+
 Second level cache
 
 Statistics
+
+What are fetching strategies in Hibernate (Select, Sub-select, Join)
 
 Hibernate many-to-many implementations
 
@@ -383,6 +611,8 @@ When to use Hibernate filters
 Hibernate singleton
 
 When to use lazy=false
+
+Session vs SessionFactory
 
 How to optimize hibernate
 
@@ -408,10 +638,40 @@ How to implement different levels of caching in Hibernate?
 
 What are hibernate properties?
 
+In hibernate, session.close is done, but transaction.commit is not done. then data won't save
+
+how to call stored procedure in Hibernate
+
+Cache data is not always update. So, if another user update then how to sync (Version attribute)
+
+Does HibernateDaoSupport used in HibernateTemplate
+
+HibernateTemplate is based on which design pattern
+
+How to do Union using HQL or Criteria API? (Can't do UNION or INTERSECT. Use view or native sql)
+
+How to do right outer join in Hibernate
+
+How to prevent SQL injection in hibernate
+
+Hibernate custom user type (UserType, CustomUserType, nullSafeGet(), nullSafeSet())
+
+savePoint in hibernate
+
 
 SQL
 
-index key, unique key vs primary key vs composite key
+Normalistion
+
+what is database partitioning
+
+index key vs unique key vs candidate key vs primary key vs composite key vs foreign key.
+
+how to chose primary key (1) Not Null, 2) Unique Value in Table and 3) Static - are the best candidates for Primary Key)
+
+why it is not a good practice to make Identity Column as Primary Key.
+
+when there is JOIN on Primary Key or when Primary Key is used in the WHERE condition it usually gives better performance than non primary key columns. true
 
 different types of Triggrers
 
@@ -431,6 +691,8 @@ truncate vs delete
 
 correlated vs non-correlated sub-queries
 
+What is cursor and what will happen if we do not close the cursor
+
 Can we use joins for any sub-query?
 
 ACID property
@@ -447,7 +709,7 @@ What is Sql injection and how to avoid it
 
 When to use char instead of varchar
 
-What is Execution plan
+What is Execution plan. How it work for one select statement from the group
 
 Materialised view
 
@@ -462,6 +724,12 @@ DECODE and CASE
 How rownum is assigned to a table? Is it sequential or not?
 
 Datatype of rowid and rownum
+
+Unique constraint vs Unique index (there is no practical difference)
+
+triggers do not accept parameters or arguments
+
+Why to use stored procedure (security)
 
 
 
@@ -490,3 +758,23 @@ Debugging plugins for browsers
 When we alter a jsp page, how server get informed of it?
 
 How to install weblogic and other Servers
+
+How to write file upload
+
+What is multiple submit problem and how to solve it
+
+Exception handling in jsp
+
+how to implement hit-count on web-page
+
+before ajax, how web-pages do asynchronous server call
+
+what is META tag in html
+
+how do you decide between jquery, dojo, and ext-js libraries
+
+What are HttpWatch and IEWatch
+
+what is .htaccess file
+
+what is virtual hosting

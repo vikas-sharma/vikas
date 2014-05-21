@@ -1,30 +1,30 @@
 --
--- Table structure for table `person`
+-- Table structure for table person
 --
 
-CREATE TABLE IF NOT EXISTS `person` (
-  `PERSON_ID` bigint(20) NOT NULL AUTO_INCREMENT,
-  `NAME` varchar(20) NOT NULL,
-  `ENCODED_PASSWORD` varchar(60) NOT NULL,
-  `EMAIL_ADDRESS` varchar(255) NOT NULL,
-  `FIRST_NAME` varchar(20) NOT NULL,
-  `LAST_NAME` varchar(20) NOT NULL,
-  `GENDER` varchar(1) NOT NULL,
-  `COUNTRY` varchar(22) NOT NULL,
-  `IP_ADDRESS` varchar(20) NOT NULL,
-  `CREATED` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `ACTIVATED` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `AUTH_KEY` int(11) NOT NULL,
-  `STATUS` varchar(10) NOT NULL,
-  PRIMARY KEY (`PERSON_ID`)
+CREATE TABLE IF NOT EXISTS person (
+  PERSON_ID bigint(20) NOT NULL AUTO_INCREMENT,
+  NAME varchar(20) NOT NULL,
+  ENCODED_PASSWORD varchar(60) NOT NULL,
+  EMAIL_ADDRESS varchar(255) NOT NULL,
+  FIRST_NAME varchar(20) NOT NULL,
+  LAST_NAME varchar(20) NOT NULL,
+  GENDER varchar(1) NOT NULL,
+  COUNTRY varchar(22) NOT NULL,
+  IP_ADDRESS varchar(20) NOT NULL,
+  CREATED timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  ACTIVATED timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  AUTH_KEY int(11) NOT NULL,
+  STATUS varchar(10) NOT NULL,
+  PRIMARY KEY (PERSON_ID)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
--- Table structure for table `person_role`
+-- Table structure for table person_role
 --
 
-CREATE TABLE IF NOT EXISTS `person_role` (
-  `PERSON_ID` bigint(20) NOT NULL,
-  `ROLE` int(11) NOT NULL,
-  PRIMARY KEY (`PERSON_ID`)
+CREATE TABLE IF NOT EXISTS person_role (
+  PERSON_ID bigint(20) NOT NULL,
+  ROLE int(11) NOT NULL,
+  PRIMARY KEY (PERSON_ID)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;

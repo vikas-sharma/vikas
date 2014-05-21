@@ -21,6 +21,7 @@
 
 	<definition extends="default" name="technology">
 		<put-attribute name="body" value="/views/technology/index.jsp" />
+		<put-attribute name="import_files"  value="/views/technology/import_files.jsp"/>
 	</definition>
 
 	<definition extends="default" name="login">

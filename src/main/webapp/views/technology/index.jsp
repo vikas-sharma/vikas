@@ -1,3 +1,4 @@
+<div id="accordion-resizer" class="ui-widget-content">
 <div id="accordion">
 
 <h3>Core Java</h3>
@@ -588,4 +589,5 @@ how to change size of hml page from a new page appeared on click of button on cu
 
 </p></div>
 
+</div>
 </div>

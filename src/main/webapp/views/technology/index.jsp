@@ -5,8 +5,6 @@
 <div><p>
 
 what is Unicode<BR/>
-Serialization vs Externalization<BR/>
-How would you exclude a field from Serialization<BR/>
 Hierarchy of Error<BR/>
 What is Preverification and Obfuscation? Which one is used first? (Obfuscation first)<BR/>
 How to make an unreachable Object rechable in java<BR/>
@@ -14,13 +12,11 @@ Making an array as volatile does not make entries in the array volatile. true<BR
 Why enum can extend interface but not class?<BR/>
 What shall be the data type to store currency?<BR/>
 Abstract method must be in Abstract class (true or false) -> false<BR/>
-Serializable vs Externalizable<BR/>
 What are weak, strong, soft, and phantom references?<BR/>
 Shallow copy vs Deep copy<BR/>
 Copy method or clone method inside Cloneable or Object?<BR/>
 StringBuffer vs StringBuilder<BR/>
 Hashcode and equals methods contract<BR/>
-Why to go for junit instead of main method?<BR/>
 what is JMX<BR/>
 How to solve memory leaks problem in java<BR/>
 How to solve out of memory error<BR/>
@@ -32,7 +28,7 @@ How to fix OutOfMemory error<BR/>
 How to optimize code and performance?<BR/>
 What are the advantages of generics?<BR/>
 How to create immutable class<BR/>
-Singleton in clustered environment or in multiple class loader<BR/>
+java.util: scanner, console, and formatter<BR/>
 How to create checked and unchecked exception<BR/>
 How to decide the exception type for custom exception<BR/>
 CGlib vs byte proxy<BR/>
@@ -42,7 +38,6 @@ What is LDAP<BR/>
 Circular reference<BR/>
 How to find out all the interfaces implemented by a class (reflection)<BR/>
 Advantages of enum, generics<BR/>
-When to use singleton class?<BR/>
 What is jndi and how to implement it? If there is Naming.rebind then why we use it?<BR/>
 (You have to lookup for a compnent to specify name)<BR/>
 What are artifacts in Maven<BR/>
@@ -56,7 +51,6 @@ BIG O Notation<BR/>
 What is the use of cause method in Exception<BR/>
 How to reverse and then copy a file to other file without opening it?<BR/>
 What is scripting in UNIX<BR/>
-Difference between ServletConfig and ServletContext<BR/>
 Whether code works:<BR/>
 class B {final static m()} class D extends B { m()}
 Whether code works:
@@ -72,7 +66,6 @@ How to get value of com in www.yahoo.com<BR/>
 How many objects will be created:
 String s = "a" + "b"; s = s + c;<BR/>
 Inner class can be final, static, and private (true/false)<BR/>
-Default value of scope in jsp.<BR/>
 Why we use private constructor?<BR/>
 What are default methods in reflection.<BR/>
 How to set and get fields in reflection?<BR/>
@@ -82,16 +75,23 @@ Java Objects' are passed by value or reference?<BR/>
 what is dangling pointers<BR/>
 Comparable vs Comparator<BR/>
 how to create Annotation types<BR/>
-what is UUID in serialization<BR/>
-writeObject, readObject, where they are defined<BR/>
 Attack aim to prevent legitimate access to service by user (Denied of Service)<BR/>
 xsc:whitespace (no normalisation)<BR/>
 what is parameterised concept in SLF4J<BR/>
 is log4j thread-safe<BR/>
+why can't have 2 or more public classes<BR/>
 why debug logging inside if (isDebugEnabled)<BR/>
 what is jar sealing<BR/>
 what is the use of Admin Server and Managed server in Weblogic<BR/>
 how to implement generic stack<BR/>
+why enum is type safe?<BR/>
+how do you get lost modified object in collection<BR/>
+swapped two int in a method and swapped values are available outside the method (use array)<BR/>
+how to prevent overflow when calculating hashcode value.<BR/>
+What things decides class Identity<BR/>
+Why annotations can have only some specific data used like String, enum<BR/>
+java bean activation framework<BR/>
+Explain Jaas (Java Authentication & Authorization Services)<BR/>
 
 </p></div>
 
@@ -112,6 +112,7 @@ What is Counting Semaphore and Binary Semaphore<BR/>
 What are Atomic classes<BR/>
 What is ThreadLocal<BR/>
 What is Fork/Join in Java 7<BR/>
+process can communicate through (sockets, signal handlers, shared memory, semaphores, files)<BR/>
 What is deadlock in multithreading and how to fix it?<BR/>
 How volatile and static variables work differently in multithreaded environment?<BR/>
 notify vs notifyAll<BR/>
@@ -123,6 +124,7 @@ How Executor framework is better than creating and managing thread by applicatio
 Executor vs Executors<BR/>
 What is race condition in multithreading and how to fix it?<BR/>
 how to prevent starvation?<BR/>
+what is livelock<BR/>
 How to synchronize constructor (of no use)<BR/>
 How to stop a thread. (Thread.stop deprecated)<BR/>
 Advantages of Lock interface<BR/>
@@ -133,6 +135,11 @@ Thread One writer and multiple read synchronization<BR/>
 When we synchronized a class. Lock is assigned to whom? (obtains a lock on the class)<BR/>
 What is ThreadScheduler<BR/>
 What is Exchanger<BR/>
+shall we synchronize both setter and getter methods<BR/>
+volatile vs Atomic<BR/>
+what are native and green thread<BR/>
+can we set priority of  daemon thread<BR/>
+how to make thread safe of an array element<BR/>
 
 </p></div>
 
@@ -142,7 +149,9 @@ What is Exchanger<BR/>
 
 Best practices related to Java Collection Frameworks<BR/>
 how to implement LinkedList with next node and a random next node?<BR/>
+sorting in collections (quick : for primitive, merge : for objects)<BR/>
 What is unmodifiable collections<BR/>
+which list traverse approach is better: index based or iterator based<BR/>
 ArrayList vs LinkedList<BR/>
 TreeMap vs BinaryTree<BR/>
 TreeMap vs Sorted Map<BR/>
@@ -174,6 +183,50 @@ Which one's performance is better contains method of List or binarySearch method
 Advantages of EnumSet<BR/>
 How to sort a list, set, and HashSet<BR/>
 Why prior to Java 5, we cannot add primitive values into ArrayList and other Collections<BR/>
+which collection is used for fast access? map, set<BR/>
+how to compare 2 list contents<BR/>
+Default arg in generic map<BR/>
+
+</p></div>
+
+<h3>Singleton</h3>
+
+<div><p>
+
+When to use singleton class?<BR/>
+Singleton in clustered environment or in multiple class loader<BR/>
+when singleton can break? (reflection, serialization, lazy initialization and not synchronized, multiple class loaders)<BR/>
+what is double checked locking in Singleton?<BR/>
+Is using enum for Singleton a good practice?<BR/>
+how to stop creating more than one instance of singleton when it serialized or deserialized<BR/>
+
+</p></div>
+
+<h3>Serialization</h3>
+
+<div><p>
+
+Serialization vs Externalization<BR/>
+How would you exclude a field from Serialization<BR/>
+what is UUID in serialization<BR/>
+what if sub-class is Serializable but super class is not<BR/>
+constructors are not called at de-serialization but only non-serializable class constructor is invoked<BR/>
+versioning issue in serialization<BR/>
+why all java classes are not serializable? (runtime specific things should not be serialized e.g. streams, threads, runtime and gui classes)<BR/>
+writeObject, readObject, where they are defined<BR/>
+protected Object readResolve<BR/>
+
+</p></div>
+
+<h3>Testing framework</h3>
+
+<div><p>
+
+Why to go for junit instead of main method?<BR/>
+junit for private methods<BR/>
+what is code coverage<BR/>
+what is mockito<BR/>
+Explain Test Driven Development<BR/>
 
 </p></div>
 
@@ -181,6 +234,8 @@ Why prior to Java 5, we cannot add primitive values into ArrayList and other Col
 
 <div><p>
 
+XML vs JSON vs JSONP<BR/>
+how to modify xml using xslt?<BR/>
 DOM vs SAX vs STAX parsers<BR/>
 Jaxp vs JaxB. Why JaxB, it consumes too much memory<BR/>
 SOAP vs REST<BR/>
@@ -189,6 +244,9 @@ What is top-down and bottom-up approaches in web-services<BR/>
 What are CDATA and PDATA in xml (Character and Parse)<BR/>
 What is the input for web-service. what tool you have used?<BR/>
 Life cycle of JSON object<BR/>
+what is atomic variables in xml / xsl<BR/>
+java API for xml registers<BR/>
+SOAP with attachments API for java<BR/>
 
 </p></div>
 
@@ -215,6 +273,8 @@ How PreparedStatement is efficient. What is pre-compiled<BR/>
 Where pre-compiled files gets store<BR/>
 what is 2-phase commit<BR/>
 What are in-memory databases<BR/>
+if 2 or more driver class are called in Class.forName and then we con from Connection Manager. which one con is returned (based on url)<BR/>
+how to search a word in blob in efficient way<BR/>
 
 </p></div>
 
@@ -223,7 +283,8 @@ What are in-memory databases<BR/>
 <div><p>
 
 In MOM, how can we force a message to be deliver to a particular receiver?<BR/>
-JMS acknowledgement sent to whom?
+JMS acknowledgement sent to whom?<BR/>
+how to handle transaction in jms?<BR/>
 
 </p></div>
 
@@ -231,12 +292,15 @@ JMS acknowledgement sent to whom?
 
 <div><p>
 
+Difference between ServletConfig and ServletContext<BR/>
 If isThreadSafe is true then servlet class implements SingleThreadModel and performance degrade. False<BR/>
 How to do inter-selvlet communication<BR/>
 What happen if we call destroy method from init.<BR/>
 Can we have private constructor in Servlet class?<BR/>
 how to delete cookie<BR/>
 How to implement servlet chaining<BR/>
+can we put servlet outside WEB-INF and access it after defining mapping in web.xml<BR/>
+how container knows that servlet instance already has been created.<BR/>
 
 </p></div>
 
@@ -247,6 +311,10 @@ How to implement servlet chaining<BR/>
 Difference between RequestDispatcher and Forward<BR/>
 Custom tags in jsp?<BR/>
 Which implicit object can get any implicit object?<BR/>
+redirect vs forward<BR/>
+advantages of using custom tags over scriptlet and java code in jsp<BR/>
+Default value of scope in jsp.<BR/>
+how a very large jsp page will be divided to load it successfully<BR/>
 
 </p></div>
 
@@ -358,6 +426,7 @@ How to implement inheritance in bean defination (parent property)<BR/>
 How to control bean instantiation process (init-method, implement Initializing Bean)<BR/>
 default (singleton and eager initialization)<BR/>
 Eager or Lazy loading. Which one is by default for BeanFactory and ApplicationContext<BR/>
+how web module loads beans application.xml in spring<BR/>
 Validation framework<BR/>
 What is weaving<BR/>
 What are inner beans<BR/>
@@ -378,8 +447,9 @@ In Spring, how multiple request is handled by Singleton object. Isn't it the pro
 How to handle browser refresh in Spring (RedirectView, PRG)<BR/>
 If form in struts have 200 fields then which data-structure you will use? (Map)<BR/>
 how to maintain order in AOP (@Order)<BR/>
-Spring team recommend: only annotate concrete class witg @Transactional, as opposed to interfces. true
-(annotations are not inherited. annotation at interface will only work in case of interface based proxies)
+Spring team recommend: only annotate concrete class witg @Transactional, as opposed to interfces. true<BR/>
+(annotations are not inherited. annotation at interface will only work in case of interface based proxies)<BR/>
+how container knows about the properties defined in diff resource bundle in struts<BR/>
 
 </p></div>
 
@@ -392,6 +462,8 @@ How Hibernate does inheritance of domain classes<BR/>
 types of inheritance model<BR/>
 Open View Session Filter and it's use<BR/>
 Hibernate Object life-cycle or state<BR/>
+merge, save, saveOrUpdate, update in Hibernate<BR/>
+Batch update in hibernate<BR/>
 When to use bag in hibernate<BR/>
 different Hibernate generators<BR/>
 Criteria vs HQL<BR/>
@@ -402,6 +474,7 @@ Second level cache<BR/>
 Statistics<BR/>
 What are fetching strategies in Hibernate (Select, Sub-select, Join)<BR/>
 Hibernate many-to-many implementations<BR/>
+diff update and lock in hibernate<BR/>
 Can we make Hibernate Entity class final?<BR/>
 Why no argument constructor in Hibernate Entity class?<BR/>
 N+1 problem in hibernate<BR/>
@@ -443,6 +516,7 @@ savePoint in hibernate
 Normalistion<BR/>
 what is database partitioning<BR/>
 index key vs unique key vs candidate key vs primary key vs composite key vs foreign key.<BR/>
+what is the need of foreign key<BR/>
 how to chose primary key (1) Not Null, 2) Unique Value in Table and 3) Static - are the best candidates for Primary Key)<BR/>
 why it is not a good practice to make Identity Column as Primary Key.<BR/>
 when there is JOIN on Primary Key or when Primary Key is used in the WHERE condition it usually gives better performance than non primary key columns. true<BR/>
@@ -474,7 +548,12 @@ How rownum is assigned to a table? Is it sequential or not?<BR/>
 Datatype of rowid and rownum<BR/>
 Unique constraint vs Unique index (there is no practical difference)<BR/>
 triggers do not accept parameters or arguments<BR/>
-Why to use stored procedure (security)
+Why to use stored procedure (security)<BR/>
+mutating trigger (when trigger is manipulating data of same table on which trigger is created)<BR/>
+Lock Db row so that others would not able to update it<BR/>
+3 types of locking in db (table level, page and row level)<BR/>
+how transaction is maintained if connection with 2 dbs<BR/>
+can we write commit in trgger? (yes, but need to configure in special way)<BR/>
 
 </p></div>
 
@@ -482,8 +561,6 @@ Why to use stored procedure (security)
 
 <div><p>
 
-XML vs JSON vs JSONP<BR/>
-how to modify xml using xslt?<BR/>
 Can we use *.do inside welcome-file-list in web.xml<BR/>
 / vs /* in url-pattern of web.xml<BR/>
 Web-Inf is under classpath then why config.xml is under classes folder. isn't it bad design?<BR/>
@@ -500,10 +577,15 @@ Exception handling in jsp<BR/>
 how to implement hit-count on web-page<BR/>
 before ajax, how web-pages do asynchronous server call<BR/>
 what is META tag in html<BR/>
+how to share things in multiple web applications?<BR/>
 how do you decide between jquery, dojo, and ext-js libraries<BR/>
 What are HttpWatch and IEWatch<BR/>
 what is .htaccess file<BR/>
 what is virtual hosting<BR/>
 What are different HTTP code<BR/>
-</p></div><BR/>
+how to invoke a method on server when close is clicked on browser. (js window close event)<BR/>
+how to change size of hml page from a new page appeared on click of button on current page.<BR/>
+
+</p></div>
+
 </div>

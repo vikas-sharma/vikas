@@ -11,13 +11,15 @@ ext {
 
 	slf4jVersion = "1.7.7"
 	logbackVersion = "1.1.2"
-	aspectjVersion = "1.7.4"
-	springVersion = "4.0.4.RELEASE"
-	springSecurityVersion = "3.2.3.RELEASE"
-	hibernateVersion = "4.3.1.Final"
+	aspectjVersion = "1.8.0"
+	springVersion = "4.0.5.RELEASE"
+	springSecurityVersion = "3.2.4.RELEASE"
+	hibernateVersion = "4.3.5.Final"
 	jacksonVersion = "2.3.3"
 	tilesVersion = "3.0.3"
 	jasyptVersion = "1.9.2"
+	h2DbVersion = "1.4.178"
+	mysqlVersion = "5.1.30"
 }
 
 task deployToTomcat(dependsOn: "build") << {
@@ -73,9 +75,8 @@ dependencies {
     compile "org.springframework.security:spring-security-web:$springSecurityVersion"
     compile "org.springframework.security:spring-security-taglibs:$springSecurityVersion"
 
-    compile "org.hsqldb:hsqldb:2.2.9"
-
-    compile "mysql:mysql-connector-java:5.1.29"
+    compile "com.h2database:h2:$h2DbVersion"
+    providedCompile "mysql:mysql-connector-java:$mysqlVersion"
 
     // Hibernate dependencies
     compile "org.hibernate:hibernate-core:$hibernateVersion"

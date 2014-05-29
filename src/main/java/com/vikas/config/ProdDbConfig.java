@@ -4,6 +4,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -15,8 +16,9 @@ import com.vikas.dao.LoginDAOImpl;
  * 
  */
 @Configuration
+@Profile(value = "prod")
 @EnableTransactionManagement
-public class DbConfig {
+public class ProdDbConfig {
 
 	@Value("${database.driverClassName}")
 	private String driverClassName;

@@ -15,7 +15,8 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 @Configuration
 @ComponentScan("com.vikas")
 @Import({ DevPlaceholderConfig.class, ProdPlaceholderConfig.class,
-		WebConfig.class, DbConfig.class, MailConfig.class, SecurityConfig.class })
+		WebConfig.class, ProdDbConfig.class, DevDbConfig.class,
+		MailConfig.class, SecurityConfig.class })
 public class AppConfig {
 
 	@Bean

@@ -73,15 +73,12 @@ public class LoginDAOImpl implements LoginDAO {
 
 		String sql = "SELECT * FROM person p INNER JOIN person_role pr ON p.person_id = pr.person_id WHERE name = ?";
 
-		Person person = null;
 		try {
-			person = jdbcTemplate.queryForObject(sql, new PersonMapper(),
+			return jdbcTemplate.queryForObject(sql, new PersonMapper(),
 					username);
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
-
-		return person;
 	}
 
 	@Override
@@ -89,15 +86,12 @@ public class LoginDAOImpl implements LoginDAO {
 
 		String sql = "SELECT * FROM person p INNER JOIN person_role pr ON p.person_id = pr.person_id WHERE EMAIL_ADDRESS = ? LIMIT 1";
 
-		Person person = null;
 		try {
-			person = jdbcTemplate.queryForObject(sql, new PersonMapper(),
+			return jdbcTemplate.queryForObject(sql, new PersonMapper(),
 					emailAddress);
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
-
-		return person;
 	}
 
 	@Override

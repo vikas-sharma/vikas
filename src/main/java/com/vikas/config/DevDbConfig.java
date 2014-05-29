@@ -10,6 +10,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.vikas.dao.GameDAOImpl;
 import com.vikas.dao.LoginDAOImpl;
 
 /**
@@ -35,6 +36,15 @@ public class DevDbConfig {
 		loginDAO.setDataSource(dataSource());
 
 		return loginDAO;
+	}
+
+	@Bean
+	public GameDAOImpl gameDao() {
+
+		GameDAOImpl gameDAO = new GameDAOImpl();
+		gameDAO.setDataSource(dataSource());
+
+		return gameDAO;
 	}
 
 	@Bean

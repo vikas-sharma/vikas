@@ -115,14 +115,23 @@ public class GameDAOImpl implements GameDAO {
 
 		String sql = "select mv from move where game_id=? and move_no=? group by mv order by count(mv) desc limit 1";
 
-		String move = null;
 		try {
-			move = jdbcTemplate.queryForObject(sql, String.class, gameId,
+			return jdbcTemplate.queryForObject(sql, String.class, gameId,
 					moveNo);
 		} catch (EmptyResultDataAccessException e) {
 			return null;
 		}
+	}
 
-		return move;
+	@Override
+	public int getPersonId(String name) {
+
+		String sql = "SELECT person_id FROM person WHERE name = ?";
+
+		try {
+			return jdbcTemplate.queryForObject(sql, Integer.class, name);
+		} catch (EmptyResultDataAccessException e) {
+			return 0;
+		}
 	}
 }

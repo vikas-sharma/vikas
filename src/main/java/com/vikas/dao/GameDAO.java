@@ -29,4 +29,6 @@ public interface GameDAO {
 
 	String getMaxVotedMove(int gameId, int moveNo);
 
+	int getPersonId(String name);
+
 }

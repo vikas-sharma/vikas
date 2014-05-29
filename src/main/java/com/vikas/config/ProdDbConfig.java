@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.vikas.dao.GameDAOImpl;
 import com.vikas.dao.LoginDAOImpl;
 
 /**
@@ -60,6 +61,15 @@ public class ProdDbConfig {
 		loginDAO.setDataSource(dataSource());
 
 		return loginDAO;
+	}
+
+	@Bean
+	public GameDAOImpl gameDao() {
+
+		GameDAOImpl gameDAO = new GameDAOImpl();
+		gameDAO.setDataSource(dataSource());
+
+		return gameDAO;
 	}
 
 	@Bean

@@ -26,7 +26,8 @@ public class DevDbConfig {
 	@Bean
 	public DataSource dataSource() {
 		return new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2)
-				.addScript("classpath:db-schema.sql").build();
+				.addScript("classpath:db-schema.sql")
+				.addScript("classpath:db-script.sql").build();
 	}
 
 	@Bean

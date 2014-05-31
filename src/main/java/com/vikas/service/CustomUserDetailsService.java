@@ -33,6 +33,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String userName)
 			throws UsernameNotFoundException {
+
 		try {
 			Person domainUser = loginDAO.findByUsername(userName);
 

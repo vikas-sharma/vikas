@@ -134,4 +134,12 @@ public class GameDAOImpl implements GameDAO {
 			return 0;
 		}
 	}
+
+	@Override
+	public Game getGame(int gameId) {
+
+		String sql = "select * from game where game_id=?";
+
+		return jdbcTemplate.queryForObject(sql, Game.class, gameId);
+	}
 }

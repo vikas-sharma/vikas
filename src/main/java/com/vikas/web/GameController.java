@@ -34,13 +34,13 @@ public class GameController {
 		return "game";
 	}
 
-	@RequestMapping(method = RequestMethod.GET)
-	public String showGame(Model model, @RequestParam int gameId) {
-
-		GamePosition currentPosition = gameService.getPosition(gameId);
-
-		return "game";
-	}
+//	@RequestMapping(method = RequestMethod.GET)
+//	public String showGame(Model model, @RequestParam int gameId) {
+//
+//		GamePosition currentPosition = gameService.getPosition(gameId);
+//
+//		return "game";
+//	}
 
 	@RequestMapping(params = "Join Game", method = RequestMethod.POST)
 	public String joinGame(Model model) {

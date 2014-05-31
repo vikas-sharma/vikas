@@ -11,6 +11,8 @@ public class Game {
 	private String title;
 	private String status;
 	private int gmId;
+	private boolean gmTurn;
+	private boolean gmColorWhite;
 	private int timeLeft;
 	private String fen;
 
@@ -46,6 +48,22 @@ public class Game {
 		this.gmId = gmId;
 	}
 
+	public boolean isGmTurn() {
+		return gmTurn;
+	}
+
+	public void setGmTurn(boolean gmTurn) {
+		this.gmTurn = gmTurn;
+	}
+
+	public boolean isGmColorWhite() {
+		return gmColorWhite;
+	}
+
+	public void setGmColorWhite(boolean gmColorWhite) {
+		this.gmColorWhite = gmColorWhite;
+	}
+
 	public int getTimeLeft() {
 		return timeLeft;
 	}
@@ -61,5 +79,4 @@ public class Game {
 	public void setFen(String fen) {
 		this.fen = fen;
 	}
-
 }

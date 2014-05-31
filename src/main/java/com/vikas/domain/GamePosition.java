@@ -16,12 +16,14 @@ public class GamePosition {
 
 	private int personId;
 	private String userType;
-	private String userColor;
+	private boolean userColor;
 	private String userJoinStatus;
 	private String userVoteStatus;
 
 	private boolean turn;
 	private boolean whiteOnTop;
+
+	private boolean gmPlayer;
 
 	private String whitePlayer;
 	private String blackPlayer;
@@ -76,11 +78,11 @@ public class GamePosition {
 		this.userType = userType;
 	}
 
-	public String getUserColor() {
+	public boolean isUserColor() {
 		return userColor;
 	}
 
-	public void setUserColor(String userColor) {
+	public void setUserColor(boolean userColor) {
 		this.userColor = userColor;
 	}
 
@@ -114,6 +116,14 @@ public class GamePosition {
 
 	public void setWhiteOnTop(boolean whiteOnTop) {
 		this.whiteOnTop = whiteOnTop;
+	}
+
+	public boolean isGmPlayer() {
+		return gmPlayer;
+	}
+
+	public void setGmPlayer(boolean gmPlayer) {
+		this.gmPlayer = gmPlayer;
 	}
 
 	public String getWhitePlayer() {

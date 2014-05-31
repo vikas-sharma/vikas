@@ -31,4 +31,6 @@ public interface GameDAO {
 
 	int getPersonId(String name);
 
+	Game getGame(int gameId);
+
 }

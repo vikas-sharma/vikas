@@ -25,11 +25,11 @@ import com.vikas.service.ChessEngineService;
 @RequestMapping("chess")
 public class ChessEngineController {
 
-	@Autowired
-	private ChessEngineService chessEngineService;
-
 	private static Logger LOGGER = LoggerFactory
 			.getLogger(ChessEngineController.class);
+
+	@Autowired
+	private ChessEngineService chessEngineService;
 
 	private static final String SEPARATOR = "XXX";
 

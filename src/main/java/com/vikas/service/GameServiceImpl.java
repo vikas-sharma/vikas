@@ -54,12 +54,36 @@ public class GameServiceImpl implements GameService {
 
 		position.setPersonId(personId);
 
+		Game game = gameDAO.getGame(gameId);
+
+		if (personId == game.getGmId()) { // if person is title player
+
+			position.setGmPlayer(true);
+
+			position.setTurn(game.isGmTurn());
+			position.setUserColor(game.isGmColorWhite());
+
+		} else {
+
+			position.setGmPlayer(false);
+
+			position.setTurn(!game.isGmTurn());
+			position.setUserColor(!game.isGmColorWhite());
+		}
+
+		if (position.isUserColor()) {
+			position.setWhitePlayer(currentUser);
+		} else {
+			position.setBlackPlayer(currentUser);
+		}
+
 		return position;
 	}
 
 	@Override
 	public void createGame(Game game) {
 
+		gameDAO.createGame(game);
 	}
 
 	@Override

@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.ui.context.support.ResourceBundleThemeSource;
+import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -23,6 +24,10 @@ import org.springframework.web.servlet.theme.ThemeChangeInterceptor;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
+import org.thymeleaf.extras.springsecurity3.dialect.SpringSecurityDialect;
+import org.thymeleaf.spring4.SpringTemplateEngine;
+import org.thymeleaf.spring4.view.ThymeleafViewResolver;
+import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 /**
  * 
@@ -154,10 +159,44 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	}
 
 	@Bean
-	public UrlBasedViewResolver tilesViewResolver() {
+	public ServletContextTemplateResolver templateResolver() {
+		ServletContextTemplateResolver resolver = new ServletContextTemplateResolver();
+		resolver.setPrefix("/WEB-INF/views/");
+		resolver.setSuffix(".html");
+		// NB, selecting HTML5 as the template mode.
+		resolver.setTemplateMode("HTML5");
+		resolver.setCacheable(false);
+		return resolver;
+
+	}
+
+	public SpringTemplateEngine templateEngine() {
+		SpringTemplateEngine engine = new SpringTemplateEngine();
+		engine.setTemplateResolver(templateResolver());
+		engine.addDialect(new SpringSecurityDialect());
+		return engine;
+	}
+
+	@Bean
+	public ViewResolver viewResolver() {
+
+		ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+		viewResolver.setTemplateEngine(templateEngine());
+		viewResolver.setOrder(1);
+		viewResolver.setViewNames(new String[] { "game" });
+		viewResolver.setCache(false);
+		viewResolver.setOrder(2);
+
+		return viewResolver;
+	}
+
+	@Bean
+	public ViewResolver tilesViewResolver() {
 
 		UrlBasedViewResolver ubvr = new UrlBasedViewResolver();
 		ubvr.setViewClass(TilesView.class);
+
+		ubvr.setOrder(1);
 
 		return ubvr;
 	}

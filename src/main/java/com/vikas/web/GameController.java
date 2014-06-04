@@ -19,28 +19,29 @@ import com.vikas.service.GameService;
  * @author Vikas Sharma
  */
 @Controller
-@RequestMapping("game.htm")
 public class GameController {
 
 	@Autowired
 	GameService gameService;
 
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value = "listgames.htm", method = RequestMethod.GET)
 	public String listGames(Model model) {
 
 		List<Game> games = gameService.getAllGames();
 
 		model.addAttribute("games", games);
-		return "game";
+		return "listgames";
 	}
 
-//	@RequestMapping(method = RequestMethod.GET)
-//	public String showGame(Model model, @RequestParam int gameId) {
-//
-//		GamePosition currentPosition = gameService.getPosition(gameId);
-//
-//		return "game";
-//	}
+	@RequestMapping(value = "game.htm", method = RequestMethod.GET)
+	public String showGame(Model model, @RequestParam int gameId) {
+
+		GamePosition currentPosition = gameService.getPosition(gameId);
+
+		model.addAttribute("position", currentPosition);
+
+		return "game";
+	}
 
 	@RequestMapping(params = "Join Game", method = RequestMethod.POST)
 	public String joinGame(Model model) {

@@ -13,6 +13,7 @@ import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 
 import com.vikas.domain.Game;
 import com.vikas.domain.Move;
+import com.vikas.model.PersonGame;
 
 /**
  * 
@@ -140,6 +141,55 @@ public class GameDAOImpl implements GameDAO {
 
 		String sql = "select * from game where game_id=?";
 
-		return jdbcTemplate.queryForObject(sql, Game.class, gameId);
+		List<Game> games = jdbcTemplate.query(sql, new BeanPropertyRowMapper(
+				Game.class), gameId);
+
+		if (games == null || games.size() == 0) {
+			return null;
+		}
+
+		return games.get(0);
+	}
+
+	@Override
+	public String getGmName(int gmId) {
+
+		String sql = "SELECT name FROM person WHERE person_id = ?";
+
+		try {
+			return jdbcTemplate.queryForObject(sql, String.class, gmId);
+		} catch (EmptyResultDataAccessException e) {
+			return "";
+		}
+	}
+
+	@Override
+	public PersonGame getPersonGameStatus(int gameId, int personId) {
+
+		String sql = "SELECT * FROM person_game WHERE game_id = ? and person_id = ?";
+
+		List<PersonGame> pg = jdbcTemplate.query(sql,
+				new BeanPropertyRowMapper(PersonGame.class), gameId, personId);
+
+		if (pg == null || pg.size() == 0) {
+			return null;
+		}
+
+		return pg.get(0);
+	}
+
+	@Override
+	public Move getMove(int gameId, int personId) {
+
+		String sql = "SELECT * FROM move WHERE game_id = ? and person_id = ?";
+
+		List<Move> moveList = jdbcTemplate.query(sql,
+				new BeanPropertyRowMapper(Move.class), gameId, personId);
+
+		if (moveList == null || moveList.size() == 0) {
+			return null;
+		}
+
+		return moveList.get(0);
 	}
 }

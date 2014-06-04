@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.vikas.domain.Game;
 import com.vikas.domain.Move;
+import com.vikas.model.PersonGame;
 
 /**
  * 
@@ -32,5 +33,11 @@ public interface GameDAO {
 	int getPersonId(String name);
 
 	Game getGame(int gameId);
+
+	String getGmName(int gmId);
+
+	PersonGame getPersonGameStatus(int gameId, int personId);
+
+	Move getMove(int gameId, int personId);
 
 }

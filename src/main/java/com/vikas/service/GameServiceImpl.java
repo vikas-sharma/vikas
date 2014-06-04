@@ -11,6 +11,7 @@ import com.vikas.dao.GameDAO;
 import com.vikas.domain.Game;
 import com.vikas.domain.GamePosition;
 import com.vikas.domain.Move;
+import com.vikas.model.PersonGame;
 
 /**
  * 
@@ -55,6 +56,7 @@ public class GameServiceImpl implements GameService {
 		position.setPersonId(personId);
 
 		Game game = gameDAO.getGame(gameId);
+		String gmName = gameDAO.getGmName(game.getGmId());
 
 		if (personId == game.getGmId()) { // if person is title player
 
@@ -63,18 +65,49 @@ public class GameServiceImpl implements GameService {
 			position.setTurn(game.isGmTurn());
 			position.setUserColor(game.isGmColorWhite());
 
+			if (position.isUserColor()) {
+				position.setWhitePlayer(gmName);
+				position.setBlackPlayer(currentUser);
+				position.setWhiteTimeLeft(String.valueOf(game.getTimeLeft()));
+			} else {
+				position.setWhitePlayer(currentUser);
+				position.setBlackPlayer(gmName);
+				position.setBlackTimeLeft(String.valueOf(game.getTimeLeft()));
+			}
+
 		} else {
 
 			position.setGmPlayer(false);
 
 			position.setTurn(!game.isGmTurn());
 			position.setUserColor(!game.isGmColorWhite());
+
+			if (position.isUserColor()) {
+				position.setWhitePlayer(currentUser);
+				position.setBlackPlayer(gmName);
+				position.setWhiteTimeLeft(String.valueOf(game.getTimeLeft()));
+			} else {
+				position.setWhitePlayer(gmName);
+				position.setBlackPlayer(currentUser);
+				position.setBlackTimeLeft(String.valueOf(game.getTimeLeft()));
+			}
 		}
 
-		if (position.isUserColor()) {
-			position.setWhitePlayer(currentUser);
+		position.setGameStatus(game.getStatus());
+		position.setGameTitle(game.getTitle());
+
+		PersonGame pg = gameDAO.getPersonGameStatus(gameId, personId);
+		if (pg != null && pg.isActive()) {
+			position.setUserJoinStatus("JOINED");
 		} else {
-			position.setBlackPlayer(currentUser);
+			position.setUserJoinStatus("NOT_JOINED");
+		}
+		
+		Move mv = gameDAO.getMove(gameId, personId);
+		if (mv != null) {
+			position.setUserVoteStatus("VOTED");
+		} else {
+			position.setUserVoteStatus("NOT_VOTED");
 		}
 
 		return position;

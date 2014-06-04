@@ -17,6 +17,8 @@ ext {
 	hibernateVersion = "4.3.5.Final"
 	jacksonVersion = "2.3.3"
 	tilesVersion = "3.0.3"
+	thymeleafVersion = "2.1.3.RELEASE"
+	thymeleafSecurityVersion = "2.1.1.RELEASE"
 	jasyptVersion = "1.9.2"
 	h2DbVersion = "1.4.178"
 	mysqlVersion = "5.1.30"
@@ -99,6 +101,10 @@ dependencies {
     	exclude group: "commons-logging", module: "commons-logging"
     }
     compile "commons-codec:commons-codec:1.9"
+
+    compile "org.thymeleaf:thymeleaf-spring4:$thymeleafVersion"
+
+    compile "org.thymeleaf.extras:thymeleaf-extras-springsecurity3:$thymeleafSecurityVersion"
 
     compile "org.apache.tiles:tiles-request-api:1.0.3"
 

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head th:substituteby="fragments/headTag :: headTag">
+</head>
+<body class="tundra spring">
+	<div id="main_div" th:include="fragments/bodyHeader :: header" th:remove="tag">
+		<div id="main"></div>
+	</div>
+	<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

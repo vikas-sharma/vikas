@@ -1,6 +1,3 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-
-
 <a href="chess/index.htm"><img src="images/space-chess.jpg"
 	alt="Chess" width="246" height="184"></a>
 

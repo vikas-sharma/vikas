@@ -17,6 +17,15 @@
 
 <fieldset>
 	<legend>
+		<a href="listgames.htm"><spring:message code="home_link_voteChess" /></a>
+	</legend>
+	<spring:message code="title_voteChess" />
+</fieldset>
+
+<p></p>
+
+<fieldset>
+	<legend>
 		<a href="myGames.htm"><spring:message code="home_link_myGames" /></a>
 	</legend>
 	<spring:message code="title_myGames" />

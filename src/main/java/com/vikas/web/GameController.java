@@ -19,12 +19,13 @@ import com.vikas.service.GameService;
  * @author Vikas Sharma
  */
 @Controller
+@RequestMapping("chess")
 public class GameController {
 
 	@Autowired
 	GameService gameService;
 
-	@RequestMapping(value = "listgames.htm", method = RequestMethod.GET)
+	@RequestMapping(value = "/listgames.htm", method = RequestMethod.GET)
 	public String listGames(Model model) {
 
 		List<Game> games = gameService.getAllGames();
@@ -33,7 +34,7 @@ public class GameController {
 		return "listgames";
 	}
 
-	@RequestMapping(value = "game.htm", method = RequestMethod.GET)
+	@RequestMapping(value = "/game.htm", method = RequestMethod.GET)
 	public String showGame(Model model, @RequestParam int gameId) {
 
 		GamePosition currentPosition = gameService.getPosition(gameId);
@@ -43,12 +44,12 @@ public class GameController {
 		return "game";
 	}
 
-	@RequestMapping(params = "Join Game", method = RequestMethod.POST)
+	@RequestMapping(value = "/game.htm", params = "Join Game", method = RequestMethod.POST)
 	public String joinGame(Model model) {
 		return "game";
 	}
 
-	@RequestMapping(params = "Vote Move", method = RequestMethod.POST)
+	@RequestMapping(value = "/game.htm", params = "Vote Move", method = RequestMethod.POST)
 	public String voteMove(Model model, @RequestParam VoteType voteType) {
 		return "game";
 	}

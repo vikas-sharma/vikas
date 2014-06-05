@@ -3,9 +3,28 @@
 <head th:substituteby="fragments/headTag :: headTag">
 </head>
 <body class="tundra spring">
-	<div id="main_div" th:include="fragments/bodyHeader :: header" th:remove="tag">
-		<div id="main"></div>
+	<div id="main_div" th:include="fragments/bodyHeader :: header">
+		<div id="main">
+			<div th:unless="${#lists.isEmpty(games)}">
+
+				<h2>List of Games</h2>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Game Id</th>
+							<th>Title</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="game : ${games}">
+							<td th:text="${game.gameId}"></td>
+							<td th:text="${game.title}">yes</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
-	<div th:replace="fragments/footer :: footer"></div>
 </body>
 </html>

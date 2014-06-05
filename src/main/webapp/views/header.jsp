@@ -8,14 +8,14 @@
 
 	<table>
 		<tr>
-			<sec:authorize ifNotGranted="ROLE_ADMIN, ROLE_USER, ROLE_FAMILY">
+			<sec:authorize access="isAnonymous()">
 				<td><a id="register"
 					href="${pageContext.request.contextPath}/register.htm">Join Now</a></td>
 				<td><a id="login"
 					href="${pageContext.request.contextPath}/login.htm">Login</a></td>
 			</sec:authorize>
 
-			<sec:authorize ifAnyGranted="ROLE_ADMIN, ROLE_USER, ROLE_FAMILY">
+			<sec:authorize access="isFullyAuthenticated()">
 				<td><a href="<c:url value='/j_spring_security_logout' />">
 						Logout</a></td>
 			</sec:authorize>

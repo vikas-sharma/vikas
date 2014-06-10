@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head th:include="fragments/headTag :: headTag">
+
+<script type="text/javascript" src="scripts/chess.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles/chess.css" />
+
+</head>
+<body class="tundra spring">
+
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="main">
+
+			<div id="chess-container">
+				<div th:each="sq : ${#numbers.sequence( 0, 63)}"
+					th:class="${sq % 8 == 0}? 'row'">
+					<div th:id="'square_' + ${sq}" class="square"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

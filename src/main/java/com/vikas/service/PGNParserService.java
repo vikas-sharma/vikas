@@ -1,7 +1,7 @@
 package com.vikas.service;
 
-import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 
@@ -11,7 +11,7 @@ public interface PGNParserService {
 
 	List<Integer> getMoveList(int gameNo);
 
-	LinkedHashMap<Integer, String> listGames();
+	Map<Integer, String> listGames();
 
 	String getPGN(int gameNo);
 }

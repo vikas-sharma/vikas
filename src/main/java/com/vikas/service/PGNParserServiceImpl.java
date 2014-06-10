@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -222,9 +223,9 @@ public class PGNParserServiceImpl implements PGNParserService {
 		return moves[index];
 	}
 
-	public LinkedHashMap<Integer, String> listGames() {
+	public Map<Integer, String> listGames() {
 
-		LinkedHashMap<Integer, String> gameList = new LinkedHashMap<Integer, String>();
+		Map<Integer, String> gameList = new LinkedHashMap<Integer, String>();
 
 		InputStream is = null;
 		BufferedReader br = null;

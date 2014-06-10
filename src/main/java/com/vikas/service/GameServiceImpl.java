@@ -16,6 +16,7 @@ import com.vikas.model.PersonGame;
 /**
  * 
  * @author Vikas Sharma
+ * 
  */
 @Service
 @Transactional
@@ -45,15 +46,63 @@ public class GameServiceImpl implements GameService {
 	@Override
 	public GamePosition getPosition(int gameId) {
 
+		String currentUser = SecurityContextHolder.getContext()
+				.getAuthentication().getName();
+
+		int personId = gameDAO.getPersonId(currentUser);
+
+		return getPosition(gameId, personId);
+
+	}
+
+	@Override
+	public GamePosition addPersonToGame(int gameId, int personId) {
+
+		gameDAO.addPersonToGame(gameId, personId);
+
+		return getPosition(gameId, personId);
+	}
+
+	@Override
+	public GamePosition removePersonFromGame(int gameId, int personId) {
+
+		gameDAO.removePersonFromGame(gameId, personId);
+
+		return getPosition(gameId, personId);
+	}
+
+	@Override
+	public GamePosition addMove(Move move) {
+
+		return null;
+	}
+
+	@Override
+	public void createGame(Game game) {
+
+		gameDAO.createGame(game);
+	}
+
+	@Override
+	public void updateGame(Game game) {
+
+	}
+
+	@Override
+	public String getMaxVotedMove(int gameId, int moveNo) {
+
+		return gameDAO.getMaxVotedMove(gameId, moveNo);
+	}
+
+	private GamePosition getPosition(int gameId, int personId) {
+
 		GamePosition position = new GamePosition();
 
 		position.setGameId(gameId);
+		position.setPersonId(personId);
 
 		String currentUser = SecurityContextHolder.getContext()
 				.getAuthentication().getName();
-		int personId = gameDAO.getPersonId(currentUser);
-
-		position.setPersonId(personId);
 
 		Game game = gameDAO.getGame(gameId);
 		String gmName = gameDAO.getGmName(game.getGmId());
@@ -96,53 +145,31 @@ public class GameServiceImpl implements GameService {
 		position.setGameStatus(game.getStatus());
 		position.setGameTitle(game.getTitle());
 
-		PersonGame pg = gameDAO.getPersonGameStatus(gameId, personId);
-		if (pg != null && pg.isActive()) {
-			position.setUserJoinStatus("JOINED");
-		} else {
-			position.setUserJoinStatus("NOT_JOINED");
-		}
-		
-		Move mv = gameDAO.getMove(gameId, personId);
-		if (mv != null) {
-			position.setUserVoteStatus("VOTED");
-		} else {
-			position.setUserVoteStatus("NOT_VOTED");
-		}
+		if ("WIN".equals(game.getStatus()) || "LOSE".equals(game.getStatus())
+				|| "DRAW".equals(game.getStatus())) {
 
+			position.setPositionStatus("GAME_OVER");
+
+		} else {
+
+			PersonGame pg = gameDAO.getPersonGameStatus(gameId, personId);
+
+			if (pg != null && pg.isActive()) {
+
+				if (position.isTurn()) {
+					Move mv = gameDAO.getMove(gameId, personId);
+					if (mv != null) {
+						position.setPositionStatus("AFTER_VOTE");
+					} else {
+						position.setPositionStatus("BEFORE_VOTE");
+					}
+				} else {
+					position.setPositionStatus("OPPONENT_TURN");
+				}
+			} else {
+				position.setPositionStatus("NOT_JOINED");
+			}
+		}
 		return position;
 	}
-
-	@Override
-	public void createGame(Game game) {
-
-		gameDAO.createGame(game);
-	}
-
-	@Override
-	public void addPersonToGame(int gameId, int personId) {
-
-	}
-
-	@Override
-	public void removePersonFromGame(int gameId, int personId) {
-
-	}
-
-	@Override
-	public void updateGame(Game game) {
-
-	}
-
-	@Override
-	public void addMove(Move move) {
-
-	}
-
-	@Override
-	public String getMaxVotedMove(int gameId, int moveNo) {
-
-		return null;
-	}
-
 }

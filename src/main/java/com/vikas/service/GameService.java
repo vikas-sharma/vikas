@@ -9,6 +9,7 @@ import com.vikas.domain.Move;
 /**
  * 
  * @author Vikas Sharma
+ * 
  */
 public interface GameService {
 
@@ -20,15 +21,15 @@ public interface GameService {
 
 	GamePosition getPosition(int gameId);
 
+	GamePosition addPersonToGame(int gameId, int personId);
+
+	GamePosition removePersonFromGame(int gameId, int personId);
+
+	GamePosition addMove(Move move);
+
 	void createGame(Game game);
 
-	void addPersonToGame(int gameId, int personId);
-
-	void removePersonFromGame(int gameId, int personId);
-
 	void updateGame(Game game);
-
-	void addMove(Move move);
 
 	String getMaxVotedMove(int gameId, int moveNo);
 }

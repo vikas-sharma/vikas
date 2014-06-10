@@ -2,9 +2,12 @@ package com.vikas.web;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,6 +25,9 @@ import com.vikas.service.GameService;
 @RequestMapping("chess")
 public class GameController {
 
+	private static Logger LOGGER = LoggerFactory
+			.getLogger(GameController.class);
+
 	@Autowired
 	GameService gameService;
 
@@ -37,20 +43,52 @@ public class GameController {
 	@RequestMapping(value = "/game.htm", method = RequestMethod.GET)
 	public String showGame(Model model, @RequestParam int gameId) {
 
-		GamePosition currentPosition = gameService.getPosition(gameId);
+		GamePosition position = gameService.getPosition(gameId);
 
-		model.addAttribute("position", currentPosition);
+		model.addAttribute("position", position);
 
-		return "game";
+		return getViewName(position.getPositionStatus());
 	}
 
 	@RequestMapping(value = "/game.htm", params = "Join Game", method = RequestMethod.POST)
-	public String joinGame(Model model) {
-		return "game";
+	public String joinGame(Model model,
+			@ModelAttribute("position") GamePosition position) {
+
+		GamePosition newPosition = gameService.addPersonToGame(
+				position.getGameId(), position.getPersonId());
+
+		model.addAttribute("position", newPosition);
+
+		return getViewName(newPosition.getPositionStatus());
+	}
+
+	@RequestMapping(value = "/game.htm", params = "UnJoin Game", method = RequestMethod.POST)
+	public String unJoinGame(Model model,
+			@ModelAttribute("position") GamePosition position) {
+
+		GamePosition newPosition = gameService.removePersonFromGame(
+				position.getGameId(), position.getPersonId());
+
+		model.addAttribute("position", newPosition);
+
+		return getViewName(newPosition.getPositionStatus());
 	}
 
 	@RequestMapping(value = "/game.htm", params = "Vote Move", method = RequestMethod.POST)
-	public String voteMove(Model model, @RequestParam VoteType voteType) {
-		return "game";
+	public String voteMove(Model model,
+			@ModelAttribute("position") GamePosition position,
+			@RequestParam VoteType voteType) {
+
+		// GamePosition newPosition = gameService.addMove(move);
+		return "readOnlyGame";
+	}
+
+	private String getViewName(String status) {
+
+		if ("BEFORE_VOTE".equals(status)) {
+			return "game";
+		} else {
+			return "readOnlyGame";
+		}
 	}
 }

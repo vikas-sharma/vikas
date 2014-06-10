@@ -29,11 +29,14 @@ How to fix OutOfMemory error<BR/>
 How to optimize code and performance?<BR/>
 What are the advantages of generics?<BR/>
 How to create immutable class<BR/>
+different ways of creating objects<BR/>
 java.util: scanner, console, and formatter<BR/>
 How to create checked and unchecked exception<BR/>
 How to decide the exception type for custom exception<BR/>
 CGlib vs byte proxy<BR/>
 heap and stack<BR/>
+different security approach (authentication, authorisation)<BR/>
+in C++, class A extends B, C... how will u do the same in java<BR/>
 Does GC in java happens in Perm gen of Heap? (JVM dependent)<BR/>
 What is LDAP<BR/>
 Circular reference<BR/>
@@ -225,9 +228,18 @@ protected Object readResolve<BR/>
 
 Why to go for junit instead of main method?<BR/>
 junit for private methods<BR/>
+How to test a protected method<BR/>
 what is code coverage<BR/>
 what is mockito<BR/>
 Explain Test Driven Development<BR/>
+How to launch a debugger when a test fails<BR/>
+How to test a method that does not return anything<BR/>
+What is a JUnit test fixture<BR/>
+Under what conditions shall you test set() and get() methods<BR/>
+Why not to use System.out.println() for Unit Testing<BR/>
+Why not to use Debugger for Unit Testing<BR/>
+what is @SuiteClasses annotation<BR/>
+Why to import org.junit.Assert statically<BR/>
 
 </p></div>
 
@@ -244,6 +256,7 @@ what is endpoint in web-service<BR/>
 What is top-down and bottom-up approaches in web-services<BR/>
 What are CDATA and PDATA in xml (Character and Parse)<BR/>
 What is the input for web-service. what tool you have used?<BR/>
+Which parser will u use to cache xml data<BR/>
 Life cycle of JSON object<BR/>
 what is atomic variables in xml / xsl<BR/>
 java API for xml registers<BR/>
@@ -360,6 +373,8 @@ Difference between interface and abstract class<BR/>
 statically typed vs dynamic language<BR/>
 Design for reading bulk data (Chunk oriented processing)<BR/>
 Why java don't have default argument feature like C<BR/>
+which java class uses abstract factory<BR/>
+how you will decide when to use abstract factory class<BR/>
 Throw an exception early and catch an exception late. Why?<BR/>
 Procedure vs Function<BR/>
 Composition vs Aggregation<BR/>
@@ -417,6 +432,11 @@ What is DataAccessException<BR/>
 How is singleton bean scope is different from Singleton class<BR/>
 Benefits of Spring framework transaction management<BR/>
 What is bean wiring<BR/>
+What are different types of Autowire types<BR/>
+What are the different types of AutoProxying<BR/>
+What are the different advice types in spring<BR/>
+What is an Introduction in AOP<BR/>
+What is a Pointcut<BR/>
 ApplicationContext vs BeanFactory<BR/>
 How will you call getInstance() of Singleton from Spring configuration file?<BR/>
 Spring and Hibernate integration<BR/>
@@ -430,7 +450,9 @@ Eager or Lazy loading. Which one is by default for BeanFactory and ApplicationCo
 how web module loads beans application.xml in spring<BR/>
 Validation framework<BR/>
 What is weaving<BR/>
+What are the different points where weaving can be applied (compile time, class load, runtime)<BR/>
 What are inner beans<BR/>
+What are the important beans lifecycle methods<BR/>
 View Resolvers<BR/>
 Transaction propagation in Spring<BR/>
 Nested Transaction in Spring<BR/>
@@ -458,12 +480,18 @@ how container knows about the properties defined in diff resource bundle in stru
 
 <div><p>
 
+What are the ORM level (pure, light, medium, full)<BR/>
+What are the general considerations or best practices for defining your Hibernate persistent classes<BR/>
 how to improve hibernate query performance<BR/>
 How Hibernate does inheritance of domain classes<BR/>
 types of inheritance model<BR/>
 Open View Session Filter and it's use<BR/>
 Hibernate Object life-cycle or state<BR/>
 merge, save, saveOrUpdate, update in Hibernate<BR/>
+sessio.update vs session.lock<BR/>
+How would you reatach detached objects to a session when the same object has already been loaded into the session (merge)<BR/>
+How does Hibernate distinguish between transient and detached objects (version property)<BR/>
+What are the pros and cons of detached objects<BR/>
 Batch update in hibernate<BR/>
 When to use bag in hibernate<BR/>
 different Hibernate generators<BR/>
@@ -478,6 +506,12 @@ Hibernate many-to-many implementations<BR/>
 diff update and lock in hibernate<BR/>
 Can we make Hibernate Entity class final?<BR/>
 Why no argument constructor in Hibernate Entity class?<BR/>
+What is the difference between sorted and ordered collection in hibernate<BR/>
+What is component mapping in Hibernate<BR/>
+What are derived properties<BR/>
+If you want to see the Hibernate generated SQL statements on console, what should we do?<BR/>
+How do you switch between relational databases without code changes<BR/>
+What are the benefits does HibernateTemplate provide<BR/>
 N+1 problem in hibernate<BR/>
 When to use Hibernate filters<BR/>
 Hibernate singleton<BR/>
@@ -499,6 +533,9 @@ How to implement different levels of caching in Hibernate?<BR/>
 What are hibernate properties?<BR/>
 In hibernate, session.close is done, but transaction.commit is not done. then data won't save<BR/>
 how to call stored procedure in Hibernate<BR/>
+What is named sql query<BR/>
+Define cascade and inverse in one-to-many relationship<BR/>
+how to define sequence generated primary key in hibernate<BR/>
 Cache data is not always update. So, if another user update then how to sync (Version attribute)<BR/>
 Does HibernateDaoSupport used in HibernateTemplate<BR/>
 HibernateTemplate is based on which design pattern<BR/>
@@ -506,7 +543,9 @@ How to do Union using HQL or Criteria API? (Can't do UNION or INTERSECT. Use vie
 How to do right outer join in Hibernate<BR/>
 How to prevent SQL injection in hibernate<BR/>
 Hibernate custom user type (UserType, CustomUserType, nullSafeGet(), nullSafeSet())<BR/>
-savePoint in hibernate
+savePoint in hibernate<BR/>
+What are Callback interfaces<BR/>
+What should SessionFactory be placed so that it can be easily accessed<BR/>
 
 </p></div>
 
@@ -542,9 +581,11 @@ When to use char instead of varchar<BR/>
 What is Execution plan. How it work for one select statement from the group<BR/>
 Materialised view<BR/>
 How to delete duplicate records<BR/>
-find nth highest number?<BR/>
+find nth highest numbvler?<BR/>
 What is Optimistic concurrency control in database.<BR/>
 DECODE and CASE<BR/>
+analytical function in oracle<BR/>
+tab: col a, b...  display value of a, if col b is null and vice versa (use nvl)
 How rownum is assigned to a table? Is it sequential or not?<BR/>
 Datatype of rowid and rownum<BR/>
 Unique constraint vs Unique index (there is no practical difference)<BR/>
@@ -555,6 +596,7 @@ Lock Db row so that others would not able to update it<BR/>
 3 types of locking in db (table level, page and row level)<BR/>
 how transaction is maintained if connection with 2 dbs<BR/>
 can we write commit in trgger? (yes, but need to configure in special way)<BR/>
+How to find the duplicate rows count from employees table in oracle?<BR/>
 
 </p></div>
 
@@ -586,6 +628,7 @@ what is virtual hosting<BR/>
 What are different HTTP code<BR/>
 how to invoke a method on server when close is clicked on browser. (js window close event)<BR/>
 how to change size of hml page from a new page appeared on click of button on current page.<BR/>
+web site count (2 line code)
 
 </p></div>
 

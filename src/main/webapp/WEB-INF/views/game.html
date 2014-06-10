@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/headTag :: headTag">
+
+<script type="text/javascript" src="scripts/chess.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles/chess.css">
+
 </head>
 <body class="tundra spring">
 	<div id="main_div" th:include="fragments/bodyHeader :: header">
-		<div id="main"></div>
+		<div id="main">
+
+			<div id="chess-container" th:each=sq->0 to 63>
+
+				<div th:if="${(sq % 8) == 0} ? class=row">
+
+					<div id="square_${sq}" class="square"></div>
+
+				</div>
+			</div>
+
+			<div id="white_promotion_window">
+				<img id="WQ" src='images/WQ.png'> <img id="WR"
+					src='images/WR.png'> <img id="WB" src='images/WB.png'>
+				<img id="WN" src='images/WN.png'>
+			</div>
+
+			<div id="black_promotion_window">
+				<img id="BQ" src='images/BQ.png'> <img id="BR"
+					src='images/BR.png'> <img id="BB" src='images/BB.png'>
+				<img id="BN" src='images/BN.png'>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

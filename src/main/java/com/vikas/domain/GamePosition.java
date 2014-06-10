@@ -20,6 +20,8 @@ public class GamePosition {
 	private String userJoinStatus;
 	private String userVoteStatus;
 
+	private String positionStatus;
+
 	private boolean turn;
 	private boolean whiteOnTop;
 
@@ -100,6 +102,14 @@ public class GamePosition {
 
 	public void setUserVoteStatus(String userVoteStatus) {
 		this.userVoteStatus = userVoteStatus;
+	}
+
+	public String getPositionStatus() {
+		return positionStatus;
+	}
+
+	public void setPositionStatus(String positionStatus) {
+		this.positionStatus = positionStatus;
 	}
 
 	public boolean isTurn() {

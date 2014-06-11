@@ -24,8 +24,10 @@
 				</thead>
 				<tbody>
 					<tr th:each="game : ${games}">
-						<td th:text="${game.gameId}"></td>
-						<td th:text="${game.title}">yes</td>
+						<td>
+							<a th:href="@{'/chess/game.htm?gameId=' + ${game.gameId}}" th:text="${game.gameId}">element</a>
+						</td>
+						<td th:text="${game.title}"></td>
 					</tr>
 				</tbody>
 			</table>

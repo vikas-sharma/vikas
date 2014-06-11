@@ -58,8 +58,8 @@
 					<div id="square_${i}" class="square"></div>
 
 					<c:if test="${(i + 1) % 8 == 0}">
-			</div>
-			</c:if>
+						</div>
+					</c:if>
 			</c:forEach>
 		</div>
 		<div id="pgn_string" class="pgn-window"></div>

@@ -53,7 +53,7 @@
 
 						<H3>
 							Filter: <select
-								th:onchange="'filter(this.options[this.selectedIndex].value, 66);'">
+								th:onchange="'filter(this, \'' + ${#maps.size(games)} + '\');'">
 								<option value="all" selected="selected">All games</option>
 								<option value="imgm">Games against IM/GM</option>
 								<option value="fav">My Favourite</option>
@@ -62,7 +62,8 @@
 
 						<div th:each="game : ${games}">
 							<div th:id="'game_' + ${game.key}">
-								<a href="#" th:onclick="'loadGame(\'' + ${game.key} + '\');return false;'"
+								<a href="#"
+									th:onclick="'loadGame(\'' + ${game.key} + '\');return false;'"
 									th:text="${game.value}"></a>
 							</div>
 						</div>
@@ -99,17 +100,17 @@
 	</div>
 
 	<script>
-	loadGame(1);
+		loadGame(1);
 
-	$(document).keydown(function(e){
-		if (e.keyCode == 37) { // left key pressed
-			goback();
-			return false;
-		} else if (e.keyCode == 39) { // right key pressed
-			goforward();
-			return false;
-		}
-	}); 
-</script>
+		$(document).keydown(function(e) {
+			if (e.keyCode == 37) { // left key pressed
+				goback();
+				return false;
+			} else if (e.keyCode == 39) { // right key pressed
+				goforward();
+				return false;
+			}
+		});
+	</script>
 </body>
 </html>

@@ -376,14 +376,16 @@ function changeFocusToCurrentMove() {
 }
 
 function filter(opt, length) {
+
+	sel = opt.value;
 	
 	for ( var i = 1; i <= length; i++) {
 		$("#game_" + i).show();
-		if (opt == 'imgm') {
+		if (sel == 'imgm') {
 			if (i != 39 && i != 51) {
 				$("#game_" + i).hide();
 			}
-		} else if (opt == 'fav') {
+		} else if (sel == 'fav') {
 			if (i != 15 && i != 22 && i != 27 && i != 34 && i != 35 && i != 39
 					&& i != 41 && i != 42 && i != 49 && i != 50 && i != 51) {
 				$("#game_" + i).hide();
@@ -391,9 +393,9 @@ function filter(opt, length) {
 		}
 	}
 
-	if (opt == 'all') {
+	if (sel == 'all') {
 		loadGame(1);
-	} else if (opt == 'imgm') {
+	} else if (sel == 'imgm') {
 		loadGame(39);
 	} else {
 		loadGame(15);

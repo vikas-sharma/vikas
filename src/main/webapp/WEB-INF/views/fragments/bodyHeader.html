@@ -10,32 +10,23 @@
 
 		<div id="title">Welcome to Vikas World!</div>
 
-				<div sec:authorize="!hasRole('ROLE_USER')">
-					<a id="register"
-						href="${pageContext.request.contextPath}/register.htm">Join
-							Now</a>
-					<BR/>
-					<a id="login"
-						href="${pageContext.request.contextPath}/login.htm">Login</a>
-				</div>
+		<div sec:authorize="!hasRole('ROLE_USER')">
+			<a id="register" th:href="@{'/register.htm'}">Join Now</a> <BR /> <a
+				id="login" th:href="@{'/login.htm'}">Login</a>
+		</div>
 
-				<div sec:authorize="hasRole('ROLE_USER')">
-					<a href="/j_spring_security_logout"> Logout</a>
-				</div>
+		<div sec:authorize="hasRole('ROLE_USER')">
+			<a th:href="@{'/j_spring_security_logout'}"> Logout</a>
+		</div>
 
-				<a id="icc"
-					href="http://www.chessclub.com/activities/finger.php?handle=vikas"
-					target="_blank">ICC</a>
-				<BR/>
-				<a href="http://www.twitter.com/vikasworld2010"
-					target="_blank"><img
-						src="http://twitter-badges.s3.amazonaws.com/follow_bird-a.png"
-						alt="Follow me on Twitter"></img></a>
-				<BR/>
-				<a id="orkut"
-					href="http://www.orkut.com/Main#Profile?uid=12179233015669932329"
-					target="_blank">Orkut</a>
-				<BR/>
+		<a id="icc"
+			href="http://www.chessclub.com/activities/finger.php?handle=vikas"
+			target="_blank">ICC</a> <BR /> <a
+			href="http://www.twitter.com/vikasworld2010" target="_blank"><img
+			src="http://twitter-badges.s3.amazonaws.com/follow_bird-a.png"
+			alt="Follow me on Twitter"></img></a> <BR /> <a id="orkut"
+			href="http://www.orkut.com/Main#Profile?uid=12179233015669932329"
+			target="_blank">Orkut</a> <BR />
 
 		<P>
 			<span> Language : <a href="?lang=en">English</a> | <a

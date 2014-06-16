@@ -65,7 +65,7 @@ public class XslController {
 			@RequestParam(required = false) Integer gameId) {
 
 		Map<String, String> gidParam = new HashMap<String, String>();
-		gidParam.put("gId", String.valueOf(gameId));
+		gidParam.put("gid", String.valueOf(gameId));
 
 		String htmlStr = getHtmlStr("data/video.xml", "data/video.xsl",
 				gidParam);

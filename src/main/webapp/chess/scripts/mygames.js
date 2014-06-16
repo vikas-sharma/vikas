@@ -376,7 +376,7 @@ function changeFocusToCurrentMove() {
 }
 
 function filter(opt, length) {
-
+	
 	for ( var i = 1; i <= length; i++) {
 		$("#game_" + i).show();
 		if (opt == 'imgm') {

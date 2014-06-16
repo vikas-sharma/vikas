@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
+
+<title>Login page</title>
+</head>
+<body class="tundra spring">
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> Join Now
+			<hr />
+		</div>
+
+		<table class="normal">
+
+			<tr>
+				<td height="50">Register yourself.</td>
+			</tr>
+
+		</table>
+
+		<form th:object="${person}">
+
+			<input type="hidden" th:field="personId" />
+			<input type="hidden" th:field="name" />
+			<input type="hidden" th:field="emailAddress" />
+			<input type="hidden" th:field="firstName" />
+			<input type="hidden" th:field="lastName" />
+			<input type="hidden" th:field="gender" />
+			<input type="hidden" th:field="country" />
+
+			<table border=0 align="center">
+				<tr>
+					<td th:text="#{label.password}"></td>
+					<td><input type="password" th:field="password" /></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="submit" value="Reset Password"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

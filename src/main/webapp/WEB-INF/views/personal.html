@@ -5,7 +5,8 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}" type="text/css" />
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
 
 <script
 	src="http://www.google.com/jsapi?key=ABQIAAAAskGHH4QCF7EWi5qfKmklERSQYZB7zIwjPLM5VrbiIxCsikgCEBTtiSYXBMHZk5VKVPk4kyb_MfGblw"
@@ -16,43 +17,38 @@
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="scripts/chess.js"></script>
+<script type="text/javascript" src="scripts/personal.js"></script>
 
-<link rel="stylesheet" type="text/css" href="styles/chess.css" />
-
-<title>Welcome to Vikas World!</title>
+<title>Login page</title>
 </head>
 <body class="tundra spring">
-
 	<div id="main_div">
 
 		<div th:replace="fragments/bodyHeader :: header"></div>
 
 		<div id="breadcrumb">
-			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/chess/index.htm'}">Chess</a>
-			>> Vote Chess
+			<a th:href="@{'/'}">Home</a> >> Personal
 			<hr />
 		</div>
 
-		<table class="normal">
+		<fieldset>
+			<legend>
+				<a href="myPhotos.htm"> <span th:text="#{home_link_myPhotos}"></span>
+				</a>
+			</legend>
+			<div th:text="#{title_myPhotos}"></div>
+		</fieldset>
 
-			<tr>
-				<td th:text="#{title_myPhotos}" height="50"></td>
-			</tr>
+		<p></p>
 
-		</table>
+		<fieldset>
+			<legend>
+				<a href="familyPhotos.htm"><span
+					th:text="#{home_link_familyPhotos}"></span> </a>
+			</legend>
+			<div th:text="#{title_familyPhotos}"></div>
+		</fieldset>
 
-		<div id="main">
-
-			<div id="chess-container">
-				<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
-					<div th:each="sqCol : ${#numbers.sequence( 0, 7)}">
-						<div th:id="'square_' + ${sqRow * 8 + sqCol}" class="square"></div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
-
 </body>
 </html>

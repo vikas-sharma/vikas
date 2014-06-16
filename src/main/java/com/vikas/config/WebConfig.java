@@ -6,8 +6,10 @@ import net.tanesha.recaptcha.ReCaptcha;
 import net.tanesha.recaptcha.ReCaptchaImpl;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.ui.context.support.ResourceBundleThemeSource;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
@@ -21,9 +23,6 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.theme.CookieThemeResolver;
 import org.springframework.web.servlet.theme.ThemeChangeInterceptor;
-import org.springframework.web.servlet.view.UrlBasedViewResolver;
-import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
-import org.springframework.web.servlet.view.tiles3.TilesView;
 import org.thymeleaf.extras.springsecurity3.dialect.SpringSecurityDialect;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
@@ -75,18 +74,18 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		registry.addViewController("/login.htm").setViewName("login");
 		registry.addViewController("/success.htm").setViewName("success");
 		registry.addViewController("/chess/index.htm").setViewName("chess");
-		registry.addViewController("/chess/favourites.htm").setViewName(
-				"favourites");
+		// registry.addViewController("/chess/favourites.htm").setViewName(
+		// "favourites");
 		registry.addViewController("/personal/index.htm").setViewName(
 				"personal");
-		registry.addViewController("/personal/myPhotos.htm").setViewName(
-				"myPhotos");
-		registry.addViewController("/personal/familyPhotos.htm").setViewName(
-				"familyPhotos");
+		// registry.addViewController("/personal/myPhotos.htm").setViewName(
+		// "myPhotos");
+		// registry.addViewController("/personal/familyPhotos.htm").setViewName(
+		// "familyPhotos");
 		registry.addViewController("/technology/index.htm").setViewName(
 				"technology");
 		registry.addViewController("/chess/playChess.htm").setViewName(
-				"playChess");
+				"computerChess");
 		registry.addViewController("/uncaughtException");
 		registry.addViewController("/resourceNotFound");
 		registry.addViewController("/dataAccessFailure");
@@ -113,6 +112,16 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		reCaptcha.setPrivateKey(privateKey);
 
 		return reCaptcha;
+	}
+
+	@Bean
+	public MessageSource messageSource() {
+
+		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
+		messageSource.setBasenames("classpath:i18n/messages");
+		messageSource.setFallbackToSystemLocale(false);
+
+		return messageSource;
 	}
 
 	// locale change
@@ -170,9 +179,11 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
 	}
 
+	@Bean
 	public SpringTemplateEngine templateEngine() {
 		SpringTemplateEngine engine = new SpringTemplateEngine();
 		engine.setTemplateResolver(templateResolver());
+		engine.setMessageSource(messageSource());
 		engine.addDialect(new SpringSecurityDialect());
 		return engine;
 	}
@@ -183,33 +194,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
 		viewResolver.setTemplateEngine(templateEngine());
 		viewResolver.setOrder(1);
-		viewResolver.setViewNames(new String[] { "listgames", "readOnlyGame",
-				"game" });
+		viewResolver.setViewNames(new String[] { "*" });
 		viewResolver.setCache(false);
-		viewResolver.setOrder(2);
+		viewResolver.setOrder(1);
 
 		return viewResolver;
-	}
-
-	@Bean
-	public ViewResolver tilesViewResolver() {
-
-		UrlBasedViewResolver ubvr = new UrlBasedViewResolver();
-		ubvr.setViewClass(TilesView.class);
-
-		ubvr.setOrder(1);
-
-		return ubvr;
-	}
-
-	@Bean
-	public TilesConfigurer tilesConfigurer() {
-
-		String[] definitions = new String[] { "/layouts/layouts.xml",
-				"/views/**/views.xml" };
-		TilesConfigurer tc = new TilesConfigurer();
-		tc.setDefinitions(definitions);
-
-		return tc;
 	}
 }

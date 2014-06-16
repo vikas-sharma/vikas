@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
+
+<title>Login page</title>
+</head>
+<body class="tundra spring">
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/login.htm'}">Login</a>
+			>> My Games
+			<hr />
+		</div>
+
+		<table class="normal">
+			<tr>
+				<td height="50">Login page</td>
+			</tr>
+		</table>
+
+		<h1>Login page</h1>
+
+		<p th:if="${loginError}">Wrong user or password</p>
+
+		<form th:action="@{/j_spring_security_check}" method="post">
+
+			<label for="j_username">Username</label>: <input type="text"
+				id="j_username" name="j_username" /> <br /> <label for="j_password">Password</label>:
+			<input type="password" id="j_password" name="j_password" /> <br /> <label
+				for="_spring_security_remember_me">Remember me</label>: <input
+				id="_spring_security_remember_me" type='checkbox'
+				name='_spring_security_remember_me' value='on' checked='checked' />
+
+			<a href="forgot.htm">forgot password</a> <input type="submit"
+				value="Log in" /> <input type="reset" value="Reset" />
+
+		</form>
+	</div>
+</body>
+</html>

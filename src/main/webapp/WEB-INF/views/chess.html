@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
+
+<script
+	src="http://www.google.com/jsapi?key=ABQIAAAAskGHH4QCF7EWi5qfKmklERSQYZB7zIwjPLM5VrbiIxCsikgCEBTtiSYXBMHZk5VKVPk4kyb_MfGblw"
+	type="text/javascript"></script>
+
+<title>Chess</title>
+</head>
+<body class="tundra spring">
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> Chess
+			<hr />
+		</div>
+
+		<fieldset>
+			<legend>
+				<a href="playChess.htm"><span th:text="#{home_link_playChess}"></span></a>
+			</legend>
+			<span th:text="#{title_playChess}"></span>
+		</fieldset>
+
+		<p></p>
+
+		<fieldset>
+			<legend>
+				<a href="listgames.htm"> <span th:text="#{home_link_voteChess}"></span>
+				</a>
+			</legend>
+			<span th:text="#{title_voteChess}"></span>
+		</fieldset>
+
+		<p></p>
+
+		<fieldset>
+			<legend>
+				<a href="myGames.htm"> <span th:text="#{home_link_myGames}"></span>
+				</a>
+			</legend>
+			<span th:text="#{title_myGames}"></span>
+		</fieldset>
+
+		<p></p>
+
+		<fieldset>
+			<legend>
+				<a href="iccVideos.htm"> <span th:text="#{home_link_iccVideos}"></span>
+				</a>
+			</legend>
+			<span th:text="#{title_iccVideos}"></span>
+		</fieldset>
+
+		<p></p>
+
+		<fieldset>
+			<legend>
+				<a href="favourites.htm">Favourites</a>
+			</legend>
+			<span th:text="#{title_favouriteChessLinks}"></span>
+		</fieldset>
+
+	</div>
+</body>
+</html>

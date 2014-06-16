@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
+
+<title>Register</title>
+</head>
+<body class="tundra spring">
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> Join Now
+			<hr />
+		</div>
+
+		<table class="normal">
+			<tr>
+				<td height="50">Register yourself.</td>
+			</tr>
+		</table>
+
+		<form th:object="${person}">
+
+			<table border="0" align="center">
+				<tr>
+					<td><label for="firstname" th:text="#{label.firstname}"></label>:</td>
+					<td><input type="text" th:field="*{firstName}" maxlength="32" /></td>
+				</tr>
+				<tr>
+					<td><label for="lastname" th:text="#{label.lastname}"></label>:</td>
+					<td><input type="text" th:field="*{lastName}" maxlength="32" /></td>
+				</tr>
+				<tr>
+					<td><label for="emailAddress" th:text="#{label.email}"></label>:</td>
+					<td><input type="text" th:field="*{emailAddress}"
+						maxlength="32" /></td>
+				</tr>
+				<tr>
+					<td><label for="reenterEmailAddress"
+						th:text="#{label.reenter_email}"></label>:</td>
+					<td><input type="text" th:field="*{reenterEmailAddress}" /></td>
+				</tr>
+				<tr>
+					<td><label for="name" th:text="#{label.username}"></label>:</td>
+					<td><input type="text" th:field="*{name}" /></td>
+				</tr>
+				<tr>
+					<td><label for="password" th:text="#{label.password}"></label>:</td>
+					<td><input type="text" th:field="*{password}" /></td>
+				</tr>
+				<tr>
+					<td><label for="gender" th:text="#{label.gender}"></label>:</td>
+					<td>
+						<table>
+							<tr>
+								<td><input type="radio" th:field="*{gender}" value="M" /></td>
+								<td><input type="radio" th:field="*{gender}" value="F" /></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="gender" th:text="#{label.country}"></label>:</td>
+					<td><select th:field="*{country}">
+							<option th:each="country : ${countryList}" th:value="${country}"
+								th:text="${country}"></option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td th:text="#{label.word_verification}"></td>
+					<td th:utext="${reCaptchaHtml}"></td>
+				</tr>
+
+				<tr>
+					<td colspan="3"><input type="submit" value="Create My Account" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

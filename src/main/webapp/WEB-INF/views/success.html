@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
+
+<title>Login page</title>
+</head>
+<body class="tundra spring">
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a>
+			<hr />
+		</div>
+
+		<table class="normal">
+			<tr>
+				<td height="50">Login success.</td>
+			</tr>
+
+			<tr>
+				<td>Your account is created! please check your mail to activate
+					your account.</td>
+			</tr>
+
+		</table>
+	</div>
+</body>
+</html>

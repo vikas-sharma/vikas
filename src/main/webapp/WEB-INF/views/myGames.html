@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
+
+<script
+	src="http://www.google.com/jsapi?key=ABQIAAAAskGHH4QCF7EWi5qfKmklERSQYZB7zIwjPLM5VrbiIxCsikgCEBTtiSYXBMHZk5VKVPk4kyb_MfGblw"
+	type="text/javascript"></script>
+
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="scripts/mygames.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles/mygames.css" />
+
+<title>Welcome to Vikas World!</title>
+</head>
+<body class="tundra spring">
+
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/chess/index.htm'}">Chess</a>
+			>> My Games
+			<hr />
+		</div>
+
+		<table class="normal">
+
+			<tr>
+				<td th:text="#{title_myGames}" height="50"></td>
+			</tr>
+
+		</table>
+
+		<div id="main">
+
+			<div style="height: 100%;">
+
+				<div class="container">
+
+					<div class="left-element">
+
+						<H3>
+							Filter: <select
+								th:onchange="'filter(this.options[this.selectedIndex].value, 66);'">
+								<option value="all" selected="selected">All games</option>
+								<option value="imgm">Games against IM/GM</option>
+								<option value="fav">My Favourite</option>
+							</select>
+						</H3>
+
+						<div th:each="game : ${games}">
+							<div th:id="'game_' + ${game.key}">
+								<a href="#" th:onclick="'loadGame(\'' + ${game.key} + '\');return false;'"
+									th:text="${game.value}"></a>
+							</div>
+						</div>
+
+					</div>
+					<div class="right-element">
+
+						<div id="chess-container">
+							<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
+								<div th:each="sqCol : ${#numbers.sequence( 0, 7)}">
+									<div th:id="'square_' + ${sqRow * 8 + sqCol}" class="square"></div>
+								</div>
+							</div>
+						</div>
+						<div id="pgn_string" class="pgn-window"></div>
+
+						<input id="beginBtn" type='image' src="/images/rewind.png"
+							alt='|&lt;' onclick='javascript:begin()' /> <input
+							id="backwardBtn" type='image' src="/images/prev.png" alt='&lt;'
+							onclick='javascript:goback()' /> <input id="playBtn"
+							type='image' src="/images/play.png" alt='&rt;&rt;'
+							onclick='javascript:play()' /> <input id="pauseBtn" type='image'
+							src="/images/pause.png" alt='||' onclick='javascript:pause()' />
+						<input id="forwardBtn" type='image' src="/images/next.png"
+							alt='&rt;' onclick='javascript:goforward()' /> <input
+							id="endBtn" type='image' src="/images/fastf.png" alt='&rt;|'
+							onclick='javascript:end()' />
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	loadGame(1);
+
+	$(document).keydown(function(e){
+		if (e.keyCode == 37) { // left key pressed
+			goback();
+			return false;
+		} else if (e.keyCode == 39) { // right key pressed
+			goforward();
+			return false;
+		}
+	}); 
+</script>
+</body>
+</html>

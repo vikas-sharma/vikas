@@ -5,7 +5,8 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}" type="text/css" />
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
 
 <script
 	src="http://www.google.com/jsapi?key=ABQIAAAAskGHH4QCF7EWi5qfKmklERSQYZB7zIwjPLM5VrbiIxCsikgCEBTtiSYXBMHZk5VKVPk4kyb_MfGblw"
@@ -23,8 +24,26 @@
 <title>Welcome to Vikas World!</title>
 </head>
 <body class="tundra spring">
-	<div id="main_div" th:include="fragments/bodyHeader :: header">
-		<div id="main">
+
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/chess/index.htm'}">Chess</a>
+			>> Play Chess
+			<hr />
+		</div>
+
+		<table class="normal">
+
+			<tr>
+				<td th:text="#{title_playChess}" height="50"></td>
+			</tr>
+
+		</table>
+
+		<div id="main" align="center">
 
 			<div id="chess-container">
 				<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
@@ -34,18 +53,17 @@
 				</div>
 			</div>
 
-			<div id="white_promotion_window">
-				<img id="WQ" src='images/WQ.png'> <img id="WR"
-					src='images/WR.png'> <img id="WB" src='images/WB.png'>
-				<img id="WN" src='images/WN.png'>
-			</div>
-
-			<div id="black_promotion_window">
-				<img id="BQ" src='images/BQ.png'> <img id="BR"
-					src='images/BR.png'> <img id="BB" src='images/BB.png'>
-				<img id="BN" src='images/BN.png'>
+			<div>
+				<input type='button' onclick='javascript:newGame();'
+					value='New Game' />
+				<input type='button'
+					onclick='javascript:switchSides();' value='Switch Sides' />
+				<input
+					type='button' onclick='javascript:takebackMove();'
+					value='Takeback Move' />
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>

@@ -17,28 +17,22 @@
 
 		<div th:replace="fragments/bodyHeader :: header"></div>
 
-		<div th:unless="${#lists.isEmpty(games)}">
-
-			<h2>List of Games</h2>
-
-			<table>
-				<thead>
-					<tr>
-						<th>Game Id</th>
-						<th>Title</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr th:each="game : ${games}">
-						<td>
-							<a th:href="@{'/chess/game.htm?gameId=' + ${game.gameId}}" th:text="${game.gameId}">1</a>
-						</td>
-						<td th:text="${game.title}"></td>
-					</tr>
-				</tbody>
-			</table>
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/chess/index.htm'}">Chess</a>
+			>> Watch Videos
+			<hr />
 		</div>
-	</div>
 
+		<table class="normal">
+
+			<tr>
+				<td th:text="#{home_link_iccVideos}" height="50"></td>
+			</tr>
+
+		</table>
+
+		<P th:utext="${htmlStr}"></P>
+
+	</div>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
+
+<title>Welcome to Vikas World</title>
+</head>
+<body class="tundra spring">
+	<div id="main_div">
+
+		<div th:replace="fragments/bodyHeader :: header"></div>
+
+		<a href="chess/index.htm"><img src="images/space-chess.jpg"
+			alt="Chess" width="246" height="184" /></a>
+
+		<p></p>
+
+		<a href="technology/index.htm"><img src="images/java2.jpg"
+			alt="Technology" width="246" height="184" /></a>
+
+		<p></p>
+
+		<a href="personal/index.htm"><img src="images/vikas.jpg"
+			alt="Personal" width="246" height="184" /></a>
+
+	</div>
+</body>
+</html>

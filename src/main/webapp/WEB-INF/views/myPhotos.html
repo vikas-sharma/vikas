@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org">
 <head>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}" type="text/css" />
@@ -16,11 +15,12 @@
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="scripts/chess.js"></script>
+<script type="text/javascript" src="scripts/photos.js"></script>
 
-<link rel="stylesheet" type="text/css" href="styles/chess.css" />
+<link rel="stylesheet" type="text/css" href="styles/photos.css" />
 
 <title>Welcome to Vikas World!</title>
+
 </head>
 <body class="tundra spring">
 
@@ -29,8 +29,8 @@
 		<div th:replace="fragments/bodyHeader :: header"></div>
 
 		<div id="breadcrumb">
-			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/chess/index.htm'}">Chess</a>
-			>> Vote Chess
+			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/personal/index.htm'}">Personal</a>
+			>> My Photos
 			<hr />
 		</div>
 
@@ -42,17 +42,13 @@
 
 		</table>
 
-		<div id="main">
+		<P th:utext="${htmlStr}"></P>
 
-			<div id="chess-container">
-				<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
-					<div th:each="sqCol : ${#numbers.sequence( 0, 7)}">
-						<div th:id="'square_' + ${sqRow * 8 + sqCol}" class="square"></div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
+
+	<script>
+		loadAlbum(1);
+	</script>
 
 </body>
 </html>

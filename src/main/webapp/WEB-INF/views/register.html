@@ -8,6 +8,12 @@
 <link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
 	type="text/css" />
 
+<style>
+.error {
+	color: #ff0000;
+}
+</style>
+
 <title>Register</title>
 </head>
 <body class="tundra spring">
@@ -26,58 +32,76 @@
 			</tr>
 		</table>
 
-		<form th:object="${person}">
+		<form th:object="${person}" method="post">
 
 			<table border="0" align="center">
 				<tr>
 					<td><label for="firstname" th:text="#{label.firstname}"></label>:</td>
 					<td><input type="text" th:field="*{firstName}" maxlength="32" /></td>
+					<td th:if="${#fields.hasErrors('firstName')}"
+						th:text="${#fields.errors('firstName')}" class="error"></td>
 				</tr>
 				<tr>
 					<td><label for="lastname" th:text="#{label.lastname}"></label>:</td>
 					<td><input type="text" th:field="*{lastName}" maxlength="32" /></td>
+					<td th:if="${#fields.hasErrors('lastName')}"
+						th:text="${#fields.errors('lastName')}" class="error"></td>
 				</tr>
 				<tr>
 					<td><label for="emailAddress" th:text="#{label.email}"></label>:</td>
 					<td><input type="text" th:field="*{emailAddress}"
 						maxlength="32" /></td>
+					<td th:if="${#fields.hasErrors('emailAddress')}"
+						th:text="${#fields.errors('emailAddress')}" class="error"></td>
 				</tr>
 				<tr>
 					<td><label for="reenterEmailAddress"
 						th:text="#{label.reenter_email}"></label>:</td>
 					<td><input type="text" th:field="*{reenterEmailAddress}" /></td>
+					<td th:if="${#fields.hasErrors('reenterEmailAddress')}"
+						th:text="${#fields.errors('reenterEmailAddress')}" class="error"></td>
 				</tr>
 				<tr>
 					<td><label for="name" th:text="#{label.username}"></label>:</td>
 					<td><input type="text" th:field="*{name}" /></td>
+					<td th:if="${#fields.hasErrors('name')}"
+						th:text="${#fields.errors('name')}" class="error"></td>
 				</tr>
 				<tr>
 					<td><label for="password" th:text="#{label.password}"></label>:</td>
 					<td><input type="text" th:field="*{password}" /></td>
+					<td th:if="${#fields.hasErrors('password')}"
+						th:text="${#fields.errors('password')}" class="error"></td>
 				</tr>
 				<tr>
 					<td><label for="gender" th:text="#{label.gender}"></label>:</td>
 					<td>
 						<table>
 							<tr>
-								<td><input type="radio" th:field="*{gender}" value="M" /></td>
-								<td><input type="radio" th:field="*{gender}" value="F" /></td>
+								<td><input type="radio" th:field="*{gender}" value="M" />M</td>
+								<td><input type="radio" th:field="*{gender}" value="F" />F</td>
 							</tr>
 						</table>
 					</td>
+					<td th:if="${#fields.hasErrors('gender')}"
+						th:text="${#fields.errors('gender')}" class="error"></td>
 				</tr>
 
 				<tr>
-					<td><label for="gender" th:text="#{label.country}"></label>:</td>
-					<td><select th:field="*{country}">
+					<td><label for="country" th:text="#{label.country}"></label>:</td>
+					<td><select th:field="*{country}" th:errorclass="error">
 							<option th:each="country : ${countryList}" th:value="${country}"
 								th:text="${country}"></option>
 					</select></td>
+					<td th:if="${#fields.hasErrors('country')}"
+						th:text="${#fields.errors('country')}" class="error"></td>
 				</tr>
 
 				<tr>
 					<td th:text="#{label.word_verification}"></td>
 					<td th:utext="${reCaptchaHtml}"></td>
+					<td th:if="${#fields.hasErrors('captcha')}"
+						th:text="${#fields.errors('captcha')}" class="error"></td>
 				</tr>
 
 				<tr>

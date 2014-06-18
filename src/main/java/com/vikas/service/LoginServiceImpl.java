@@ -6,6 +6,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
@@ -29,6 +31,9 @@ import com.vikas.domain.PersonRole;
 @Service
 @Transactional
 public class LoginServiceImpl implements LoginService {
+
+	private static Logger LOGGER = LoggerFactory
+			.getLogger(LoginServiceImpl.class);
 
 	@Autowired
 	private ReloadableResourceBundleMessageSource messageSource;
@@ -71,26 +76,24 @@ public class LoginServiceImpl implements LoginService {
 
 		loginDAO.addPerson(person);
 
-		sendActivationMail(person);
+		try {
+			Object[] args = new Object[] { person.getFirstName(),
+					person.getLastName(), contextPath,
+					String.valueOf(person.getPersonId()),
+					String.valueOf(person.getAuthKey()) };
+
+			String message = messageSource.getMessage("mail.activation", args,
+					Locale.US);
+			sendMail(person, message);
+		} catch (MailException e) {
+			LOGGER.error("failed to send email, exception: {}", e.toString());
+		}
 	}
 
 	private void createAuthKey(Person person) {
 
 		int authKey = 10000000 + (int) (Math.random() * 99999999);
 		person.setAuthKey(authKey);
-	}
-
-	private void sendActivationMail(Person person) {
-
-		Object[] args = new Object[] { person.getFirstName(),
-				person.getLastName(), contextPath,
-				String.valueOf(person.getPersonId()),
-				String.valueOf(person.getAuthKey()) };
-
-		String message = messageSource.getMessage("mail.activation", args,
-				Locale.US);
-
-		sendMail(person, message);
 	}
 
 	@Override
@@ -107,7 +110,7 @@ public class LoginServiceImpl implements LoginService {
 
 	@Override
 	@Transactional(readOnly = true)
-	public boolean sendResetPasswordMail(Person person) throws MailException {
+	public boolean sendResetPasswordMail(Person person) {
 
 		Person p = null;
 		if (StringUtils.hasText(person.getEmailAddress())) {
@@ -125,20 +128,19 @@ public class LoginServiceImpl implements LoginService {
 		}
 
 		try {
-			sendActivationMail(p);
+			Object[] args = new Object[] { p.getFirstName(), p.getLastName(),
+					contextPath, String.valueOf(p.getPersonId()),
+					String.valueOf(p.getAuthKey()) };
+
+			String message = messageSource.getMessage("mail.resetPassword",
+					args, Locale.US);
+			sendMail(p, message);
 		} catch (MailException e) {
+			LOGGER.error("failed to send email, exception: {}", e.toString());
 			return false;
 		}
 
 		return true;
-	}
-
-	private void sendMail(Person person, String message) throws MailException {
-
-		SimpleMailMessage msg = new SimpleMailMessage(this.templateMessage);
-		msg.setTo(person.getEmailAddress());
-		msg.setText(message);
-		this.mailSender.send(msg);
 	}
 
 	@Override
@@ -148,6 +150,7 @@ public class LoginServiceImpl implements LoginService {
 		Person person = loginDAO.findByPID(pid);
 
 		if (person == null || !authKey.equals(person.getAuthKey())) {
+			LOGGER.error("pid {} with authKey {} not found.", pid, authKey);
 			return null;
 		}
 
@@ -196,5 +199,13 @@ public class LoginServiceImpl implements LoginService {
 		} catch (Exception e) {
 			return "India";
 		}
+	}
+
+	private void sendMail(Person person, String message) throws MailException {
+
+		SimpleMailMessage msg = new SimpleMailMessage(this.templateMessage);
+		msg.setTo(person.getEmailAddress());
+		msg.setText(message);
+		this.mailSender.send(msg);
 	}
 }

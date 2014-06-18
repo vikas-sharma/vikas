@@ -8,6 +8,12 @@
 <link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
 	type="text/css" />
 
+<style>
+.error {
+	color: #ff0000;
+}
+</style>
+
 <title>Login page</title>
 </head>
 <body class="tundra spring">
@@ -21,29 +27,44 @@
 			<hr />
 		</div>
 
-		<table class="normal">
-			<tr>
-				<td height="50">Login page</td>
-			</tr>
-		</table>
-
 		<h1>Login page</h1>
 
-		<p th:if="${loginError}">Wrong user or password</p>
+		<div align='center'>
 
-		<form th:action="@{/j_spring_security_check}" method="post">
+			<div th:if="${param.login_error}" class="error">Wrong username or password</div>
 
-			<label for="j_username">Username</label>: <input type="text"
-				id="j_username" name="j_username" /> <br /> <label for="j_password">Password</label>:
-			<input type="password" id="j_password" name="j_password" /> <br /> <label
-				for="_spring_security_remember_me">Remember me</label>: <input
-				id="_spring_security_remember_me" type='checkbox'
-				name='_spring_security_remember_me' value='on' checked='checked' />
+			<form th:action="@{/j_spring_security_check}" method="post">
 
-			<a href="forgot.htm">forgot password</a> <input type="submit"
-				value="Log in" /> <input type="reset" value="Reset" />
+				<div>
+				<label for="j_username">Username: </label>
+				<input type="text" id="j_username" name="j_username" />
+				</div>
+				<br/>
 
-		</form>
+				<div>
+				<label for="j_password">Password: </label>
+				<input type="password" id="j_password" name="j_password" />
+				</div>
+				<br/>
+
+				<div>
+				<label for="_spring_security_remember_me">Remember me: </label>
+				<input id="_spring_security_remember_me" type='checkbox' name='_spring_security_remember_me' value='on' checked='checked' />
+				</div>
+				<br/>
+
+				<div>
+				<a href="forgot.htm">forgot password</a>
+				</div>
+				<br/>
+
+				<div>
+					<input type="submit" value="Log in" />
+					<input type="reset" value="Reset" />
+				</div>
+
+			</form>
+		</div>
 	</div>
 </body>
 </html>

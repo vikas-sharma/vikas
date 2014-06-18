@@ -111,14 +111,15 @@ public class LoginController {
 	public String forgot(Model model, @RequestParam(required = false) String msg) {
 
 		if ("success".equals(msg)) {
-			return "forgotSuccess";
+			model.addAttribute("msg", "success");
+			return "forgot";
 		}
 
-		Person person = new Person();
-		model.addAttribute(person);
+		model.addAttribute("person", new Person());
 
 		if ("fail".equals(msg)) {
-			return "forgotFail";
+			model.addAttribute("msg", "fail");
+			return "forgot";
 		}
 
 		return "forgot";
@@ -139,7 +140,7 @@ public class LoginController {
 		return "redirect:forgot.htm";
 	}
 
-	@RequestMapping(value = "/password_reset.htm", method = RequestMethod.GET)
+	@RequestMapping(value = "/reset_password.htm", method = RequestMethod.GET)
 	public String passwordReset(Model model, @RequestParam long pid,
 			@RequestParam int authKey) {
 
@@ -153,10 +154,10 @@ public class LoginController {
 
 		model.addAttribute("person", person);
 
-		return "reset";
+		return "resetPassword";
 	}
 
-	@RequestMapping(value = "/password_reset.htm", method = RequestMethod.POST)
+	@RequestMapping(value = "/reset_password.htm", method = RequestMethod.POST)
 	public String passwordReset(@ModelAttribute("person") Person person) {
 
 		loginService.resetPassword(person);

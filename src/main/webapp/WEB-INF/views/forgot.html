@@ -26,18 +26,18 @@
 			</tr>
 		</table>
 
-		<div align='center'>
+		<div th:if="${msg} == 'success'">
+			<font color="red">Your username and password details are sent
+				to your mail id. Please check.</font>
+		</div>
 
-			<form th:object="${person}">
+		<div th:if="${msg} != 'success'">
 
-				<div th:if="${param.msg == 'success'}">
-					<font color="red">Your username and password details are
-						sent to your mail id. Please check.</font>
-				</div>
+			<div align='center'>
 
-				<div th:else="">
+				<form th:object="${person}" method="post">
 
-					<div th:if="${param.msg == 'fail'}">
+					<div th:if="${msg} == 'fail'">
 						<font color="red">Please provide correct mail id or
 							username.</font>
 					</div>
@@ -49,24 +49,24 @@
 						</tr>
 						<tr>
 							<td>email id :</td>
-							<td><input type="text" path="emailAddress" /></td>
+							<td><input type="text" th:field="*{emailAddress}" /></td>
 						</tr>
 						<tr>
 							<td colspan="3">--OR--</td>
 						</tr>
 						<tr>
 							<td>User Name :</td>
-							<td><input type="text" path="name" maxlength="32" /></td>
+							<td><input type="text" th:field="*{name}" maxlength="32" /></td>
 						</tr>
 
 						<tr>
 							<td colspan="3"><input type="submit"
-								value="Email My Password"></td>
+								value="Email My Password" /></td>
 						</tr>
 
 					</table>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>

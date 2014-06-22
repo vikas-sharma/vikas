@@ -69,7 +69,7 @@
 				</tr>
 				<tr>
 					<td><label for="password" th:text="#{label.password}"></label>:</td>
-					<td><input type="text" th:field="*{password}" /></td>
+					<td><input type="password" th:field="*{password}" /></td>
 					<td th:if="${#fields.hasErrors('password')}"
 						th:text="${#fields.errors('password')}" class="error"></td>
 				</tr>

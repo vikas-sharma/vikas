@@ -193,10 +193,8 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
 		ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
 		viewResolver.setTemplateEngine(templateEngine());
-		viewResolver.setOrder(1);
 		viewResolver.setViewNames(new String[] { "*" });
 		viewResolver.setCache(false);
-		viewResolver.setOrder(1);
 
 		return viewResolver;
 	}

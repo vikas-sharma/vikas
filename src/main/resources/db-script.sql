@@ -4,4 +4,4 @@ INSERT INTO person (PERSON_ID, NAME, ENCODED_PASSWORD, EMAIL_ADDRESS, FIRST_NAME
 
 INSERT INTO person_role (PERSON_ID, ROLE) VALUES (1, 1)
 
-INSERT INTO game (game_id,  title,  status,  gm_id,  time_left,  fen) values (1, 'Anand vs World', 'STARTED', 2, 0, null)
+INSERT INTO game (game_id,  title,  status,  gm_id,  time_left,  fen) values (1, 'Anand vs World', 'STARTED', 2, 0, 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')

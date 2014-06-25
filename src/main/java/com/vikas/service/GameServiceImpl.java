@@ -2,6 +2,8 @@ package com.vikas.service;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
@@ -21,6 +23,9 @@ import com.vikas.model.PersonGame;
 @Service
 @Transactional
 public class GameServiceImpl implements GameService {
+
+	private static Logger LOGGER = LoggerFactory
+			.getLogger(GameServiceImpl.class);
 
 	@Autowired
 	private GameDAO gameDAO;
@@ -105,6 +110,9 @@ public class GameServiceImpl implements GameService {
 				.getAuthentication().getName();
 
 		Game game = gameDAO.getGame(gameId);
+
+		position.setFen(game.getFen());
+
 		String gmName = gameDAO.getGmName(game.getGmId());
 
 		if (personId == game.getGmId()) { // if person is title player

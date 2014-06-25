@@ -5,7 +5,8 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}" type="text/css" />
+<link rel="stylesheet" th:href="@{${'/' + #themes.code('css')}}"
+	type="text/css" />
 
 <script
 	src="http://www.google.com/jsapi?key=ABQIAAAAskGHH4QCF7EWi5qfKmklERSQYZB7zIwjPLM5VrbiIxCsikgCEBTtiSYXBMHZk5VKVPk4kyb_MfGblw"
@@ -16,7 +17,7 @@
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="scripts/chess.js"></script>
+<script type="text/javascript" src="scripts/game.js"></script>
 
 <link rel="stylesheet" type="text/css" href="styles/chess.css" />
 
@@ -42,17 +43,44 @@
 
 		</table>
 
-		<div id="main">
+		<form th:object="${position}" method="post">
 
-			<div id="chess-container">
-				<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
-					<div th:each="sqCol : ${#numbers.sequence( 0, 7)}">
-						<div th:id="'square_' + ${sqRow * 8 + sqCol}" class="square"></div>
+			<div class="container">
+				<div class="left-element">
+
+					<div th:switch="${whiteOnTop}">
+						<p th:case="${true}" th:text="${whitePlayer} - ${whiteTimeLeft}">White</p>
+						<p th:case="${false}" th:text="${blackPlayer} - ${blackTimeLeft}">Black</p>
 					</div>
+
+					<div id="chess-container">
+						<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
+							<div th:each="sqCol : ${#numbers.sequence( 0, 7)}">
+								<div th:id="'square_' + ${sqRow * 8 + sqCol}" class="square"></div>
+							</div>
+						</div>
+					</div>
+
+					<div th:switch="${whiteOnTop}">
+						<p th:case="${false}" th:text="${whitePlayer} - ${whiteTimeLeft}">White</p>
+						<p th:case="${true}" th:text="${blackPlayer} - ${blackTimeLeft}">Black</p>
+					</div>
+
 				</div>
+
+				<div class="right-element">
+					<p th:if="${positionStatus=='NOT_JOINED'}">
+						<input type="submit" name="Join Game" value="Join Game" />
+					</p>
+				</div>
+
 			</div>
-		</div>
+
+		</form>
 	</div>
+	<script type="text/javascript" th:inline="javascript">
+		newGame([[${position.fen}]], [[${position.whiteOnTop}]]);
+	</script>
 
 </body>
 </html>

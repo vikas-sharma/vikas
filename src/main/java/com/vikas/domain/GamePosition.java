@@ -36,7 +36,7 @@ public class GamePosition {
 	private String toSq;
 	private String promotedPiece;
 
-	private String[] boardImg;
+	private String fen;
 	private List<Integer> pawnPromotionSquares;
 	private Map<Integer, List<Integer>> dragDrops;
 
@@ -192,12 +192,12 @@ public class GamePosition {
 		this.promotedPiece = promotedPiece;
 	}
 
-	public String[] getBoardImg() {
-		return boardImg;
+	public String getFen() {
+		return fen;
 	}
 
-	public void setBoardImg(String[] boardImg) {
-		this.boardImg = boardImg;
+	public void setFen(String fen) {
+		this.fen = fen;
 	}
 
 	public List<Integer> getPawnPromotionSquares() {

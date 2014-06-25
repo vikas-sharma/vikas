@@ -44,6 +44,8 @@ public class GameController {
 	public String showGame(Model model, @RequestParam int gameId) {
 
 		GamePosition position = gameService.getPosition(gameId);
+		
+		LOGGER.info("status: {}", position.getPositionStatus());
 
 		model.addAttribute("position", position);
 

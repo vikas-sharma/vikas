@@ -219,7 +219,6 @@ public class OpeningTable implements Constants {
 		int toSq = 8 * y + x;
 
 		int p = getPiece(board, fromSq);
-		int c = getPiece(board, toSq);
 
 		int mv;
 		if (p == KING && fromSq == E1 && toSq == G1) {
@@ -231,6 +230,7 @@ public class OpeningTable implements Constants {
 		} else if (p == KING && fromSq == E8 && toSq == C8) {
 			mv = (KING << 12) | (C8 << 6) | E8;
 		} else {
+			int c = getPiece(board, toSq);
 			if ((board.color && p == PAWN && fromSq <= H7) ||
 				(!board.color && p == PAWN && fromSq >= A2)) {
 				mv = (QUEEN << 18) | (c << 15) | (p << 12) | (toSq << 6) | fromSq;

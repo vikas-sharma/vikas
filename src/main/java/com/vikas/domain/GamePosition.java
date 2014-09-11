@@ -215,4 +215,20 @@ public class GamePosition {
 	public void setDragDrops(Map<Integer, List<Integer>> dragDrops) {
 		this.dragDrops = dragDrops;
 	}
+
+	@Override
+	public String toString() {
+		return "GamePosition [gameId=" + gameId + ", gameTitle=" + gameTitle
+				+ ", gameStatus=" + gameStatus + ", personId=" + personId
+				+ ", userType=" + userType + ", userColor=" + userColor
+				+ ", userJoinStatus=" + userJoinStatus + ", userVoteStatus="
+				+ userVoteStatus + ", positionStatus=" + positionStatus
+				+ ", turn=" + turn + ", whiteOnTop=" + whiteOnTop
+				+ ", gmPlayer=" + gmPlayer + ", whitePlayer=" + whitePlayer
+				+ ", blackPlayer=" + blackPlayer + ", whiteTimeLeft="
+				+ whiteTimeLeft + ", blackTimeLeft=" + blackTimeLeft
+				+ ", fromSq=" + fromSq + ", toSq=" + toSq + ", promotedPiece="
+				+ promotedPiece + ", fen=" + fen + ", pawnPromotionSquares="
+				+ pawnPromotionSquares + ", dragDrops=" + dragDrops + "]";
+	}
 }

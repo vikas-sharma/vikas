@@ -178,6 +178,9 @@ public class GameServiceImpl implements GameService {
 				position.setPositionStatus("NOT_JOINED");
 			}
 		}
+
+		LOGGER.info("position: {}", position);
+
 		return position;
 	}
 }

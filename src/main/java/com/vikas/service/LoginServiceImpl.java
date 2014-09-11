@@ -86,7 +86,7 @@ public class LoginServiceImpl implements LoginService {
 					Locale.US);
 			sendMail(person, message);
 		} catch (MailException e) {
-			LOGGER.error("failed to send email, exception: {}", e.toString());
+			LOGGER.error("failed to send email.", e);
 		}
 	}
 
@@ -136,7 +136,7 @@ public class LoginServiceImpl implements LoginService {
 					args, Locale.US);
 			sendMail(p, message);
 		} catch (MailException e) {
-			LOGGER.error("failed to send email, exception: {}", e.toString());
+			LOGGER.error("failed to send email.", e);
 			return false;
 		}
 

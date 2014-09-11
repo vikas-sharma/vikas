@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.vikas.domain.Game;
 import com.vikas.domain.GamePosition;
-import com.vikas.domain.VoteType;
 import com.vikas.service.GameService;
 
 /**
@@ -44,8 +43,6 @@ public class GameController {
 	public String showGame(Model model, @RequestParam int gameId) {
 
 		GamePosition position = gameService.getPosition(gameId);
-		
-		LOGGER.info("status: {}", position.getPositionStatus());
 
 		model.addAttribute("position", position);
 
@@ -65,7 +62,7 @@ public class GameController {
 	}
 
 	@RequestMapping(value = "/game.htm", params = "UnJoin Game", method = RequestMethod.POST)
-	public String unJoinGame(Model model,
+	public String abort(Model model,
 			@ModelAttribute("position") GamePosition position) {
 
 		GamePosition newPosition = gameService.removePersonFromGame(
@@ -78,8 +75,7 @@ public class GameController {
 
 	@RequestMapping(value = "/game.htm", params = "Vote Move", method = RequestMethod.POST)
 	public String voteMove(Model model,
-			@ModelAttribute("position") GamePosition position,
-			@RequestParam VoteType voteType) {
+			@ModelAttribute("position") GamePosition position) {
 
 		// GamePosition newPosition = gameService.addMove(move);
 		return "readOnlyGame";

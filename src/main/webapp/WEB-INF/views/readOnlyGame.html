@@ -44,13 +44,15 @@
 		</table>
 
 		<form th:object="${position}" method="post">
+		
+			<H3 th:text="*{gameTitle}">title</H3>
 
 			<div class="container">
 				<div class="left-element">
 
 					<div th:switch="${whiteOnTop}">
-						<p th:case="${true}" th:text="${whitePlayer} - ${whiteTimeLeft}">White</p>
-						<p th:case="${false}" th:text="${blackPlayer} - ${blackTimeLeft}">Black</p>
+						<p th:case="${true}" th:text="${position.whitePlayer} - ${position.whiteTimeLeft}">White</p>
+						<p th:case="${false}" th:text="${position.blackPlayer} - ${position.blackTimeLeft}">Black</p>
 					</div>
 
 					<div id="chess-container">
@@ -62,14 +64,14 @@
 					</div>
 
 					<div th:switch="${whiteOnTop}">
-						<p th:case="${false}" th:text="${whitePlayer} - ${whiteTimeLeft}">White</p>
-						<p th:case="${true}" th:text="${blackPlayer} - ${blackTimeLeft}">Black</p>
+						<p th:case="${false}" th:text="${position.whitePlayer} - ${position.whiteTimeLeft}">White</p>
+						<p th:case="${true}" th:text="${position.blackPlayer} - ${position.blackTimeLeft}">Black</p>
 					</div>
 
 				</div>
 
 				<div class="right-element">
-					<p th:if="${positionStatus=='NOT_JOINED'}">
+					<p th:if="${position.positionStatus=='NOT_JOINED'}">
 						<input type="submit" name="Join Game" value="Join Game" />
 					</p>
 				</div>

@@ -20,6 +20,15 @@ public final class Engine implements Constants {
 			return move + "XXX ";
 		}
 
+		if (Utility.bitCount(board.allpieces) <= 5) {
+
+			String result = EndgameTable.playMove(board);
+			
+			if (result != null) {
+				return result;
+			}
+		}
+
 		BitBoard startBoard = new BitBoard(board);
 		int depth = 1;
 		int score = 0;
@@ -110,8 +119,8 @@ public final class Engine implements Constants {
 		return null;
 	}
 
-	public final int alphaBeta(int depth, int ply, int alpha, int beta, final BitBoard board)
-	{
+	private final int alphaBeta(int depth, int ply, int alpha, int beta, final BitBoard board) {
+
 		long entry = TranspositionTable.getEntry(board.zobristKey);
 		if (entry != 0) {
 

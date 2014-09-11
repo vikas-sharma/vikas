@@ -23,29 +23,79 @@
 <title>Welcome to Vikas World!</title>
 </head>
 <body class="tundra spring">
-	<div id="main_div" th:include="fragments/bodyHeader :: header">
-		<div id="main">
 
-			<div id="chess-container">
-				<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
-					<div th:each="sqCol : ${#numbers.sequence( 0, 7)}">
-						<div th:id="'square_' + ${sqRow * 8 + sqCol}" class="square"></div>
-					</div>
-				</div>
-			</div>
+	<div id="main_div">
 
-			<div id="white_promotion_window">
-				<img id="WQ" src='images/WQ.png'> <img id="WR"
-					src='images/WR.png'> <img id="WB" src='images/WB.png'>
-				<img id="WN" src='images/WN.png'>
-			</div>
+		<div th:replace="fragments/bodyHeader :: header"></div>
 
-			<div id="black_promotion_window">
-				<img id="BQ" src='images/BQ.png'> <img id="BR"
-					src='images/BR.png'> <img id="BB" src='images/BB.png'>
-				<img id="BN" src='images/BN.png'>
-			</div>
+		<div id="breadcrumb">
+			<a th:href="@{'/'}">Home</a> >> <a th:href="@{'/chess/index.htm'}">Chess</a>
+			>> Vote Chess
+			<hr />
 		</div>
+
+		<table class="normal">
+
+			<tr>
+				<td th:text="#{title_myPhotos}" height="50"></td>
+			</tr>
+
+		</table>
+
+		<form th:object="${position}" method="post">
+		
+			<H3 th:text="*{gameTitle}">title</H3>
+
+			<div class="container">
+				<div class="left-element">
+
+					<div th:switch="${whiteOnTop}">
+						<p th:case="${true}" th:text="${position.whitePlayer} - ${position.whiteTimeLeft}">White</p>
+						<p th:case="${false}" th:text="${position.blackPlayer} - ${position.blackTimeLeft}">Black</p>
+					</div>
+
+					<div id="chess-container">
+						<div th:each="sqRow : ${#numbers.sequence( 0, 7)}" class="row">
+							<div th:each="sqCol : ${#numbers.sequence( 0, 7)}">
+								<div th:id="'square_' + ${sqRow * 8 + sqCol}" class="square"></div>
+							</div>
+						</div>
+					</div>
+
+					<div th:switch="${whiteOnTop}">
+						<p th:case="${false}" th:text="*{whitePlayer} - *{whiteTimeLeft}">White</p>
+						<p th:case="${true}" th:text="*{blackPlayer} - *{blackTimeLeft}">Black</p>
+					</div>
+
+				</div>
+
+				<div class="right-element">
+					<input type="submit" name="Vote Move" value="Vote Move" />
+					<input type="submit" name="Cancel" value="Cancel" />
+				</div>
+
+			</div>
+
+		</form>
+
+		<div id="white_promotion_window">
+			<img id="WQ" src='images/WQ.png' />
+			<img id="WR" src='images/WR.png' />
+			<img id="WB" src='images/WB.png' />
+			<img id="WN" src='images/WN.png' />
+		</div>
+
+		<div id="black_promotion_window">
+			<img id="BQ" src='images/BQ.png' />
+			<img id="BR" src='images/BR.png' />
+			<img id="BB" src='images/BB.png' />
+			<img id="BN" src='images/BN.png' />
+		</div>
+
 	</div>
+	<script type="text/javascript" th:inline="javascript">
+		newGame([[${position.fen}]], [[${position.whiteOnTop}]]);
+	</script>
+
 </body>
 </html>

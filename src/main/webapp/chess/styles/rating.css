@@ -1,0 +1,28 @@
+.players {
+	border: 2px solid #ccc;
+	overflow-y: scroll;
+}
+
+.container {
+	position: relative;
+	height: 440px;
+}
+
+.left-element {
+	position: absolute;
+	left: 0;
+	width: 20%;
+	height: 440px;
+	font: 14px/180% Verdana;
+	overflow: auto;
+}
+
+.left-element a {
+	text-decoration: none;
+}
+
+.right-element {
+	position: absolute;
+	right: 0;
+	width: 80%;
+}

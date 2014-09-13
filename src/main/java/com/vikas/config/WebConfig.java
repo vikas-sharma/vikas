@@ -74,18 +74,14 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		registry.addViewController("/login.htm").setViewName("login");
 		registry.addViewController("/success.htm").setViewName("success");
 		registry.addViewController("/chess/index.htm").setViewName("chess");
-		// registry.addViewController("/chess/favourites.htm").setViewName(
-		// "favourites");
 		registry.addViewController("/personal/index.htm").setViewName(
 				"personal");
-		// registry.addViewController("/personal/myPhotos.htm").setViewName(
-		// "myPhotos");
-		// registry.addViewController("/personal/familyPhotos.htm").setViewName(
-		// "familyPhotos");
 		registry.addViewController("/technology/index.htm").setViewName(
 				"technology");
 		registry.addViewController("/chess/playChess.htm").setViewName(
 				"computerChess");
+		registry.addViewController("/chess/ratingChart.htm").setViewName(
+				"ratingChart");
 		registry.addViewController("/uncaughtException");
 		registry.addViewController("/resourceNotFound");
 		registry.addViewController("/dataAccessFailure");

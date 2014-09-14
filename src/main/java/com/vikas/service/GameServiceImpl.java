@@ -1,6 +1,7 @@
 package com.vikas.service;
 
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,7 @@ import com.vikas.dao.GameDAO;
 import com.vikas.domain.Game;
 import com.vikas.domain.GamePosition;
 import com.vikas.domain.Move;
+import com.vikas.engine.BitBoard;
 import com.vikas.model.PersonGame;
 
 /**
@@ -29,6 +31,9 @@ public class GameServiceImpl implements GameService {
 
 	@Autowired
 	private GameDAO gameDAO;
+
+	@Autowired
+	private ChessEngineService chessEngineService;
 
 	@Override
 	public List<Game> getAllGames() {
@@ -110,6 +115,12 @@ public class GameServiceImpl implements GameService {
 				.getAuthentication().getName();
 
 		Game game = gameDAO.getGame(gameId);
+
+		BitBoard board = new BitBoard(game.getFen());
+		Map<Integer, List<Integer>> dragDrops = chessEngineService
+				.getDragDrop(board);
+
+		position.setDragDrop(dragDrops.toString());
 
 		position.setFen(game.getFen());
 

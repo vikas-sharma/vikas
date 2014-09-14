@@ -28,7 +28,7 @@ public class GameController {
 			.getLogger(GameController.class);
 
 	@Autowired
-	GameService gameService;
+	private GameService gameService;
 
 	@RequestMapping(value = "/listgames.htm", method = RequestMethod.GET)
 	public String listGames(Model model) {

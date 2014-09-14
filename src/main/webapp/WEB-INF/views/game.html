@@ -16,7 +16,7 @@
 <script type="text/javascript"
 	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="scripts/chess.js"></script>
+<script type="text/javascript" src="scripts/game.js"></script>
 
 <link rel="stylesheet" type="text/css" href="styles/chess.css" />
 
@@ -37,7 +37,7 @@
 		<table class="normal">
 
 			<tr>
-				<td th:text="#{title_myPhotos}" height="50"></td>
+				<td th:text="#{title_voteChess}" height="50"></td>
 			</tr>
 
 		</table>
@@ -94,7 +94,7 @@
 
 	</div>
 	<script type="text/javascript" th:inline="javascript">
-		newGame([[${position.fen}]], [[${position.whiteOnTop}]]);
+		newGameWithDragDrop([[${position.fen}]], [[${position.whiteOnTop}]], [[${position.dragDrop}]]);
 	</script>
 
 </body>

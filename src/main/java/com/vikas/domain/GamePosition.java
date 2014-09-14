@@ -1,7 +1,6 @@
 package com.vikas.domain;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * 
@@ -38,7 +37,7 @@ public class GamePosition {
 
 	private String fen;
 	private List<Integer> pawnPromotionSquares;
-	private Map<Integer, List<Integer>> dragDrops;
+	private String dragDrop;
 
 	public int getGameId() {
 		return gameId;
@@ -208,12 +207,12 @@ public class GamePosition {
 		this.pawnPromotionSquares = pawnPromotionSquares;
 	}
 
-	public Map<Integer, List<Integer>> getDragDrops() {
-		return dragDrops;
+	public String getDragDrop() {
+		return dragDrop;
 	}
 
-	public void setDragDrops(Map<Integer, List<Integer>> dragDrops) {
-		this.dragDrops = dragDrops;
+	public void setDragDrop(String dragDrop) {
+		this.dragDrop = dragDrop;
 	}
 
 	@Override
@@ -229,6 +228,6 @@ public class GamePosition {
 				+ whiteTimeLeft + ", blackTimeLeft=" + blackTimeLeft
 				+ ", fromSq=" + fromSq + ", toSq=" + toSq + ", promotedPiece="
 				+ promotedPiece + ", fen=" + fen + ", pawnPromotionSquares="
-				+ pawnPromotionSquares + ", dragDrops=" + dragDrops + "]";
+				+ pawnPromotionSquares + ", dragDrop=" + dragDrop + "]";
 	}
 }

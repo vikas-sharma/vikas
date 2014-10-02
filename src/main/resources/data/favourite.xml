@@ -36,6 +36,10 @@
 	</head>
 	<head name="Chess Theory">
 		<information>
+			<title>Remote Chess Academy</title>
+			<url>http://chess-teacher.com/</url>
+		</information>
+		<information>
 			<title>Online Chess Lessons</title>
 			<url>http://www.onlinechesslessons.net</url>
 		</information>
@@ -66,6 +70,14 @@
 		<information>
 			<title>Chess Mentor</title>
 			<url>http://www.chessmentor.com/</url>
+		</information>
+		<information>
+			<title>The Chess World</title>
+			<url>http://www.thechessworld.com/</url>
+		</information>
+		<information>
+			<title>Chess Area</title>
+			<url>http://www.chessarea.com/</url>
 		</information>
 	</head>
 	<head name="GrandMaster Sites">
@@ -202,6 +214,10 @@
 			<url>http://www.pgnmentor.com/files.html</url>
 		</information>
 		<information>
+			<title>Chess Database</title>
+			<url>http://www.chess-database.com/</url>
+		</information>
+		<information>
 			<title>Endgame Tablespace</title>
 			<url>http://www.k4it.de/egtb/endgame.php?lang=en</url>
 		</information>
@@ -256,6 +272,10 @@
 		<information>
 			<title>Russia Chess Videos</title>
 			<url>http://video.russiachess.org</url>
+		</information>
+		<information>
+			<title>Chess24</title>
+			<url>https://chess24.com/en</url>
 		</information>
 		<information>
 			<title>Chess Results</title>

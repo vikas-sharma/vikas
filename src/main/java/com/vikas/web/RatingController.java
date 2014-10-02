@@ -6,9 +6,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 import javax.servlet.ServletContext;
 
@@ -66,22 +63,6 @@ public class RatingController {
 
 				reader = new BufferedReader(new InputStreamReader(fis));
 
-				List<String> ratingList = new ArrayList<String>();
-
-				String line;
-				while (true) {
-
-					line = reader.readLine();
-					if (line == null) {
-						break;
-					}
-
-					ratingList.add(line);
-
-				}
-
-				Collections.reverse(ratingList);
-
 				boolean first = true;
 
 				String[] arr;
@@ -91,7 +72,13 @@ public class RatingController {
 
 				jGenerator.writeArrayFieldStart("data");
 
-				for (String rating : ratingList) {
+				String rating;
+				while (true) {
+
+					rating = reader.readLine();
+					if (rating == null) {
+						break;
+					}
 
 					arr = rating.trim().split("\\s+");
 

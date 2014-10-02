@@ -65,7 +65,7 @@ public class RatingController {
 
 				boolean first = true;
 
-				String[] arr;
+				String[] arr = null;
 
 				jGenerator.writeObjectFieldStart(filename);
 				jGenerator.writeStringField("label", filename);
@@ -77,22 +77,23 @@ public class RatingController {
 
 					rating = reader.readLine();
 					if (rating == null) {
+
 						break;
 					}
 
 					arr = rating.trim().split("\\s+");
 
-					if (!first && !arr[0].endsWith("Jan")) {
-						continue;
+					if (first) {
+
+						writeYearAndRating(jGenerator, "2015", arr[1]);
+
+					} else if (arr[0].endsWith("Jan")) {
+
+						writeYearAndRating(jGenerator, arr[0].substring(0, 4),
+								arr[1]);
 					}
 					first = false;
 
-					jGenerator.writeStartArray();
-
-					jGenerator.writeNumber(arr[0].substring(0, 4));
-					jGenerator.writeNumber(arr[1]);
-
-					jGenerator.writeEndArray();
 				}
 
 				jGenerator.writeEndArray();
@@ -114,5 +115,16 @@ public class RatingController {
 		}
 
 		return writer.toString();
+	}
+
+	private void writeYearAndRating(JsonGenerator jGenerator, String year,
+			String rating) throws IOException {
+
+		jGenerator.writeStartArray();
+
+		jGenerator.writeNumber(year);
+		jGenerator.writeNumber(rating);
+
+		jGenerator.writeEndArray();
 	}
 }

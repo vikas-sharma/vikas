@@ -6,6 +6,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletContext;
 
@@ -36,6 +38,27 @@ public class RatingController {
 	@Autowired
 	private ServletContext context;
 
+	private static final Map<String, Float> monthsMap;
+
+	static {
+
+		monthsMap = new HashMap<String, Float>();
+
+		monthsMap.put("Jan", (float) 1 / 12);
+		monthsMap.put("Feb", (float) 2 / 12);
+		monthsMap.put("Mar", (float) 3 / 12);
+		monthsMap.put("Apr", (float) 4 / 12);
+		monthsMap.put("May", (float) 5 / 12);
+		monthsMap.put("Jun", (float) 6 / 12);
+		monthsMap.put("Jul", (float) 7 / 12);
+		monthsMap.put("Aug", (float) 8 / 12);
+		monthsMap.put("Sep", (float) 9 / 12);
+		monthsMap.put("Oct", (float) 10 / 12);
+		monthsMap.put("Nov", (float) 11 / 12);
+		monthsMap.put("Dec", (float) 12 / 12);
+
+	}
+
 	@RequestMapping(value = "/rating/init.htm", method = RequestMethod.GET)
 	@ResponseBody
 	public String getTopPlayersRatingList() {
@@ -63,9 +86,7 @@ public class RatingController {
 
 				reader = new BufferedReader(new InputStreamReader(fis));
 
-				boolean first = true;
-
-				String[] arr = null;
+				String[] arr;
 
 				jGenerator.writeObjectFieldStart(filename);
 				jGenerator.writeStringField("label", filename);
@@ -83,19 +104,8 @@ public class RatingController {
 
 					arr = rating.trim().split("\\s+");
 
-					if (first) {
-
-						writeYearAndRating(jGenerator, "2015", arr[1]);
-
-					} else if (arr[0].endsWith("Jan")) {
-
-						writeYearAndRating(jGenerator, arr[0].substring(0, 4),
-								arr[1]);
-					}
-					first = false;
-
+					write(jGenerator, arr[0], arr[1]);
 				}
-
 				jGenerator.writeEndArray();
 				jGenerator.writeEndObject();
 			}
@@ -117,12 +127,15 @@ public class RatingController {
 		return writer.toString();
 	}
 
-	private void writeYearAndRating(JsonGenerator jGenerator, String year,
-			String rating) throws IOException {
+	private void write(JsonGenerator jGenerator, String date, String rating)
+			throws IOException {
+
+		String year = date.substring(0, 4);
+		String month = date.substring(5);
 
 		jGenerator.writeStartArray();
 
-		jGenerator.writeNumber(year);
+		jGenerator.writeNumber(Integer.parseInt(year) + monthsMap.get(month));
 		jGenerator.writeNumber(rating);
 
 		jGenerator.writeEndArray();

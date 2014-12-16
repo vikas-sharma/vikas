@@ -1,3 +1,257 @@
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.13"]
+[Round "1"]
+[White "Vikas R, Sharma"]
+[Black "Rohan, Mankar"]
+[Result "1-0"]
+[ECO "C25"]
+[WhiteElo "2010"]
+[PlyCount "37"]
+
+1. e4 e5 2. Nf3 c6 3. Nc3 f6 4. Nxe5 fxe5 5. Qh5+ g6 6. Qxe5+ Ne7 7. Qxh8 c5 8.
+d4 d6 9. Bb5+ Nbc6 10. Bh6 cxd4 11. Qxf8+ Kd7 12. Qxd8+ Kxd8 13. Nd5 Nxd5 14.
+exd5 Nb4 15. O-O-O Nxa2+ 16. Kb1 Nb4 17. Rxd4 Na6 18. Rc4 Bg4 19. Bg5# 1-0
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.13"]
+[Round "2"]
+[White "Niti, Gupta"]
+[Black "Vikas R, Sharma"]
+[Result "0-1"]
+[ECO "A35"]
+[WhiteElo "1381"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "33"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Be2 c5 7. O-O cxd4 8. Nxd4
+(8. exd4 Nc6 9. h3 Bf5 10. Be3 dxc4 11. Bxc4 Rc8) 8... Nc6 (8... dxc4 9. Bxc4
+a6 10. Qe2 e5 11. Nc2 e4 12. Nd4 b5 13. Bb3 Bb7 14. Rd1 Qe7 15. a4 b4 16. Nb1
+Nbd7 17. Nd2 Nc5 18. a5 Nfd7 19. Bc2 Ne5) 9. Nf3 e6 $6 (9... dxc4) 10. Rb1 Ne4
+11. Nxe4 $2 dxe4 12. Qxd8 Rxd8 13. Ng5 f5 14. f3 h6 15. Nh3 exf3 16. Bxf3 e5
+17. Be2 $17 {black wins after some moves. dont remember whole game.} 0-1
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.13"]
+[Round "3"]
+[White "Vikas R, Sharma"]
+[Black "Rupesh, Bhogal"]
+[Result "1-0"]
+[ECO "B07"]
+[WhiteElo "2010"]
+[BlackElo "1644"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "41"]
+
+1. e4 d6 2. d4 Nf6 3. Nc3 c6 4. f4 Qa5 5. Bd3 e5 6. Nf3 Bg4 7. dxe5 (7. Be3
+Nbd7 8. O-O Be7 9. Kh1 {is main line}) 7... dxe5 8. fxe5 Bxf3 $2 (8... Nfd7 9.
+Bf4 Bb4 10. O-O O-O) 9. Qxf3 Qxe5 10. Bf4 $16 Qa5 11. O-O (11. O-O-O {was
+stronger}) 11... Bc5+ $2 (11... Qh5) 12. Kh1 O-O 13. e5 Ne8 14. Qh3 g6 15. Ne4
+$18 Bd4 16. Bh6 Qxe5 17. Bxf8 Kxf8 18. c3 Bb6 19. Rae1 Qg7 20. Ng5 f5 21. Ne6+
+1-0
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.13"]
+[Round "4"]
+[White "Rajesh K, Srivastava"]
+[Black "Vikas R, Sharma"]
+[Result "0-1"]
+[ECO "D90"]
+[WhiteElo "1813"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "70"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. cxd5 Nxd5 6. Qb3 Nb6 7. Bf4 O-O (
+7... Be6 8. Qa3 O-O 9. e4 c6 10. Rd1 N8d7 11. Ng5 Bg4 12. f3 h6 13. fxg4 e5 14.
+Nf3 exf4 15. e5 Re8 16. Be2) 8. Rd1 c6 9. e4 Be6 10. Qc2 N8d7 (10... Bg4 11.
+Be2 Bxf3 12. Bxf3 e5 13. Bxe5 Bxe5 14. dxe5 Qe7 15. Be2 Qxe5 16. O-O) 11. Ng5
+Bc4 (11... Bg4 12. f3 h6 13. fxg4 e5 14. Nh3 exf4 15. Nxf4 Qg5 16. g3 $14) 12.
+Bxc4 Nxc4 13. Qb3 b5 14. O-O Qb6 $2 (14... Qa5 {leaves b6 square for knights})
+15. e5 $1 e6 16. Qc2 (16. h4) 16... c5 17. b3 Na3 18. Qe4 cxd4 19. Rxd4 Nc5 20.
+Qe2 b4 21. Nd1 $2 (21. Nce4 Nxe4 22. Qxe4 Nb5 $1 23. Rxb4 Nc3 $11) 21... h6 22.
+Ne4 Nxe4 23. Qxe4 a5 24. Rd6 Qc7 $11 25. Re1 Nb5 26. Rc6 Qb7 27. Rc4 Qxe4 28.
+Rcxe4 Rfc8 $15 29. R4e2 g5 30. Bg3 Rc5 31. Rd2 Rac8 32. Rb2 $2 (32. f4) 32...
+Rc2 33. Re2 $4 (33. Kf1 $17) 33... Rxb2 34. Rxb2 Rc1 35. Rd2 Nc3 0-1
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.13"]
+[Round "5"]
+[White "Vikas R, Sharma"]
+[Black "Vakil, Akhtara"]
+[Result "1-0"]
+[ECO "B38"]
+[WhiteElo "2010"]
+[BlackElo "1970"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "77"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. f3 g6 6. c4 Bg7 7. Nc3 O-O 8. Be3
+Nc6 9. Be2 Bd7 10. O-O Rc8 11. Qd2 Ne5 $6 (11... Qa5 12. Rfd1 Rfd8 13. Rac1
+Nxd4 14. Bxd4 Bc6) 12. b3 Qa5 13. Rac1 (13. Nd5 $5 Qxd2 14. Nxe7+ Kh8 15. Bxd2
+Rce8 16. Nd5 Nxc4 17. Bxc4 Nxd5 18. Nb5 Bxa1 19. Rxa1 Nb6 20. Nxd6 Nxc4 21.
+bxc4 Re6 22. Nxb7) 13... Rfd8 14. Rfd1 Nc6 15. Bf1 a6 16. Qf2 Qh5 $2 (16...
+Nxd4) 17. Nde2 Be6 $2 (17... Bh6 18. Nf4 Qe5 19. Nfd5 $14) 18. Nf4 Qe5 19. Nd3
+(19. Nfd5 $16) 19... Qh5 20. Ne2 Bh6 $2 (20... g5) 21. Nef4 Bxf4 22. Nxf4 Qe5
+23. Nd3 Qh5 24. g4 Bxg4 25. fxg4 Nxg4 26. Qg3 Nxe3 27. Qxe3 $18 e5 28. Be2 Qh4
+29. Ne1 Nd4 30. Nf3 Qg4+ (30... Qh3 31. Rc3) 31. Kh1 Nxe2 32. Qxe2 f5 33. exf5
+e4 34. Nd4 Qxe2 35. Nxe2 gxf5 36. Ng3 Rc5 37. Rf1 Rf8 38. Rcd1 Rf6 39. Nxe4 1-0
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.14"]
+[Round "6"]
+[White "IM Saptarshi, Roy"]
+[Black "Vikas R, Sharma"]
+[Result "1-0"]
+[ECO "B50"]
+[WhiteElo "2448"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "53"]
+
+1. e4 c5 2. Nf3 d6 3. Bc4 Nf6 4. d3 e6 5. c3 Be7 6. O-O O-O 7. Bb3 Nc6 8. Re1
+d5 $6 (8... b5 9. Nbd2 Bb7 10. Nf1 a5) 9. e5 Nd7 10. d4 cxd4 (10... b6) 11.
+cxd4 f6 12. exf6 Nxf6 13. Nc3 $14 a6 $2 (13... Bd7 14. Ng5 Qc8 15. Qd3 h6 16.
+Nh3 Qe8 17. Nf4 Bd6) 14. Bc2 $2 (14. Ng5 Qd6 15. g3 Nd8 16. Bf4 Qb6 17. Rc1 $16
+) 14... b5 15. a3 Bd6 16. Bg5 b4 (16... Qc7) 17. axb4 Nxb4 18. Bb1 Qb6 19. h3
+Ra7 20. Ne5 Bxe5 $4 (20... Rc7 $15) 21. dxe5 $18 Ng4 22. Qxg4 Qxf2+ 23. Kh2
+Qxb2 24. Na4 Qb3 25. Be3 Raf7 26. Bc5 Rf4 27. Qh5 1-0
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.14"]
+[Round "7"]
+[White "Rajesh R.S., Gupta"]
+[Black "Vikas R, Sharma"]
+[Result "0-1"]
+[ECO "D78"]
+[WhiteElo "1681"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "76"]
+
+1. Nf3 Nf6 2. b3 g6 3. Bb2 Bg7 4. c4 O-O 5. g3 c6 6. Bg2 d5 7. d4 Re8 (7... Be6
+8. Nbd2 a5 9. O-O a4 10. Bc3 axb3 11. axb3 Na6 12. e3 Bf5 13. Qe2 Ne4 14. Nxe4
+Bxe4 15. Rfc1 Qd7 16. c5 Nc7 17. b4) 8. O-O Nbd7 $6 (8... Bf5 9. Nc3 Ne4 10.
+Rc1 Nxc3 11. Bxc3 Be4 12. Qd2 Nd7 13. Rfd1 a5 14. Bh3 Bxf3 15. exf3 e6 16. cxd5
+cxd5 17. Bf1 Qb6) 9. Nbd2 b5 10. Ne5 (10. Qc2) 10... Nxe5 $2 (10... bxc4 11.
+bxc4 Nxe5 12. dxe5 Ng4 13. cxd5 Rb8 14. Bc3 cxd5 15. Nf3 Ba6) 11. dxe5 Ng4 12.
+cxb5 $2 (12. cxd5 cxd5 13. Nf3 {transposes to game}) 12... cxb5 $2 (12... Bxe5
+13. Bxe5 Nxe5 14. bxc6 Nxc6 $11) 13. Nf3 $14 Bb7 14. h3 Nh6 15. Qd3 a5 16. Rfd1
+e6 17. Rac1 Ba6 $2 (17... Nf5 $14) 18. Qd2 $2 (18. e4 $1 b4 19. Qe3 Bb7 20. Nd4
+$16) 18... Nf5 19. g4 Bh6 20. e3 Ne7 21. Rc5 Ra7 22. Rdc1 Bf8 23. Bd4 Rb7 24.
+Qc2 b4 25. Rc7 Qb8 26. Rc5 Bb5 27. Bf1 Bxf1 28. Kxf1 Qa8 29. Rc7 $4 (29. Qd3)
+29... Rxc7 30. Qxc7 Rc8 $19 31. Qd7 Rxc1+ 32. Kg2 Rc6 33. Ng5 Qc8 34. Qa7 Ra6
+35. Qc5 Qxc5 36. Bxc5 Nc6 37. Bd4 Nxd4 38. exd4 Rc6 0-1
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.14"]
+[Round "8"]
+[White "Vikas R, Sharma"]
+[Black "Praful, Mehta"]
+[Result "1-0"]
+[ECO "B01"]
+[WhiteElo "2010"]
+[BlackElo "2074"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "63"]
+
+1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Be2 (5. Nf3 c6 6. Bc4 Bf5 7. Bd2
+e6 8. Nd5 Qd8 9. Nxf6+ Qxf6 10. Qe2 Nd7 11. O-O-O) 5... c6 6. Nf3 Bf5 (6... Bg4
+7. O-O e6 8. Ne5 Bxe2 9. Qxe2) 7. O-O e6 8. Ne5 (8. Re1 Nbd7 9. Bf4 Bb4 10. Bd2
+h6 11. a3 Be7 12. Ne4 Qb6 13. Ng3 Bh7 14. b4 O-O 15. c4 Qc7 16. Bf1 Rfd8 17.
+Qe2 Nf8 18. Rac1 a5 19. Bc3 axb4 20. axb4) 8... Nbd7 9. Bf4 (9. Nc4) 9... Nxe5
+10. dxe5 Nd7 11. a3 Nxe5 12. b4 Qc7 13. Qd4 f6 (13... Bd6 14. g4 Bg6 15. Bg3
+$13) 14. Bg3 Bd6 15. Rad1 Ke7 $2 (15... Rd8 16. Qxa7 $11) 16. Ne4 Bxe4 $2 (
+16... Rhd8 17. Qe3 Kf8 18. Nxd6 Rxd6 19. Bxe5 fxe5 20. Qxe5 Rad8 21. c4 $14)
+17. Qxe4 $16 Rad8 18. f4 Nf7 19. Bc4 Rhe8 20. Qxh7 Kf8 21. Qh5 (21. Rde1) 21...
+Nh6 22. Bf2 b6 23. g4 $2 (23. Rde1) 23... Ng8 $4 (23... Bxf4 $15) 24. Rde1 Qc8
+(24... Bxf4 25. Bxe6 Nh6 26. g5 fxg5 27. Bg3 $18) 25. f5 $18 Be5 26. Bxe6 Rxe6
+27. fxe6 Qxe6 28. Rxe5 Qc4 (28... Qxe5 29. Qxe5 fxe5 30. Bxb6+ Ke8 31. Bxd8)
+29. Re3 Qf4 30. Rfe1 Qb8 31. Bg3 Qc8 32. Bd6+ 1-0
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.14"]
+[Round "9"]
+[White "Srinath, Rao S.V."]
+[Black "Vikas R, Sharma"]
+[Result "1-0"]
+[ECO "B50"]
+[WhiteElo "2094"]
+[BlackElo "2010"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "73"]
+
+1. e4 c5 2. Nf3 d6 3. c3 Nf6 4. Be2 Nc6 5. d4 cxd4 6. cxd4 d5 (6... Nxe4 7. d5
+Qa5+ 8. Nc3 Nxc3 9. bxc3 Ne5 10. Nxe5 Qxc3+ 11. Bd2 Qxe5 12. O-O a6) 7. e5 Ne4
+8. O-O e6 9. Nbd2 Be7 10. Bd3 Nxd2 11. Bxd2 Bd7 12. Rc1 Rc8 13. Qe1 O-O 14. Qe3
+f5 15. exf6 Bxf6 16. a3 Qb6 17. Bc3 Rce8 18. b4 e5 $2 (18... Ne7 $1 {with the
+idea of Nf5 and Bb5}) 19. dxe5 Nxe5 20. Nxe5 Qxe3 21. fxe3 Bxe5 22. Bxh7+ $2 (
+22. Bxe5 $1 Rxf1+ 23. Bxf1 Rxe5 24. Rc7 Be8 25. Rxb7 $16) (22. Rxf8+ Kxf8 23.
+Bxh7 Bxc3 24. Rxc3 $16) 22... Kxh7 23. Rxf8 Bxh2+ 24. Kxh2 Rxf8 25. Bd4 Bc6 $2
+(25... Rc8 $1 26. Rf1 Be6 27. Bxa7 Ra8 $11) 26. b5 $2 (26. Bxa7 Ra8 27. Bc5 $14
+) 26... Bxb5 27. Rc7 Rg8 $2 (27... Bc6 28. Rxg7+ Kh6 29. Re7 Rf2 $11) 28. Rxb7
+a6 29. Kg3 Kh6 30. Rb6+ g6 31. Rd6 Bc4 32. Rd7 Kg5 33. Rf7 Re8 34. Kf3 Re4 35.
+g4 Re6 36. Kg3 Be2 $4 (36... Kh6 {only move to save the game}) 37. Bc5 $2 {
+white won on time. 37 ...Bxg4 38.Be7+ Rxe7 39.Rxe7 Kf6 white has to fight long
+battle to win.} (37. e4 $1 Kh6 38. g5+ Kh5 39. Be3 {Rh7 mate is unavoidable})
+1-0
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.14"]
+[Round "10"]
+[White "Vikas R, Sharma"]
+[Black "Mohammad Nubairshah, Shaikh"]
+[Result "0-1"]
+[ECO "B41"]
+[WhiteElo "2010"]
+[BlackElo "2259"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "52"]
+
+1. e4 c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 a6 5. c4 Nf6 6. Nc3 Qc7 7. Be3 Bb4 8. f3
+O-O (8... Bxc3+ 9. bxc3 d5 10. cxd5 exd5 11. Qa4+ Bd7 12. Nb5 axb5 13. Qxa8
+Qxc3+ 14. Kf2 O-O 15. Rd1 $13) 9. Qb3 Bc5 10. O-O-O (10. Na4 d6 11. Nxc5 dxc5
+12. Nc2) 10... d5 11. cxd5 exd5 12. exd5 Re8 13. Bg1 (13. Bg5 $14) 13... b5 14.
+Kb1 Bb7 15. Nc2 $2 (15. Nf5 $14) 15... Nbd7 16. Ne4 $2 (16. Bxc5 Nxc5 17. d6
+Qb6 18. Qb4 Rad8 19. Qf4 Re6 $13) 16... Bxg1 17. Nxf6+ Nxf6 18. Rxg1 Qxh2 19.
+Bd3 Bxd5 $17 20. Qb4 Rad8 21. Nd4 Bc4 $2 (21... g6 $17) 22. Bxc4 bxc4 23. Qxc4
+$11 h6 24. Qf1 Rc8 25. Rd2 a5 26. Qd1 Qb8 {I dont remember rest of the moves.
+the position is equal. game continued very long in the equal position with
+both players under time pressure. my opponent offers draw that I rejected.
+Later, I blundered and lose the game.} 0-1
+
+[Event "3rd Vaze Memorial Rapid"]
+[Site "?"]
+[Date "2014.12.14"]
+[Round "11"]
+[White "Vikas R, Sharma"]
+[Black "Ronak, Mehta"]
+[Result "1-0"]
+[ECO "B38"]
+[WhiteElo "2010"]
+[BlackElo "1804"]
+[Annotator "Sharma,Vikas"]
+[PlyCount "91"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. f3 g6 6. c4 Bg7 7. Be3 O-O 8. Nc3
+Nc6 9. Be2 Bd7 10. O-O Rc8 11. Qd2 Re8 12. Rac1 Qa5 13. Rfd1 a6 14. Bf1 Qh5 $2
+15. Nde2 Qa5 16. Nf4 Ne5 17. b3 b5 $4 (17... Rc6 18. Nfd5 Nxd5 19. Nxd5 Qxd2
+20. Rxd2 $14) 18. cxb5 axb5 19. Nxb5 Qxd2 20. Bxd2 $16 Rb8 21. a4 g5 22. Nd5
+Nxd5 23. exd5 h6 24. Be3 Bf5 25. Rc7 Kf8 26. a5 Bd3 27. Bxd3 Nxd3 28. Rxd3 Rxb5
+29. a6 $18 Ra5 30. a7 f5 31. b4 Ra1+ 32. Rc1 Ra4 33. Rb1 f4 34. Bf2 Ra8 35. b5
+R8xa7 36. Bxa7 Rxa7 37. Kf1 Rb7 38. Ke2 Ke8 39. Rd2 Kd7 40. Kd3 e6 41. dxe6+
+Kxe6 42. b6 Kd5 43. Rb4 Kc5 44. Rc4+ Kd5 45. Rc7 Rxb6 46. Rxg7 1-0
+
 [Event "Neeraj Gawale Memorial Rapid"]
 [Site "?"]
 [Date "2014.12.06"]
